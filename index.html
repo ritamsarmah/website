@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ritam Sarmah</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Open+Sans:300,400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top delay-animated fadeIn">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#home"><span class="glyphicon glyphicon-home"></span></a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#experience">experience</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="home" class="jumbotron text-left animated fadeIn">
+        <div class="delay-animated fadeInDown">
+            <h1>ritam sarmah</h1>
+        </div>
+        <div class="delay-animated fadeInDown">
+            <h3>student / developer</h3>
+        </div>
+    </div>
+
+    <!-- Container (About) -->
+    <div id="about" class="container-fluid">
+        <div class="col-md-6 col-md-offset-3">
+            <h2>about me</h2>
+            <p>I am currently a third-year computer science student at UCLA and software developer based in Los Angeles, CA. I love building iOS apps. I also enjoy playing and writing music, learning about design and typography, and <a href="https://www.youtube.com/watch?v=EtoMN_xi-AM">Batman</a>.
+            </p>
+        </div>
+    </div>
+
+    <!-- Container (Projects) -->
+    <div id="projects" class="container-fluid">
+        <div class="col-sm-6 col-sm-offset-3">
+            <h2>projects</h2>
+            <div class="row">
+                <div class="col-md-5 col-md-offset-1">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3>Movie Search</h3>
+                            <p>Discover and search for the latest movies.</p>
+                            <br>
+                            <a href="https://github.com/ritamsarmah/movie-search">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3>Streamer</h3>
+                            <p>Stream and download any video link to your device.</p>
+                            <br>
+                            <a href="https://github.com/ritamsarmah/video-streamer">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 col-md-offset-1">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3>3D Ski Simulator</h3>
+                            <p>Ski past obstacles in this WebGL arcade game</p>
+                            <br>
+                            <a href="https://github.com/ritamsarmah/ski-simulator">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3>Cal Scheduler</h3>
+                            <p>Create calendar events with the help of a virtual assistant.</p>
+                            <br>
+                            <a href="https://github.com/ritamsarmah/cal-scheduler">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container (Experience) -->
+    <div id="experience" class="container-fluid">
+        <h2>experience</h2>
+        <p>University of California, Los Angeles B.S. in Computer Science</p>
+        <p>iOS Developer Intern Kypher</p>
+        <p>Support Technician UCLA Social Sciences Computing</p>
+    </div>
+
+    <!-- Container (Contact) -->
+    <div id="contact" class="container-fluid">
+        <a href="mailto:sarmah.ritam@gmail.com"><span class="glyphicon glyphicon-envelope" style="color:white; font-size:3.1em"></span></a>
+        <a href="https://www.facebook.com/ritam.sarmah" target="_blank"><img border="0" alt="Facebook" src="./images/facebook.png" width="48" height="48"></a>
+        <a href="https://www.linkedin.com/in/rsarmah" target="_blank"><img border="0" alt="LinkedIn" src="./images/linkedin.png" width="48" height="48"></a>
+        <a href="https://www.github.com/ritamsarmah" target="_blank"><img border="0" alt="GitHub" src="./images/github.png" width="48" height="48"></a>
+    </div>
+
+    <script>
+    // navbar scroll
+    var solidColor = 'rgba(255, 255, 255, 1)';
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= 50) {
+            $('.navbar').css('background-color', solidColor);
+        } else {
+            var isExpanded = $("#myNavbar").is(":visible");
+            if (!isExpanded || $(window).width() >= 768) {
+                $('.navbar').css('background-color', 'transparent');
+            }
+        }
+    });
+
+    $(window).on('resize', function () {
+        var isExpanded = $("#myNavbar").is(":visible");
+        if ($(window).scrollTop() < 50 && $(window).width() >= 768) {
+            $('.navbar').css('background-color', 'transparent');
+        } else if (isExpanded && $(window).width() < 768) {
+            $('.navbar').css('background-color', solidColor);
+        }
+    });
+
+    $('.navbar-collapse').on('show.bs.collapse', function () {
+        $('.navbar').css('background-color', solidColor);
+    });
+
+    $('.navbar-collapse').on('hidden.bs.collapse', function () {
+        if ($(window).scrollTop() < 50) {
+            $('.navbar').css('background-color', 'transparent');
+        }
+    });
+
+    // smooth anchor scrolling
+    var $root = $('html, body');
+    $('a').click(function() {
+        var href = $.attr(this, 'href');
+        var offset = 50; // section padding
+
+        // Desktop navbar has different height than mobile
+        if ($(window).width() >= 768) {
+            offset = 100 + 3; // 3 is a corrective magic number
+        }
+        $root.animate({
+            scrollTop: $(href).offset().top - offset
+        }, 500, function () {
+            window.location.hash = href;
+        });
+        event.preventDefault();
+    });
+    </script>
+</body>
+</html>

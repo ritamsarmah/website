@@ -1,0 +1,315 @@
+/* Welcome to Compass.
+* In this file you should write your main styles. (or centralize your imports)
+* Import this file using the following HTML or equivalent:
+* <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "responsive-font";
+
+// Colors
+$pale-turquoise: #c2eaec;
+$jet: #303030;
+$deep-space: #495F70;
+$isabelline: #f2efea;
+$columbine-green: #2c2c2c;
+$swift-orange: #ff7700;
+$platinum: #e8e3dc;
+
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+}
+//
+// @mixin border-radius($radius){
+//     border-top-radius: $radius;
+//     border-right-radius: $radius;
+//     border-bottom-radius: $radius;
+//     border-left-radius: $radius;
+// }
+
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        color: $swift-orange;
+        text-decoration: none;
+    }
+
+    &:active, &:focus, &:link {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+h2 {
+    font-family: Arvo, serif;
+    font-style: bold;
+    text-align: center;
+    @include responsive-font(5vw, 28px, 36px, 50px);
+    padding-bottom: 20px;
+
+}
+
+// TODO: Fix grey line, highlights on hover
+// Transparent desktop, solid color mobile
+// Highlight selected
+.navbar {
+    font-family: Open Sans, sans-serif;
+    background-color: transparent;
+    // background-color: rgba(255, 255, 255, 0.9);
+    border-color: transparent;
+    padding-top: 40px;
+    padding-bottom: 10px;
+
+    .navbar-toggle {
+        border: none;
+        .icon-bar {
+            background-color: $jet;
+        }
+
+        &:hover {
+            background-color: transparent;
+            .icon-bar {
+                background-color: lighten($jet, 25%);;
+            }
+        }
+
+        &:active, &:enabled {
+            background-color: transparent;
+        }
+    }
+
+    .navbar-nav {
+        display: inline-block;
+        float: none;
+        > li {
+            font-size: 18px;
+            padding-left: 10px;
+            padding-right: 10px;
+            &:hover a, &:active a {
+                // font-weight: bold;
+                color: $swift-orange !important;
+            }
+            > a {
+                color: $jet;
+            }
+        }
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+}
+
+
+.delay-animated {
+    -webkit-animation-delay: 0.2s; /* Safari 4.0 - 8.0 */
+    animation-delay: 0.2s;
+    -webkit-animation-duration: 1.2s;
+    animation-duration: 1.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@media (max-width: 767px){
+    .navbar {
+        // background-color: rgba(255, 255, 255, 0.9);
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-40px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+.jumbotron {
+    background-color: $pale-turquoise;
+    background-image: url(../images/jumbotron.png);
+    transition: 1000ms;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+
+    padding: 20%;
+    padding-left: 20%;
+    margin-bottom: 0px;
+
+    text-shadow: 1px 1px 3px #ffffff;
+
+    h1 {
+        font-family: Arvo, serif;
+        @include responsive-font(5vw, 48px, 84px, 50px);
+        color: $jet;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-family: Open Sans, sans-serif;
+        @include responsive-font(5vw, 14px, 28px, 50px);
+        font-weight: 10;
+        letter-spacing: 0.1em;
+        line-height: 1.4em;
+        color: $jet;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+#about {
+    background-color: $deep-space;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    p {
+        font-family: Open Sans, sans-serif;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        line-height: 1.4em;
+    }
+}
+
+#projects {
+    background-color: $isabelline;
+    color: $jet;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+
+    .panel {
+        border-width: 2px;
+        border-radius: 7px;
+        padding: 15px;
+        background-color: $isabelline;
+        transition: box-shadow 0.5s;
+
+        &:hover {
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, .2);
+        }
+    }
+
+    h3 {
+        font-weight: bold;
+    }
+
+    h3, p {
+        font-family: Open Sans, sans-serif;
+        margin-left: 20px;
+        margin-right: 20px;
+        line-height: 1.4em;
+    }
+
+    a {
+        color: $jet;
+        font-family: Open Sans, sans-serif;
+        text-decoration: underline;
+
+        &:hover {
+            color: $swift-orange;
+        }
+        //
+        // &:active, &:focus, &:link {
+        //     color: $jet;
+        // }
+    }
+}
+
+#experience {
+    background-color: $columbine-green;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    p {
+        font-family: Open Sans, sans-serif;
+        margin-left: 20px;
+        margin-right: 20px;
+        line-height: 1.4em;
+    }
+}
+
+#contact {
+    background-color: $deep-space;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    a {
+        display: inline-block;
+        padding: 40px;
+    }
+
+    p {
+        font-family: Open Sans, sans-serif;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        line-height: 1.4em;
+    }
+}
