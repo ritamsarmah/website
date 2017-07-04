@@ -12,7 +12,7 @@ $jet: #303030;
 $deep-space: #495F70;
 $isabelline: #f2efea;
 $columbine-green: #2c2c2c;
-$swift-orange: #ff7700;
+$orioles-orange: #f4511e;
 $platinum: #e8e3dc;
 
 @mixin opacity($opacity) {
@@ -20,13 +20,6 @@ $platinum: #e8e3dc;
     $opacity-ie: $opacity * 100;
     filter: alpha(opacity=$opacity-ie); //IE8
 }
-//
-// @mixin border-radius($radius){
-//     border-top-radius: $radius;
-//     border-right-radius: $radius;
-//     border-bottom-radius: $radius;
-//     border-left-radius: $radius;
-// }
 
 @mixin transition($args...) {
     -webkit-transition: $args;
@@ -41,7 +34,7 @@ a {
     text-decoration: none;
 
     &:hover {
-        color: $swift-orange;
+        color: $orioles-orange;
         text-decoration: none;
     }
 
@@ -71,15 +64,11 @@ h2 {
 
 }
 
-// TODO: Fix grey line, highlights on hover
-// Transparent desktop, solid color mobile
-// Highlight selected
 .navbar {
     font-family: Open Sans, sans-serif;
-    background-color: transparent;
-    // background-color: rgba(255, 255, 255, 0.9);
     border-color: transparent;
-    padding-top: 40px;
+    background-color: transparent;
+    padding-top: 30px;
     padding-bottom: 10px;
 
     .navbar-toggle {
@@ -103,13 +92,18 @@ h2 {
     .navbar-nav {
         display: inline-block;
         float: none;
+        li a:hover, li.active a {
+            color: $orioles-orange !important;
+            // font-weight: bold;
+            background-color: transparent !important;
+        }
         > li {
             font-size: 18px;
             padding-left: 10px;
             padding-right: 10px;
-            &:hover a, &:active a {
+            &:hover a, &:active a, &:focus a {
                 // font-weight: bold;
-                color: $swift-orange !important;
+                color: $orioles-orange !important;
             }
             > a {
                 color: $jet;
@@ -124,8 +118,8 @@ h2 {
 
 
 .delay-animated {
-    -webkit-animation-delay: 0.2s; /* Safari 4.0 - 8.0 */
-    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.4s; /* Safari 4.0 - 8.0 */
+    animation-delay: 0.4s;
     -webkit-animation-duration: 1.2s;
     animation-duration: 1.2s;
     -webkit-animation-fill-mode: both;
@@ -139,12 +133,16 @@ h2 {
     animation-fill-mode: both;
 }
 
-@media (max-width: 767px){
-    .navbar {
-        // background-color: rgba(255, 255, 255, 0.9);
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
+.slideanim {
+    visibility: hidden;
+}
+
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
 }
 
 @-webkit-keyframes fadeIn {
@@ -197,13 +195,38 @@ h2 {
     animation-name: fadeInDown;
 }
 
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(30%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
 .jumbotron {
     background-color: $pale-turquoise;
     background-image: url(../images/jumbotron.png);
+    background-position: top;
     transition: 1000ms;
     background-size: 100%;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
+    position: relative;
+    height: 100vh;
 
     padding: 20%;
     padding-left: 20%;
@@ -228,6 +251,13 @@ h2 {
         margin: 0px;
         padding: 0px;
     }
+}
+
+.jumbotron-text {
+    position: absolute;
+    padding-right: 10px;
+    top: 50%;
+    transform: translate(0%, -50%);
 }
 
 #about {
@@ -257,15 +287,14 @@ h2 {
     text-align: center;
 
     .panel {
-        border-width: 2px;
+        border-width: 0px;
         border-radius: 7px;
-        border-color: $platinum;;
-        background-color: $isabelline;
+        background-color: $platinum;
         padding: 15px;
         transition: box-shadow 0.5s;
 
         &:hover {
-            box-shadow: 0px 5px 20px rgba(0, 0, 0, .2);
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, .3);
         }
     }
 
@@ -286,12 +315,12 @@ h2 {
         text-decoration: underline;
 
         &:hover {
-            color: $swift-orange;
+            color: $orioles-orange;
         }
     }
 
     img {
-        box-shadow: 0px 5px 20px rgba(0, 0, 0, .5);
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, .3);
         width: 80%;
         max-width: 250px;
         height: auto;
@@ -309,15 +338,37 @@ h2 {
     padding-top: 50px;
     padding-bottom: 50px;
 
+    h3 {
+        font-family: Open Sans, sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 1.5em;
+        text-align: left;
+    }
+
+    h4 {
+        font-family: Open Sans, sans-serif;
+        font-size: 18px;
+        line-height: 2em;
+        text-align: center;
+    }
+
     p {
         font-family: Open Sans, sans-serif;
-        margin-left: 20px;
-        margin-right: 20px;
+        font-size: 14px;
         line-height: 1.4em;
+        margin-bottom: 25px;
     }
 
     h2:after {
         color: $pale-turquoise;
+    }
+
+    img {
+        width: 50%;
+        max-width: 60px;
+        margin: auto;
+        height: auto;
     }
 }
 
@@ -339,5 +390,17 @@ h2 {
         margin-left: 20px;
         margin-right: 20px;
         line-height: 1.4em;
+    }
+}
+
+
+@media (max-width: 767px){
+    .navbar {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .jumbotron {
+        height: 75vh;
+        min-height: 400px;
     }
 }

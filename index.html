@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="94">
     <nav class="navbar navbar-default navbar-fixed-top delay-animated fadeIn">
         <div class="container">
             <div class="navbar-header">
@@ -22,7 +22,8 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li><a href="#home"><span class="glyphicon glyphicon-home"></span></a></li>
+                    <!-- <li><a href="#home"><span class="glyphicon glyphicon-home"></span></a></li> -->
+                    <li><a href="#home">home</a></li>
                     <li><a href="#about">about</a></li>
                     <li><a href="#projects">projects</a></li>
                     <li><a href="#experience">experience</a></li>
@@ -33,70 +34,75 @@
     </nav>
 
     <div id="home" class="jumbotron text-left animated fadeIn">
-        <div class="delay-animated fadeInDown">
-            <h1>ritam sarmah</h1>
-        </div>
-        <div class="delay-animated fadeInDown">
-            <h3>student / developer</h3>
-        </div>
+        <section class="jumbotron-text">
+            <div class="delay-animated fadeInDown">
+                <h1>ritam sarmah</h1>
+            </div>
+            <div class="delay-animated fadeInDown">
+                <h3>student / developer</h3>
+            </div>
+        </section>
     </div>
 
     <!-- Container (About) -->
     <div id="about" class="container-fluid">
         <div class="col-md-6 col-md-offset-3">
             <h2>about me</h2>
-            <p>I am currently a third-year computer science student at UCLA and software developer based in Los Angeles, CA. I love building iOS apps. I also enjoy playing and writing music, learning about design and typography, and <a href="https://www.youtube.com/watch?v=EtoMN_xi-AM">Batman</a>.
+            <p>I am currently a third-year computer science student at UCLA and software developer based in Los Angeles, CA. I love building iOS apps. I also enjoy playing and writing music, learning about design and typography, and <a href="https://www.youtube.com/watch?v=EtoMN_xi-AM" target="_blank">Batman</a>.
             </p>
         </div>
     </div>
 
     <!-- Container (Projects) -->
     <div id="projects" class="container-fluid">
-        <div class="col-sm-6 col-sm-offset-3">
+        <div class="col-sm-8 col-sm-offset-2">
             <h2>projects</h2>
             <div class="row">
-                <div class="col-lg-5 col-lg-offset-1">
-                    <div class="panel panel-default">
+                <div class="col-md-5 col-md-offset-1">
+                    <div class="panel panel-default slideanim">
                         <div class="panel-body">
                             <img src="./images/moviesearch.png" alt="MovieSearch.png">
-                            <br>
-                            <br>
+                            <br><br>
                             <h3>Movie Search</h3>
                             <p>Discover and search for the latest movies.</p>
                             <br>
-                            <a href="https://github.com/ritamsarmah/movie-search">GitHub</a>
+                            <a href="https://github.com/ritamsarmah/movie-search" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="panel panel-default slideanim">
+                        <div class="panel-body">
+                            <h3>Cal Scheduler</h3>
+                            <p>Create calendar events using natural language.</p>
+                            <br>
+                            <a href="https://github.com/ritamsarmah/cal-scheduler" target="_blank">GitHub</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5">
-                    <div class="panel panel-default">
+                <div class="col-md-5">
+                    <div class="panel panel-default slideanim">
                         <div class="panel-body">
                             <h3>Streamer</h3>
                             <p>Stream and download any video link to your device.</p>
                             <br>
-                            <a href="https://github.com/ritamsarmah/video-streamer">GitHub</a>
+                            <a href="https://github.com/ritamsarmah/video-streamer" target="_blank">GitHub</a>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1">
-                    <div class="panel panel-default">
+                    <div class="panel panel-default slideanim">
                         <div class="panel-body">
+                            <img src="./images/skisim.png" alt="SkiSim.png">
+                            <br><br>
                             <h3>3D Ski Simulator</h3>
                             <p>Ski past obstacles in this WebGL arcade game</p>
                             <br>
-                            <a href="https://github.com/ritamsarmah/ski-simulator">GitHub</a>
+                            <a href="https://github.com/ritamsarmah/ski-simulator" target="_blank">GitHub</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="panel panel-default">
+                    <div class="panel panel-default slideanim">
                         <div class="panel-body">
-                            <h3>Cal Scheduler</h3>
-                            <p>Create calendar events with the help of a virtual assistant.</p>
+                            <h3>HearthBase</h3>
+                            <p>Reference your Hearthstone cards on the go.</p>
                             <br>
-                            <a href="https://github.com/ritamsarmah/cal-scheduler">GitHub</a>
+                            <a href="https://github.com/ritamsarmah/hearthbase" target="_blank">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -107,9 +113,50 @@
     <!-- Container (Experience) -->
     <div id="experience" class="container-fluid">
         <h2>experience</h2>
-        <p>University of California, Los Angeles B.S. in Computer Science</p>
-        <p>iOS Developer Intern Kypher</p>
-        <p>Support Technician UCLA Social Sciences Computing</p>
+        <div class="col-sm-8 col-sm-offset-2">
+            <div class="row">
+
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-4">
+                        <img src="./images/kypher.png" class="img-responsive pull-left" alt="Kypher.png">
+                        <h3>iOS Developer Intern</h3>
+                        <p>Kypher</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-4">
+                        <img src="./images/ucla.png" class="img-responsive pull-left" alt="UCLA.png">
+                        <h3>Support Technician</h3>
+                        <p>UCLA Social Sciences Computing</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-4">
+                        <img src="./images/ucla.png" class="img-responsive pull-left" alt="UCLA.png">
+                        <h3>University of California, Los Angeles</h3>
+                        <p>B.S. Computer Science</p>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-xs-6 col-md-4"><h4>Swift</h4></div>
+                <div class="col-xs-6 col-md-4"><h4>Javascript</h4></div>
+                <div class="col-xs-6 col-md-4"><h4>Xcode</h4></div>
+                <div class="col-xs-6 col-md-4"><h4>Objective-C</h4></div>
+                <div class="col-xs-6 col-md-4"><h4>HTML/CSS</h4></div>
+                <div class="col-xs-6 col-md-4"><h4>iOS SDK</h4></div>
+                <div class="col-xs-6 col-md-4"><h4>Python</h4></div>
+                <div class="col-xs-6 col-md-4"><h4>Bootstrap</h4></div>
+                <div class="col-xs-6 col-md-4"><h4>CocoaPods</h4></div>
+                <div class="col-xs-6 col-md-4"><h4>C++</h4></div>
+                <div class="col-xs-6 col-md-4"><h4>RESTful APIs</h4></div>
+                <div class="col-xs-6 col-md-4"><h4>Sketch</h4></div>
+                <div class="col-xs-6 col-md-4"><h4>C</h4></div>
+                <div class="col-xs-6 col-md-4"><h4>SQL</h4></div>
+                <div class="col-xs-6 col-md-4"><h4>Git</h4></div>
+            </div>
+        </div>
     </div>
 
     <!-- Container (Contact) -->
@@ -134,7 +181,7 @@
         }
     });
 
-    $(window).on('resize', function () {
+    $(window).on('onbeforeprint resize', function () {
         var isExpanded = $("#myNavbar").is(":visible");
         if ($(window).scrollTop() < 50 && $(window).width() >= 768) {
             $('.navbar').css('background-color', 'transparent');
@@ -161,7 +208,7 @@
 
         // Desktop navbar has different height than mobile
         if ($(window).width() >= 768) {
-            offset = 100 + 3; // 3 is a corrective magic number
+            offset = 90 + 3; // 3 is a corrective magic number
         }
         $root.animate({
             scrollTop: $(href).offset().top - offset
@@ -169,6 +216,18 @@
             window.location.hash = href;
         });
         event.preventDefault();
+    });
+
+    // slide in animation
+    $(window).scroll(function() {
+        $(".slideanim").each(function() {
+            var pos = $(this).offset().top;
+
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+                $(this).addClass("slide");
+            }
+        });
     });
     </script>
 </body>
