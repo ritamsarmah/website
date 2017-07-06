@@ -12,7 +12,7 @@ $jet: #303030;
 $deep-space: #495F70;
 $isabelline: #f2efea;
 $columbine-green: #2c2c2c;
-$orioles-orange: #f4511e;
+$terracotta: #ED6A5A;
 $platinum: #e8e3dc;
 
 @mixin opacity($opacity) {
@@ -30,11 +30,12 @@ $platinum: #e8e3dc;
 }
 
 a {
+    font-family: Open Sans, sans-serif;
     color: white;
     text-decoration: none;
 
     &:hover {
-        color: $orioles-orange;
+        color: $terracotta;
         text-decoration: none;
     }
 
@@ -93,7 +94,7 @@ h2 {
         display: inline-block;
         float: none;
         li a:hover, li.active a {
-            color: $orioles-orange !important;
+            color: $terracotta !important;
             // font-weight: bold;
             background-color: transparent !important;
         }
@@ -103,7 +104,7 @@ h2 {
             padding-right: 10px;
             &:hover a, &:active a, &:focus a {
                 // font-weight: bold;
-                color: $orioles-orange !important;
+                color: $terracotta !important;
             }
             > a {
                 color: $jet;
@@ -131,18 +132,6 @@ h2 {
     animation-duration: 1.5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-}
-
-.slideanim {
-    visibility: hidden;
-}
-
-.slide {
-    animation-name: slide;
-    -webkit-animation-name: slide;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible;
 }
 
 @-webkit-keyframes fadeIn {
@@ -217,6 +206,62 @@ h2 {
     }
 }
 
+.slideanim {
+    visibility: hidden;
+}
+
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes bounceIn {
+    from, 30%, 60%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    0% {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    30% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    60% {
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.bounceanim {
+    visibility: hidden;
+}
+
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+.bounceIn {
+    animation-name: bounceIn;
+    -webkit-animation-name: bounceIn;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
 .jumbotron {
     background-color: $pale-turquoise;
     background-image: url(../images/jumbotron.png);
@@ -255,8 +300,8 @@ h2 {
 
 .jumbotron-text {
     position: absolute;
-    padding-right: 10px;
-    top: 50%;
+    padding-right: 15px;
+    top: 45%;
     transform: translate(0%, -50%);
 }
 
@@ -315,7 +360,7 @@ h2 {
         text-decoration: underline;
 
         &:hover {
-            color: $orioles-orange;
+            color: $terracotta;
         }
     }
 
@@ -341,34 +386,42 @@ h2 {
     h3 {
         font-family: Open Sans, sans-serif;
         font-weight: bold;
-        font-size: 18px;
+        font-size: 20px;
         line-height: 1.5em;
-        text-align: left;
+        text-align: center;
     }
 
     h4 {
+        font-family: Open Sans, sans-serif;
+        font-style: bold;
+        font-size: 18px;
+        line-height: 1.5em;
+        text-align: center;
+    }
+
+    p {
         font-family: Open Sans, sans-serif;
         font-size: 18px;
         line-height: 2em;
         text-align: center;
     }
 
-    p {
-        font-family: Open Sans, sans-serif;
-        font-size: 14px;
-        line-height: 1.4em;
-        margin-bottom: 25px;
+    a {
+        text-align: center;
+        text-decoration: underline;
     }
 
     h2:after {
         color: $pale-turquoise;
     }
 
-    img {
-        width: 50%;
-        max-width: 60px;
-        margin: auto;
-        height: auto;
+    img, svg {
+        width: 70%;
+        max-width: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
     }
 }
 
@@ -402,5 +455,8 @@ h2 {
     .jumbotron {
         height: 75vh;
         min-height: 400px;
+    }
+    .jumbotron-text {
+        padding-right: 90px;
     }
 }
