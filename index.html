@@ -47,7 +47,7 @@
     <div id="about" class="container-fluid">
         <div class="col-lg-6 col-lg-offset-3">
             <h2>about me</h2>
-            <p>I am currently a third-year computer science student at UCLA, and software developer based in Los Angeles, CA. I love designing and building iOS apps using Swift. In my spare time, I enjoying playing and writing music, creating awesome design mockups in Sketch, learning about typography, and appreciating anything related to <a href="https://www.youtube.com/watch?v=EtoMN_xi-AM" target="_blank">Batman</a>.
+            <p>I am currently a third-year computer science student at UCLA, and software developer based in Los Angeles, CA. I love designing and building iOS apps using Swift. In my spare time, I enjoying playing and writing music, creating design mockups in Sketch, learning about typography, and appreciating anything related to <a href="https://www.youtube.com/watch?v=EtoMN_xi-AM" target="_blank">Batman</a>.
             </p>
         </div>
     </div>
@@ -63,7 +63,7 @@
                             <img src="./images/moviesearch.png" alt="MovieSearch.png">
                             <br><br>
                             <h3>Movie Search</h3>
-                            <p>Discover and keep track of the latest movies with a sleek design</p>
+                            <p>Discover and keep track of the latest movies</p>
                             <br>
                             <a href="https://github.com/ritamsarmah/movie-search" target="_blank">GitHub</a>
                         </div>
@@ -191,24 +191,35 @@
             </div>
             <div class="row">
                 <div class="form-group">
-                    <a href="mailto:sarmah.ritam@gmail.com" class="btn btn-default">Get in Touch</a>
+                    <script type="text/javascript">
+                    var first = "ritam";
+                    var last = "sarmah";
+                    var domain = "gmail";
+                    document.write('<a href="mailto:'+ last + '.' + first + '@' + domain + '.com"class="btn btn-default">Get in Touch<\/a>');
+                    </script>
                 </div>
             </div>
         </div>
     </div>
 
     <footer>
-        <a href="mailto:sarmah.ritam@gmail.com"><span class="glyphicon glyphicon-envelope" style="color:white; font-size:2em"></span></a>
-        <a href="https://www.facebook.com/ritam.sarmah" target="_blank"><img border="0" alt="Facebook" src="./images/facebook.svg" width="28" height="28"></a>
-        <a href="https://www.linkedin.com/in/rsarmah" target="_blank"><img border="0" alt="LinkedIn" src="./images/linkedin.svg" width="28" height="28"></a>
-        <a href="https://www.github.com/ritamsarmah" target="_blank"><img border="0" alt="GitHub" src="./images/github.svg" width="28" height="28"></a>
-        <a href="https://www.instagram.com/ritamsarmah" target="_blank"><img border="0" alt="GitHub" src="./images/instagram.svg" width="28" height="28"></a>
+        <script type="text/javascript">
+        var first = "ritam";
+        var last = "sarmah";
+        var domain = "gmail";
+        document.write('<a href="mailto:'+ last + '.' + first + '@' + domain + '.com"<span class="glyphicon glyphicon-envelope" style="color:white; font-size:2em"><\/span><\/a>');
+        document.write('<a href="https://www.facebook.com/' + first + '.' + last + '" target="_blank"><img border="0" alt="Facebook" src=".\/images\/facebook.svg" width="28" height="28"><\/a>');
+        document.write('<a href="https://www.linkedin.com/in/r' + last + '" target="_blank"><img border="0" alt="LinkedIn" src=".\/images\/linkedin.svg" width="28" height="28"><\/a>');
+        document.write('<a href="https://www.github.com/' + first + last + '" target="_blank"><img border="0" alt="GitHub" src=".\/images\/github.svg" width="28" height="28"><\/a>');
+        document.write('<a href="https://www.instagram.com/' + first + last + '" target="_blank"><img border="0" alt="Instagram" src=".\/images\/instagram.svg" width="28" height="28"><\/a>');
+        </script>
     </footer>
 
     <script>
     // navbar scroll
     var solidColor = 'rgba(255, 255, 255, 1)';
     $(window).scroll(function () {
+        $('.navbar').css('background-color', solidColor);
         if ($(window).scrollTop() >= 50) {
             $('.navbar').css('background-color', solidColor);
         } else {
