@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="281px" height="281px" viewBox="0 0 281 281" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43 (38999) - http://www.bohemiancoding.com/sketch -->
+    <title>mobile</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="140.5" cy="140.5" r="140.5"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mobile">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Oval-2" fill="#495F70" xlink:href="#path-1"></use>
+            <g id="iPhone" mask="url(#mask-2)">
+                <g transform="translate(91.000000, 42.000000)">
+                    <rect id="Rectangle" fill="#2C2C2C" x="1.1" y="0" width="96.8" height="198" rx="14.3"></rect>
+                    <rect id="Rectangle-6" fill="#495F70" x="8.8" y="24.2" width="81.4" height="149.6"></rect>
+                    <ellipse id="Oval" fill="#495F70" cx="49.4" cy="185.4" rx="7.4" ry="7.4"></ellipse>
+                    <rect id="Rectangle-7" fill="#495F70" x="39.6" y="11" width="20.9" height="4.4" rx="2.2"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

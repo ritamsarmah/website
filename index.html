@@ -47,7 +47,7 @@
     <div id="about" class="container-fluid">
         <div class="col-lg-6 col-lg-offset-3">
             <h2>about me</h2>
-            <p>I am currently a third-year computer science student at UCLA and software developer based in Los Angeles, CA. I love designing and building iOS apps using Swift. I also enjoy playing and writing music in my spare time, creating design mockups with Sketch, learning about beautiful typography, and pretty much anything related to <a href="https://www.youtube.com/watch?v=EtoMN_xi-AM" target="_blank">Batman</a>.
+            <p>I am currently a third-year computer science student at UCLA, and software developer based in Los Angeles, CA. I love designing and building iOS apps using Swift. In my spare time, I enjoying playing and writing music, creating awesome design mockups in Sketch, learning about typography, and appreciating anything related to <a href="https://www.youtube.com/watch?v=EtoMN_xi-AM" target="_blank">Batman</a>.
             </p>
         </div>
     </div>
@@ -63,7 +63,7 @@
                             <img src="./images/moviesearch.png" alt="MovieSearch.png">
                             <br><br>
                             <h3>Movie Search</h3>
-                            <p>Discover and search for the latest movies</p>
+                            <p>Discover and keep track of the latest movies in style</p>
                             <br>
                             <a href="https://github.com/ritamsarmah/movie-search" target="_blank">GitHub</a>
                         </div>
@@ -136,21 +136,21 @@
                 </div>
             </div>
             <br><br>
-            <h3>the things I do,</h3>
+            <h3>the skills I have,</h3>
             <br>
             <div class="row">
                 <div class="col-sm-4 bounceanim">
-                    <img src="./images/mobile.png" alt="mobile.png">
+                    <img src="./images/mobile.svg" alt="mobile.svg">
                     <br>
                     <h4>Mobile Development</h4>
                 </div>
                 <div class="col-sm-4 bounceanim">
-                    <img src="./images/code.png" alt="code.png">
+                    <img src="./images/code.svg" alt="code.svg">
                     <br>
                     <h4>Application Programming</h4>
                 </div>
                 <div class="col-sm-4 bounceanim">
-                    <img src="./images/design.png" alt="design.png">
+                    <img src="./images/design.svg" alt="design.svg">
                     <br>
                     <h4>UI/UX Design</h4>
                 </div>
@@ -178,7 +178,7 @@
             <br><br>
             <div class="row">
                 <div style="text-align:center">
-                    <a href="https://github.com/ritamsarmah/movie-search" target="_blank">view my full resume</a>
+                    <a href="./assets/resume.pdf" target="_blank">view my full resume</a>
                 </div>
             </div>
         </div>
@@ -189,7 +189,7 @@
         <h2>contact</h2>
         <div class="col-sm-6 col-sm-offset-3">
             <div class="row">
-                <p>Feel free to contact me if you are interested in working with me or if you have any questions. You can also find me on social media by checking out the links at the bottom of this page. I look forward to hearing from you!</p>
+                <p>Feel free to contact me if you are interested in working together or if you have any questions. You can also find me on social media by checking out the links at the bottom of this page. I look forward to hearing from you!</p>
                 <br>
             </div>
             <div class="row">
@@ -205,82 +205,85 @@
         <a href="https://www.facebook.com/ritam.sarmah" target="_blank"><img border="0" alt="Facebook" src="./images/facebook.svg" width="28" height="28"></a>
         <a href="https://www.linkedin.com/in/rsarmah" target="_blank"><img border="0" alt="LinkedIn" src="./images/linkedin.svg" width="28" height="28"></a>
         <a href="https://www.github.com/ritamsarmah" target="_blank"><img border="0" alt="GitHub" src="./images/github.svg" width="28" height="28"></a>
-        <a href="https://www.instagram.com/ritamsarmah" target="_blank"><img border="0" alt="GitHub" src="./images/instagram.svg" width="28" height="28"></a>
-    </footer>
+        <a href="https://www.instagram.com/ritamsarmah" target="_blank">
+            <img border="0" alt="GitHub" src="./images/instagram.svg" width="28" height="28">
+        </a>
+    </a>
+</footer>
 
-    <script>
-    // navbar scroll
-    var solidColor = 'rgba(255, 255, 255, 1)';
-    $(window).scroll(function () {
-        if ($(window).scrollTop() >= 50) {
-            $('.navbar').css('background-color', solidColor);
-        } else {
-            var isExpanded = $("#myNavbar").is(":visible");
-            if (!isExpanded || $(window).width() >= 768) {
-                $('.navbar').css('background-color', 'transparent');
-            }
-        }
-    });
-
-    $(window).on('onload resize', function () {
-        var isExpanded = $("#myNavbar").is(":visible");
-        if ($(window).scrollTop() < 50) {
-            $('.navbar').css('background-color', 'transparent');
-        } else if (isExpanded && $(window).width() < 768) {
-            $('.navbar').css('background-color', solidColor);
-        }
-    });
-
-    $('.navbar-collapse').on('show.bs.collapse', function () {
+<script>
+// navbar scroll
+var solidColor = 'rgba(255, 255, 255, 1)';
+$(window).scroll(function () {
+    if ($(window).scrollTop() >= 50) {
         $('.navbar').css('background-color', solidColor);
-    });
-
-    $('.navbar-collapse').on('hidden.bs.collapse', function () {
-        if ($(window).scrollTop() < 50) {
+    } else {
+        var isExpanded = $("#myNavbar").is(":visible");
+        if (!isExpanded || $(window).width() >= 768) {
             $('.navbar').css('background-color', 'transparent');
         }
+    }
+});
+
+$(window).on('onload resize', function () {
+    var isExpanded = $("#myNavbar").is(":visible");
+    if ($(window).scrollTop() < 50) {
+        $('.navbar').css('background-color', 'transparent');
+    } else if (isExpanded && $(window).width() < 768) {
+        $('.navbar').css('background-color', solidColor);
+    }
+});
+
+$('.navbar-collapse').on('show.bs.collapse', function () {
+    $('.navbar').css('background-color', solidColor);
+});
+
+$('.navbar-collapse').on('hidden.bs.collapse', function () {
+    if ($(window).scrollTop() < 50) {
+        $('.navbar').css('background-color', 'transparent');
+    }
+});
+
+// smooth anchor scrolling
+var $root = $('html, body');
+$('a').click(function() {
+    var href = $.attr(this, 'href');
+    var offset = 50; // section padding
+
+    // Desktop navbar has different height than mobile
+    if ($(window).width() >= 768) {
+        offset = 90 + 3; // 3 is a corrective magic number
+    }
+    $root.animate({
+        scrollTop: $(href).offset().top - offset
+    }, 500, function () {
+        window.location.hash = href;
     });
+    event.preventDefault();
+});
 
-    // smooth anchor scrolling
-    var $root = $('html, body');
-    $('a').click(function() {
-        var href = $.attr(this, 'href');
-        var offset = 50; // section padding
+// slide in animation
+$(window).scroll(function() {
+    $(".slideanim").each(function() {
+        var pos = $(this).offset().top;
 
-        // Desktop navbar has different height than mobile
-        if ($(window).width() >= 768) {
-            offset = 90 + 3; // 3 is a corrective magic number
+        var winTop = $(window).scrollTop();
+        if (pos < winTop + 700) {
+            $(this).addClass("slide");
         }
-        $root.animate({
-            scrollTop: $(href).offset().top - offset
-        }, 500, function () {
-            window.location.hash = href;
-        });
-        event.preventDefault();
     });
+});
 
-    // slide in animation
-    $(window).scroll(function() {
-        $(".slideanim").each(function() {
-            var pos = $(this).offset().top;
-
-            var winTop = $(window).scrollTop();
-            if (pos < winTop + 700) {
-                $(this).addClass("slide");
-            }
-        });
+// slide in animation
+$(window).scroll(function() {
+    $(".bounceanim").each(function() {
+        var pos = $(this).offset().top;
+        var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+            $(this).addClass("bounceIn");
+        }
     });
-
-    // slide in animation
-    $(window).scroll(function() {
-        $(".bounceanim").each(function() {
-            var pos = $(this).offset().top;
-            var winTop = $(window).scrollTop();
-            if (pos < winTop + 700) {
-                $(this).addClass("bounceIn");
-            }
-        });
-    });
-    </script>
+});
+</script>
 </body>
 </html>

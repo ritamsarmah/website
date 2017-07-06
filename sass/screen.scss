@@ -353,7 +353,7 @@ h2 {
 
     h3 {
         font-weight: bold;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     h3, p {
@@ -435,7 +435,7 @@ h2 {
 }
 
 #contact {
-    background-color: $pale-turquoise;
+    background-color: $isabelline;
     color: $jet;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -457,8 +457,8 @@ h2 {
         color: $jet;
         text-decoration: underline;
 
-        &:hover {
-            color: $terracotta
+        svg &:hover {
+            fill: $terracotta
         }
     }
 
@@ -494,6 +494,12 @@ footer {
     a {
         display: inline-block;
         padding: 40px;
+        outline: none;
+        border: 0;
+
+        &:hover {
+            color: black;
+        }
     }
 
     p {
@@ -504,7 +510,6 @@ footer {
         line-height: 1.4em;
     }
 }
-
 
 @media (max-width: 767px) {
     .navbar {

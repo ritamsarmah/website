@@ -444,7 +444,7 @@ h2:after {
 /* line 354, ../sass/screen.scss */
 #projects h3 {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
 }
 /* line 359, ../sass/screen.scss */
 #projects h3, #projects p {
@@ -527,7 +527,7 @@ h2:after {
 
 /* line 437, ../sass/screen.scss */
 #contact {
-  background-color: #c2eaec;
+  background-color: #f2efea;
   color: #303030;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -550,8 +550,8 @@ h2:after {
   text-decoration: underline;
 }
 /* line 460, ../sass/screen.scss */
-#contact a:hover {
-  color: #ED6A5A;
+svg #contact a:hover {
+  fill: #ED6A5A;
 }
 /* line 465, ../sass/screen.scss */
 #contact h2:after {
@@ -587,8 +587,14 @@ footer {
 footer a {
   display: inline-block;
   padding: 40px;
+  outline: none;
+  border: 0;
 }
-/* line 499, ../sass/screen.scss */
+/* line 500, ../sass/screen.scss */
+footer a:hover {
+  color: black;
+}
+/* line 505, ../sass/screen.scss */
 footer p {
   font-family: Open Sans, sans-serif;
   text-align: center;
@@ -598,19 +604,19 @@ footer p {
 }
 
 @media (max-width: 767px) {
-  /* line 510, ../sass/screen.scss */
+  /* line 515, ../sass/screen.scss */
   .navbar {
     padding-top: 0px;
     padding-bottom: 0px;
   }
 
-  /* line 514, ../sass/screen.scss */
+  /* line 519, ../sass/screen.scss */
   .jumbotron {
     height: 75vh;
     min-height: 400px;
   }
 
-  /* line 518, ../sass/screen.scss */
+  /* line 523, ../sass/screen.scss */
   .jumbotron-text {
     padding-right: 90px;
   }
