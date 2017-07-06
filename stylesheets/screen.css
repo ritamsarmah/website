@@ -554,24 +554,33 @@ footer {
 /* line 461, ../sass/screen.scss */
 footer a {
   display: inline-block;
-  padding: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 
 @media (max-width: 767px) {
-  /* line 468, ../sass/screen.scss */
+  /* line 471, ../sass/screen.scss */
   .navbar {
     padding-top: 0px;
     padding-bottom: 0px;
   }
 
-  /* line 472, ../sass/screen.scss */
+  /* line 475, ../sass/screen.scss */
   .jumbotron {
     height: 75vh;
     min-height: 400px;
   }
 
-  /* line 476, ../sass/screen.scss */
+  /* line 479, ../sass/screen.scss */
   .jumbotron-text {
     padding-right: 90px;
+  }
+
+  /* line 483, ../sass/screen.scss */
+  footer a {
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
 }

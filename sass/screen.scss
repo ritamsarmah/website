@@ -460,7 +460,10 @@ footer {
 
     a {
         display: inline-block;
-        padding: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 3vw;
+        padding-right: 3vw;
     }
 }
 
@@ -475,5 +478,11 @@ footer {
     }
     .jumbotron-text {
         padding-right: 90px;
+    }
+    footer {
+        a {
+            padding-left: 5vw;
+            padding-right: 5vw;
+        }
     }
 }

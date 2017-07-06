@@ -12,7 +12,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="94">
-    <nav class="navbar navbar-default navbar-fixed-top delay-animated fadeIn">
+    <nav id="completeNavbar" class="navbar navbar-default navbar-fixed-top delay-animated fadeIn">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -48,7 +48,7 @@
     <div id="about" class="container-fluid">
         <div class="col-lg-6 col-lg-offset-3">
             <h2>about me</h2>
-            <p>I am currently a third-year computer science student at UCLA, and software developer based in Los Angeles, CA. I love designing and building iOS apps using Swift. In my spare time, I enjoying playing and writing music, creating design mockups in Sketch, learning about typography, and appreciating anything related to <a href="https://www.youtube.com/watch?v=EtoMN_xi-AM" target="_blank">Batman</a>.
+            <p>I am currently a third-year computer science student at UCLA, and software developer based in Los Angeles, CA. I love designing and building iOS apps using Swift. In my spare time, I like playing and writing music, creating design mockups in Sketch, learning about typography, and enjoying anything related to <a href="https://www.youtube.com/watch?v=EtoMN_xi-AM" target="_blank">Batman</a>.
             </p>
         </div>
     </div>
@@ -162,13 +162,10 @@
                     <div class="col-xs-6 col-md-4"><p>HTML/CSS</p></div>
                     <div class="col-xs-6 col-md-4"><p>iOS SDK</p></div>
                     <div class="col-xs-6 col-md-4"><p>Python</p></div>
-                    <div class="col-xs-6 col-md-4"><p>Bootstrap</p></div>
                     <div class="col-xs-6 col-md-4"><p>CocoaPods</p></div>
                     <div class="col-xs-6 col-md-4"><p>C++</p></div>
-                    <div class="col-xs-6 col-md-4"><p>RESTful APIs</p></div>
                     <div class="col-xs-6 col-md-4"><p>Sketch</p></div>
                     <div class="col-xs-6 col-md-4"><p>C</p></div>
-                    <div class="col-xs-6 col-md-4"><p>SQL</p></div>
                     <div class="col-xs-6 col-md-4"><p>Git</p></div>
                 </div>
                 <br><br><br>
@@ -217,8 +214,10 @@
     </footer>
 
     <script>
-    // navbar scroll
+
     var solidColor = 'rgba(255, 255, 255, 1)';
+
+    // navbar transparency
     $(window).scroll(function () {
         $('.navbar').css('background-color', solidColor);
         if ($(window).scrollTop() >= 50) {
@@ -231,14 +230,18 @@
         }
     });
 
-    $(window).on('onload resize', function () {
+    function navFill() {
         var isExpanded = $("#myNavbar").is(":visible");
         if ($(window).scrollTop() < 50) {
             $('.navbar').css('background-color', 'transparent');
-        } else if (isExpanded && $(window).width() < 768) {
+        }
+        if (isExpanded && $(window).width() < 768) {
             $('.navbar').css('background-color', solidColor);
         }
-    });
+    }
+
+    window.onload = navFill();
+    $(window).on('resize', navFill);
 
     $('.navbar-collapse').on('show.bs.collapse', function () {
         $('.navbar').css('background-color', solidColor);
@@ -249,6 +252,15 @@
             $('.navbar').css('background-color', 'transparent');
         }
     });
+
+    $(window).on('scroll', function () {
+        if (window.pageYOffset < 0) {
+            var newOffset = Math.abs(window.pageYOffset);
+            document.getElementById('completeNavbar').style.top = newOffset.toString() + 'px';
+        } else {
+            document.getElementById('completeNavbar').style.top = 0;
+        }
+    })
 
     // smooth anchor scrolling
     var $root = $('html, body');
@@ -267,6 +279,7 @@
         });
         event.preventDefault();
     });
+
 
     // slide in animation
     $(window).scroll(function() {
