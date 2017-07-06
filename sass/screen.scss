@@ -36,13 +36,21 @@ a {
 
     &:hover {
         color: $terracotta;
-        text-decoration: none;
     }
 
     &:active, &:focus, &:link {
         color: white;
         text-decoration: none;
     }
+}
+
+b { font-weight: bold; }
+
+i { font-style: italic; }
+
+ol {
+    font-family: Open Sans, sans-serif;
+    list-style: decimal;
 }
 
 h2 {
@@ -310,12 +318,12 @@ h2 {
     color: white;
     padding-top: 50px;
     padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     p {
         font-family: Open Sans, sans-serif;
         text-align: center;
-        margin-left: 20px;
-        margin-right: 20px;
         line-height: 1.4em;
     }
 
@@ -345,6 +353,7 @@ h2 {
 
     h3 {
         font-weight: bold;
+        font-size: 20px;
     }
 
     h3, p {
@@ -426,6 +435,56 @@ h2 {
 }
 
 #contact {
+    background-color: $pale-turquoise;
+    color: $jet;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: Open Sans, sans-serif;
+    font-size: 18px;
+    line-height: 1.5em;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    p, ol {
+        font-family: Open Sans, sans-serif;
+        font-size: 18px;
+        line-height: 1.5em;
+
+    }
+
+    a {
+        color: $jet;
+        text-decoration: underline;
+
+        &:hover {
+            color: $terracotta
+        }
+    }
+
+    h2:after {
+        color: $jet;
+    }
+
+    .btn {
+        text-align: center;
+        background-color: $terracotta;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+
+        &:hover {
+            color: white;
+            background-color: lighten($terracotta, 7%);
+        }
+    }
+}
+
+footer {
     background-color: $deep-space;
     color: white;
     text-align: center;
@@ -447,7 +506,7 @@ h2 {
 }
 
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
     .navbar {
         padding-top: 0px;
         padding-bottom: 0px;
