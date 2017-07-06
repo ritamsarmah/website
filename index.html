@@ -60,10 +60,10 @@
                 <div class="col-md-6">
                     <div class="panel panel-default slideanim">
                         <div class="panel-body">
-                            <img src="./assets/images/moviesearch.png" alt="MovieSearch.png">
+                            <img src="./images/moviesearch.png" alt="MovieSearch.png">
                             <br><br>
                             <h3>Movie Search</h3>
-                            <p>Discover and keep track of the latest movies in style</p>
+                            <p>Discover and keep track of the latest movies with a sleek design</p>
                             <br>
                             <a href="https://github.com/ritamsarmah/movie-search" target="_blank">GitHub</a>
                         </div>
@@ -88,7 +88,7 @@
                     </div>
                     <div class="panel panel-default slideanim">
                         <div class="panel-body">
-                            <img src="./assets/images/skisim.png" alt="SkiSim.png">
+                            <img src="./images/skisim.png" alt="SkiSim.png">
                             <br><br>
                             <h3>3D Ski Simulator</h3>
                             <p>Ski past obstacles in this WebGL arcade game</p>
@@ -117,33 +117,33 @@
             <br>
             <div class="row">
                 <div class="col-sm-4 bounceanim">
-                    <img src="./assets/images/mobile.svg" alt="mobile.svg">
+                    <img src="./images/mobile.svg" alt="mobile.svg">
                     <br>
                     <h4>Mobile Development</h4>
                 </div>
                 <div class="col-sm-4 bounceanim">
-                    <img src="./assets/images/code.svg" alt="code.svg">
+                    <img src="./images/code.svg" alt="code.svg">
                     <br>
                     <h4>Application Development</h4>
                 </div>
                 <div class="col-sm-4 bounceanim">
-                    <img src="./assets/images/design.svg" alt="design.svg">
+                    <img src="./images/design.svg" alt="design.svg">
                     <br>
                     <h4>UI/UX Design</h4>
                 </div>
             </div>
             <br><br>
-            <h3>the places I've worked at</h3>
+            <h3>the places I've worked at,</h3>
             <br>
             <div class="row">
                 <div class="col-sm-4 col-sm-offset-2 bounceanim">
-                    <img src="./assets/images/kypher.png" alt="kypher.png">
+                    <img src="./images/kypher.png" alt="kypher.png">
                     <br>
                     <h4>Kypher</h4>
                     <h5>iOS Developer Intern</h5>
                 </div>
                 <div class="col-sm-4 bounceanim">
-                    <img src="./assets/images/ssc-white.png" alt="ssc.png">
+                    <img src="./images/ssc-white.png" alt="ssc.png">
                     <br>
                     <h4>UCLA SSC</h4>
                     <h5>Support Technician</h5>
@@ -199,88 +199,85 @@
 
     <footer>
         <a href="mailto:sarmah.ritam@gmail.com"><span class="glyphicon glyphicon-envelope" style="color:white; font-size:2em"></span></a>
-        <a href="https://www.facebook.com/ritam.sarmah" target="_blank"><img border="0" alt="Facebook" src="./assets/images/facebook.svg" width="28" height="28"></a>
-        <a href="https://www.linkedin.com/in/rsarmah" target="_blank"><img border="0" alt="LinkedIn" src="./assets/images/linkedin.svg" width="28" height="28"></a>
-        <a href="https://www.github.com/ritamsarmah" target="_blank"><img border="0" alt="GitHub" src="./assets/images/github.svg" width="28" height="28"></a>
-        <a href="https://www.instagram.com/ritamsarmah" target="_blank">
-            <img border="0" alt="GitHub" src="./assets/images/instagram.svg" width="28" height="28">
-        </a>
-    </a>
-</footer>
+        <a href="https://www.facebook.com/ritam.sarmah" target="_blank"><img border="0" alt="Facebook" src="./images/facebook.svg" width="28" height="28"></a>
+        <a href="https://www.linkedin.com/in/rsarmah" target="_blank"><img border="0" alt="LinkedIn" src="./images/linkedin.svg" width="28" height="28"></a>
+        <a href="https://www.github.com/ritamsarmah" target="_blank"><img border="0" alt="GitHub" src="./images/github.svg" width="28" height="28"></a>
+        <a href="https://www.instagram.com/ritamsarmah" target="_blank"><img border="0" alt="GitHub" src="./images/instagram.svg" width="28" height="28"></a>
+    </footer>
 
-<script>
-// navbar scroll
-var solidColor = 'rgba(255, 255, 255, 1)';
-$(window).scroll(function () {
-    if ($(window).scrollTop() >= 50) {
-        $('.navbar').css('background-color', solidColor);
-    } else {
+    <script>
+    // navbar scroll
+    var solidColor = 'rgba(255, 255, 255, 1)';
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= 50) {
+            $('.navbar').css('background-color', solidColor);
+        } else {
+            var isExpanded = $("#myNavbar").is(":visible");
+            if (!isExpanded || $(window).width() >= 768) {
+                $('.navbar').css('background-color', 'transparent');
+            }
+        }
+    });
+
+    $(window).on('onload resize', function () {
         var isExpanded = $("#myNavbar").is(":visible");
-        if (!isExpanded || $(window).width() >= 768) {
+        if ($(window).scrollTop() < 50) {
+            $('.navbar').css('background-color', 'transparent');
+        } else if (isExpanded && $(window).width() < 768) {
+            $('.navbar').css('background-color', solidColor);
+        }
+    });
+
+    $('.navbar-collapse').on('show.bs.collapse', function () {
+        $('.navbar').css('background-color', solidColor);
+    });
+
+    $('.navbar-collapse').on('hidden.bs.collapse', function () {
+        if ($(window).scrollTop() < 50) {
             $('.navbar').css('background-color', 'transparent');
         }
-    }
-});
-
-$(window).on('onload resize', function () {
-    var isExpanded = $("#myNavbar").is(":visible");
-    if ($(window).scrollTop() < 50) {
-        $('.navbar').css('background-color', 'transparent');
-    } else if (isExpanded && $(window).width() < 768) {
-        $('.navbar').css('background-color', solidColor);
-    }
-});
-
-$('.navbar-collapse').on('show.bs.collapse', function () {
-    $('.navbar').css('background-color', solidColor);
-});
-
-$('.navbar-collapse').on('hidden.bs.collapse', function () {
-    if ($(window).scrollTop() < 50) {
-        $('.navbar').css('background-color', 'transparent');
-    }
-});
-
-// smooth anchor scrolling
-var $root = $('html, body');
-$('a').click(function() {
-    var href = $.attr(this, 'href');
-    var offset = 50; // section padding
-
-    // Desktop navbar has different height than mobile
-    if ($(window).width() >= 768) {
-        offset = 90 + 3; // 3 is a corrective magic number
-    }
-    $root.animate({
-        scrollTop: $(href).offset().top - offset
-    }, 500, function () {
-        window.location.hash = href;
     });
-    event.preventDefault();
-});
 
-// slide in animation
-$(window).scroll(function() {
-    $(".slideanim").each(function() {
-        var pos = $(this).offset().top;
+    // smooth anchor scrolling
+    var $root = $('html, body');
+    $('a').click(function() {
+        var href = $.attr(this, 'href');
+        var offset = 50; // section padding
 
-        var winTop = $(window).scrollTop();
-        if (pos < winTop + 700) {
-            $(this).addClass("slide");
+        // Desktop navbar has different height than mobile
+        if ($(window).width() >= 768) {
+            offset = 90 + 3; // 3 is a corrective magic number
         }
+        $root.animate({
+            scrollTop: $(href).offset().top - offset
+        }, 500, function () {
+            window.location.hash = href;
+        });
+        event.preventDefault();
     });
-});
 
-// slide in animation
-$(window).scroll(function() {
-    $(".bounceanim").each(function() {
-        var pos = $(this).offset().top;
-        var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-            $(this).addClass("bounceIn");
-        }
+    // slide in animation
+    $(window).scroll(function() {
+        $(".slideanim").each(function() {
+            var pos = $(this).offset().top;
+
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 700) {
+                $(this).addClass("slide");
+            }
+        });
     });
-});
-</script>
+
+    // slide in animation
+    $(window).scroll(function() {
+        $(".bounceanim").each(function() {
+            var pos = $(this).offset().top;
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+                $(this).addClass("bounceIn");
+            }
+        });
+    });
+    </script>
 </body>
 </html>

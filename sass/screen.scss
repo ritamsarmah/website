@@ -48,11 +48,6 @@ b { font-weight: bold; }
 
 i { font-style: italic; }
 
-ol {
-    font-family: Open Sans, sans-serif;
-    list-style: decimal;
-}
-
 h2 {
     font-family: Arvo, serif;
     font-style: bold;
@@ -61,7 +56,7 @@ h2 {
     padding-bottom: 20px;
 
     &:after {
-        content:' ';
+        content:'';
         margin: auto;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -103,7 +98,6 @@ h2 {
         float: none;
         li a:hover, li.active a {
             color: $terracotta !important;
-            // font-weight: bold;
             background-color: transparent !important;
         }
         > li {
@@ -111,7 +105,6 @@ h2 {
             padding-left: 10px;
             padding-right: 10px;
             &:hover a, &:active a, &:focus a {
-                // font-weight: bold;
                 color: $terracotta !important;
             }
             > a {
@@ -142,7 +135,7 @@ h2 {
     animation-fill-mode: both;
 }
 
-@-webkit-keyframes fadeIn {
+@keyframes fadeIn {
     0% {
         opacity: 0;
     }
@@ -151,7 +144,7 @@ h2 {
     }
 }
 
-@keyframes fadeIn {
+@-webkit-keyframes fadeIn {
     0% {
         opacity: 0;
     }
@@ -165,17 +158,6 @@ h2 {
     animation-name: fadeIn;
 }
 
-@-webkit-keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(-40px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-    }
-}
-
 @keyframes fadeInDown {
     0% {
         opacity: 0;
@@ -184,6 +166,17 @@ h2 {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-40px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
     }
 }
 
@@ -254,14 +247,6 @@ h2 {
     visibility: hidden;
 }
 
-.slide {
-    animation-name: slide;
-    -webkit-animation-name: slide;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible;
-}
-
 .bounceIn {
     animation-name: bounceIn;
     -webkit-animation-name: bounceIn;
@@ -272,7 +257,7 @@ h2 {
 
 .jumbotron {
     background-color: $pale-turquoise;
-    background-image: url(../assets/images/jumbotron.png);
+    background-image: url(../images/jumbotron.png);
     background-position: top;
     transition: 1000ms;
     background-size: 100%;
@@ -338,6 +323,7 @@ h2 {
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
+    font-family: Open Sans, sans-serif;
 
     .panel {
         border-width: 0px;
@@ -357,7 +343,6 @@ h2 {
     }
 
     h3, p {
-        font-family: Open Sans, sans-serif;
         margin-top: 8px;
         margin-bottom: 8px;
         margin-left: 20px;
@@ -367,7 +352,6 @@ h2 {
 
     a {
         color: $jet;
-        font-family: Open Sans, sans-serif;
         text-decoration: underline;
 
         &:hover {
@@ -393,41 +377,31 @@ h2 {
     color: white;
     padding-top: 50px;
     padding-bottom: 50px;
+    text-align: center;
+    font-family: Open Sans, sans-serif;
+    font-size: 18px;
 
     h3 {
-        font-family: Open Sans, sans-serif;
         font-weight: bold;
         font-size: 20px;
         line-height: 1.5em;
-        text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
     }
 
-    h4 {
-        font-family: Open Sans, sans-serif;
-        font-size: 18px;
+    h4, h5 {
         line-height: 1.5em;
-        text-align: center;
     }
 
     h5 {
-        font-family: Open Sans, sans-serif;
         font-style: italic;
-        font-size: 18px;
-        line-height: 1.5em;
-        text-align: center;
     }
 
     p {
-        font-family: Open Sans, sans-serif;
-        font-size: 18px;
         line-height: 2.5em;
-        text-align: center;
     }
 
     a {
-        text-align: center;
         text-decoration: underline;
     }
 
@@ -457,32 +431,15 @@ h2 {
     padding-left: 20px;
     padding-right: 20px;
 
-    p {
-        font-family: Open Sans, sans-serif;
-        font-size: 18px;
-        line-height: 1.5em;
-    }
-
-    a {
-        color: $jet;
-        text-decoration: underline;
-
-        svg &:hover {
-            fill: $terracotta
-        }
-    }
-
     h2:after {
         color: $jet;
     }
 
     .btn {
-        text-align: center;
         background-color: $terracotta;
         border: none;
         color: white;
         padding: 15px 32px;
-        text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
@@ -503,7 +460,7 @@ footer {
 
     a {
         display: inline-block;
-        padding: 40px;
+        padding: 30px;
     }
 }
 
