@@ -65,7 +65,6 @@ h2 {
         -webkit-transform: translateY(10px);
         border: 1px solid;
     }
-
 }
 
 .navbar {
@@ -74,6 +73,8 @@ h2 {
     background-color: transparent;
     padding-top: 20px;
     padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
 
     .navbar-toggle {
         border: none;
@@ -103,7 +104,7 @@ h2 {
         > li {
             font-size: 18px;
             padding-left: 10px;
-            padding-right: 10px;
+            // padding-right: 10px;
             &:hover a, &:active a, &:focus a {
                 color: $terracotta !important;
             }
@@ -259,18 +260,17 @@ h2 {
     background-color: $pale-turquoise;
     background-image: url(../images/jumbotron.png);
     background-position: top;
-    transition: 1000ms;
     background-size: 100%;
-    background-repeat: no-repeat;
     -webkit-background-size: cover;
+    background-repeat: no-repeat;
+
     position: relative;
     height: 100vh;
-
     padding: 20%;
-    padding-left: 20%;
     margin-bottom: 0px;
+    text-shadow: 1px 1px 1px lightgray;
 
-    text-shadow: 1px 1px 3px #ffffff;
+    transition: 1000ms;
 
     h1 {
         font-family: Arvo, serif;
@@ -281,7 +281,7 @@ h2 {
 
     h3 {
         font-family: Open Sans, sans-serif;
-        @include responsive-font(5vw, 14px, 28px, 50px);
+        @include responsive-font(5vw, 24px, 32px, 50px);
         font-weight: 10;
         letter-spacing: 0.1em;
         line-height: 1.4em;
@@ -293,7 +293,7 @@ h2 {
 
 .jumbotron-text {
     position: absolute;
-    padding-right: 15px;
+    padding-right: 20%;
     top: 45%;
     transform: translate(0%, -50%);
 }
@@ -303,8 +303,8 @@ h2 {
     color: white;
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     p {
         font-family: Open Sans, sans-serif;
@@ -462,8 +462,8 @@ footer {
         display: inline-block;
         padding-top: 20px;
         padding-bottom: 20px;
-        padding-left: 3vw;
-        padding-right: 3vw;
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
     }
 }
 
@@ -473,16 +473,13 @@ footer {
         padding-bottom: 0px;
     }
     .jumbotron {
-        height: 75vh;
-        min-height: 400px;
-    }
-    .jumbotron-text {
-        padding-right: 90px;
+        height: 80vh;
+        min-height: 500px;
     }
     footer {
         a {
-            padding-left: 5vw;
-            padding-right: 5vw;
+            padding-left: 4vw;
+            padding-right: 4vw;
         }
     }
 }

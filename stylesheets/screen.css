@@ -126,64 +126,65 @@ h2:after {
   border: 1px solid;
 }
 
-/* line 71, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 .navbar {
   font-family: Open Sans, sans-serif;
   border-color: transparent;
   background-color: transparent;
   padding-top: 20px;
   padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
-/* line 78, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .navbar .navbar-toggle {
   border: none;
 }
-/* line 80, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 .navbar .navbar-toggle .icon-bar {
   background-color: #303030;
 }
-/* line 84, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 .navbar .navbar-toggle:hover {
   background-color: transparent;
 }
-/* line 86, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .navbar .navbar-toggle:hover .icon-bar {
   background-color: #707070;
 }
-/* line 91, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 .navbar .navbar-toggle:active, .navbar .navbar-toggle:enabled {
   background-color: transparent;
 }
-/* line 96, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
 }
-/* line 99, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .navbar .navbar-nav li a:hover, .navbar .navbar-nav li.active a {
   color: #ED6A5A !important;
   background-color: transparent !important;
 }
-/* line 103, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 .navbar .navbar-nav > li {
   font-size: 18px;
   padding-left: 10px;
-  padding-right: 10px;
 }
-/* line 107, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .navbar .navbar-nav > li:hover a, .navbar .navbar-nav > li:active a, .navbar .navbar-nav > li:focus a {
   color: #ED6A5A !important;
 }
-/* line 110, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 .navbar .navbar-nav > li > a {
   color: #303030;
 }
-/* line 116, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .navbar .navbar-collapse {
   text-align: center;
 }
 
-/* line 122, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .delay-animated {
   -webkit-animation-delay: 0.4s;
   /* Safari 4.0 - 8.0 */
@@ -194,7 +195,7 @@ h2:after {
   animation-fill-mode: both;
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 .animated {
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
@@ -218,7 +219,7 @@ h2:after {
     opacity: 1;
   }
 }
-/* line 156, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
@@ -244,7 +245,7 @@ h2:after {
     -webkit-transform: translateY(0);
   }
 }
-/* line 183, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
@@ -270,12 +271,12 @@ h2:after {
     -webkit-transform: translateY(0%);
   }
 }
-/* line 210, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .slideanim {
   visibility: hidden;
 }
 
-/* line 214, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 .slide {
   animation-name: slide;
   -webkit-animation-name: slide;
@@ -303,12 +304,12 @@ h2:after {
     transform: scale3d(1, 1, 1);
   }
 }
-/* line 246, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 .bounceanim {
   visibility: hidden;
 }
 
-/* line 250, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .bounceIn {
   animation-name: bounceIn;
   -webkit-animation-name: bounceIn;
@@ -317,21 +318,20 @@ h2:after {
   visibility: visible;
 }
 
-/* line 258, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 .jumbotron {
   background-color: #c2eaec;
   background-image: url(../images/jumbotron.png);
   background-position: top;
-  transition: 1000ms;
   background-size: 100%;
-  background-repeat: no-repeat;
   -webkit-background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
   height: 100vh;
   padding: 20%;
-  padding-left: 20%;
   margin-bottom: 0px;
-  text-shadow: 1px 1px 3px #ffffff;
+  text-shadow: 1px 1px 1px lightgray;
+  transition: 1000ms;
 }
 /* line 275, ../sass/screen.scss */
 .jumbotron h1 {
@@ -365,23 +365,23 @@ h2:after {
   margin: 0px;
   padding: 0px;
 }
-@media (max-width: 280px) {
+@media (max-width: 480px) {
   /* line 282, ../sass/screen.scss */
   .jumbotron h3 {
-    font-size: 14px;
+    font-size: 24px;
   }
 }
-@media (min-width: 560px) {
+@media (min-width: 640px) {
   /* line 282, ../sass/screen.scss */
   .jumbotron h3 {
-    font-size: 28px;
+    font-size: 32px;
   }
 }
 
 /* line 294, ../sass/screen.scss */
 .jumbotron-text {
   position: absolute;
-  padding-right: 15px;
+  padding-right: 20%;
   top: 45%;
   transform: translate(0%, -50%);
 }
@@ -392,8 +392,8 @@ h2:after {
   color: white;
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /* line 309, ../sass/screen.scss */
 #about p {
@@ -556,8 +556,8 @@ footer a {
   display: inline-block;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 3vw;
-  padding-right: 3vw;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
 }
 
 @media (max-width: 767px) {
@@ -569,18 +569,13 @@ footer a {
 
   /* line 475, ../sass/screen.scss */
   .jumbotron {
-    height: 75vh;
-    min-height: 400px;
+    height: 80vh;
+    min-height: 500px;
   }
 
-  /* line 479, ../sass/screen.scss */
-  .jumbotron-text {
-    padding-right: 90px;
-  }
-
-  /* line 483, ../sass/screen.scss */
+  /* line 480, ../sass/screen.scss */
   footer a {
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
   }
 }
