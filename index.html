@@ -7,12 +7,12 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Arvo|Open+Sans:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab|Open+Sans:300,400" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="94">
-    <nav id="completeNavbar" class="navbar navbar-default navbar-fixed-top delay-animated fadeIn">
+<body id="myPage" data-spy="scroll" data-target=".navbar">
+    <nav id="completeNavbar" class="navbar navbar-default delay-animated fadeIn">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -25,176 +25,151 @@
                 <ul class="nav navbar-nav">
                     <li><a href="#home">home</a></li>
                     <li><a href="#about">about</a></li>
-                    <li><a href="#projects">projects</a></li>
                     <li><a href="#experience">experience</a></li>
+                    <li><a href="#work">work</a></li>
                     <li><a href="#contact">contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div id="home" class="jumbotron text-left animated fadeIn">
-        <section class="jumbotron-text">
-            <div class="delay-animated fadeInDown">
-                <h1>ritam sarmah</h1>
-            </div>
-            <div class="delay-animated fadeInDown">
-                <h3>software developer</h3>
-            </div>
-        </section>
-    </div>
-
     <!-- Container (About) -->
-    <div id="about" class="container-fluid">
-        <div class="col-lg-6 col-lg-offset-3">
-            <h2>about me</h2>
-            <p>I am currently a third-year computer science student at UCLA, and software developer based in Los Angeles, CA. I love designing and building iOS apps using Swift. In my spare time, I like playing and writing music, creating design mockups in Sketch, learning about typography, and enjoying anything related to <a href="https://www.youtube.com/watch?v=EtoMN_xi-AM" target="_blank">Batman</a>.
-            </p>
-        </div>
-    </div>
-
-    <!-- Container (Projects) -->
-    <div id="projects" class="container-fluid">
-        <div class="col-sm-6 col-sm-offset-3">
-            <h2>projects</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="panel panel-default slideanim">
-                        <div class="panel-body">
-                            <img src="./images/moviesearch.png" alt="MovieSearch.png">
-                            <br><br>
-                            <h3>Movie Search</h3>
-                            <p>Discover and keep track of the latest movies</p>
-                            <br>
-                            <a href="https://github.com/ritamsarmah/movie-search" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                    <div class="panel panel-default slideanim">
-                        <div class="panel-body">
-                            <h3>Cal Scheduler</h3>
-                            <p>Create calendar events using natural language</p>
-                            <br>
-                            <a href="https://github.com/ritamsarmah/cal-scheduler" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="panel panel-default slideanim">
-                        <div class="panel-body">
-                            <h3>Streamer</h3>
-                            <p>Stream and download any video link to your device</p>
-                            <br>
-                            <a href="https://github.com/ritamsarmah/video-streamer" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                    <div class="panel panel-default slideanim">
-                        <div class="panel-body">
-                            <img src="./images/skisim.png" alt="SkiSim.png">
-                            <br><br>
-                            <h3>3D Ski Simulator</h3>
-                            <p>Ski past obstacles in this WebGL arcade game</p>
-                            <br>
-                            <a href="https://github.com/ritamsarmah/ski-simulator" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                    <div class="panel panel-default slideanim">
-                        <div class="panel-body">
-                            <h3>HearthBase</h3>
-                            <p>Reference your Hearthstone cards on the go</p>
-                            <br>
-                            <a href="https://github.com/ritamsarmah/hearthbase" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                </div>
+    <div id="home" class="container-fluid">
+        <div class="col-lg-8 col-lg-offset-2">
+            <div class="animated fadeInDown">
+                <h1>ritam sarmah</h1>
+                <h2>software developer</h2>
+            </div>
+            <div class="delay-animated fadeIn">
+                <img src="./images/profile.png" alt="profile.png">
             </div>
         </div>
     </div>
 
-    <!-- Container (Experience) -->
+    <div id="about" class="container-fluid">
+        <h2>who i am</h2>
+        <div class="col-lg-4 col-lg-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+            <div class="panel">
+                <p>I’m a third year <b>computer science student</b> at UCLA and <b>developer</b> based in Los Angeles, CA. I love solving problems, designing & developing beautiful software, and building iOS apps in Swift.</p>
+            </div>
+        </div>
+    </div>
+
     <div id="experience" class="container-fluid">
-        <h2>experience</h2>
-        <div class="col-sm-6 col-sm-offset-3">
-            <h3>Some of the things I do,</h3>
-            <br>
+        <div class="col-lg-4 col-lg-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+            <h2>what i do</h2>
             <div class="row">
-                <div class="col-md-4 bounceanim">
+                <div class="col-sm-4 slideanim">
                     <img src="./images/mobile.svg" alt="mobile.svg">
                     <br>
-                    <h4>Mobile Development</h4>
+                    <p>mobile apps</p>
                 </div>
-                <div class="col-md-4 bounceanim">
+                <div class="col-sm-4 slideanim">
                     <img src="./images/code.svg" alt="code.svg">
                     <br>
-                    <h4>Application Development</h4>
+                    <p>development</p>
                 </div>
-                <div class="col-md-4 bounceanim">
+                <div class="col-sm-4 slideanim">
                     <img src="./images/design.svg" alt="design.svg">
                     <br>
-                    <h4>UI/UX Design</h4>
+                    <p>ui/ux design</p>
                 </div>
             </div>
-            <br><br>
-            <h3>the places I've worked at,</h3>
-            <br>
-            <div class="row">
-                <div class="col-md-4 col-md-offset-2 bounceanim">
-                    <img src="./images/kypher.png" alt="kypher.png">
-                    <br>
-                    <h4>Kypher</h4>
-                    <h5>iOS Developer Intern</h5>
-                </div>
-                <div class="col-md-4 bounceanim">
-                    <img src="./images/ssc-white.png" alt="ssc.png">
-                    <br>
-                    <h4>UCLA SSC</h4>
-                    <h5>Support Technician</h5>
-                </div>
-            </div>
-            <br><br>
-            <h3>and the languages and tools I've used.</h3>
-            <br>
-            <div class="slideanim">
-                <div class="row">
-                    <div class="col-xs-6 col-md-4"><p>Swift</p></div>
-                    <div class="col-xs-6 col-md-4"><p>JavaScript</p></div>
-                    <div class="col-xs-6 col-md-4"><p>Xcode</p></div>
-                    <div class="col-xs-6 col-md-4"><p>Objective-C</p></div>
-                    <div class="col-xs-6 col-md-4"><p>HTML/CSS</p></div>
-                    <div class="col-xs-6 col-md-4"><p>iOS SDK</p></div>
-                    <div class="col-xs-6 col-md-4"><p>Python</p></div>
-                    <div class="col-xs-6 col-md-4"><p>CocoaPods</p></div>
-                    <div class="col-xs-6 col-md-4"><p>C++</p></div>
-                    <div class="col-xs-6 col-md-4"><p>Sketch</p></div>
-                    <div class="col-xs-6 col-md-4"><p>C</p></div>
-                    <div class="col-xs-6 col-md-4"><p>Git</p></div>
-                </div>
-                <br><br>
-                <div class="row">
-                    <div style="text-align:center">
-                        <a href="./resume.pdf" target="_blank">download my resume</a>
-                    </div>
-                </div>
-                <br>
+            <div class="row slideanim">
+                <h3>and what i use</h3>
+                <div class="col-xs-6 col-md-4"><p>Swift</p></div>
+                <div class="col-xs-6 col-md-4"><p>JavaScript</p></div>
+                <div class="col-xs-6 col-md-4"><p>Xcode</p></div>
+                <div class="col-xs-6 col-md-4"><p>iOS SDK</p></div>
+                <div class="col-xs-6 col-md-4"><p>HTML/CSS</p></div>
+                <div class="col-xs-6 col-md-4"><p>Objective-C</p></div>
+                <div class="col-xs-6 col-md-4"><p>Python</p></div>
+                <div class="col-xs-6 col-md-4"><p>CocoaPods</p></div>
+                <div class="col-xs-6 col-md-4"><p>C++</p></div>
+                <div class="col-xs-6 col-md-4"><p>Sketch</p></div>
+                <div class="col-xs-6 col-md-4"><p>C</p></div>
+                <div class="col-xs-6 col-md-4"><p>Git</p></div>
             </div>
         </div>
     </div>
 
-    <!-- Container (Contact) -->
-    <div id="contact" class="container-fluid">
-        <h2>contact</h2>
+    <div id="work" class="container-fluid">
         <div class="col-sm-6 col-sm-offset-3">
-            <div class="row">
-                <p>Feel free to contact me if you are interested in working together or if you have any questions. You can also find me on social media by checking out the links at the bottom of this page. I look forward to hearing from you!</p>
-                <br>
+            <h2>what i've been working on</h2>
+            <p>Here's a selection of my recent work. Check out my <a href="https://www.github.com/ritamsarmah" target="_blank">GitHub</a> to see all of my personal projects, or download my <a href="./resume.pdf" target="_blank">resume</a> to view my work experience.</p>
+            <br><br>
+            <div class="col-lg-6">
+                <div class="panel panel-default slideanim">
+                    <div class="panel-body">
+                        <img src="./images/moviesearch.png" alt="MovieSearch.png">
+                        <br><br>
+                        <h3>Movie Search</h3>
+                        <p>Discover and keep track of the latest movies</p>
+                        <br>
+                        <a href="https://github.com/ritamsarmah/movie-search" target="_blank">view on github</a>
+                    </div>
+                </div>
+                <div class="panel panel-default slideanim">
+                    <div class="panel-body">
+                        <h3>Cal Scheduler</h3>
+                        <p>Create calendar events using natural language</p>
+                        <br>
+                        <a href="https://github.com/ritamsarmah/cal-scheduler" target="_blank">view on github</a>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <div class="form-group">
-                    <script type="text/javascript">
-                    var first = "ritam";
-                    var last = "sarmah";
-                    var domain = "gmail";
-                    document.write('<a href="mailto:'+ last + '.' + first + '@' + domain + '.com"class="btn btn-default">Get in Touch<\/a>');
-                    </script>
+            <div class="col-lg-6">
+                <div class="panel panel-default slideanim">
+                    <div class="panel-body">
+                        <h3>Streamer</h3>
+                        <p>Stream and download any video link to your device</p>
+                        <br>
+                        <a href="https://github.com/ritamsarmah/video-streamer" target="_blank">view on github</a>
+                    </div>
+                </div>
+                <div class="panel panel-default slideanim">
+                    <div class="panel-body">
+                        <img src="./images/skisim.png" alt="SkiSim.png">
+                        <br><br>
+                        <h3>3D Ski Simulator</h3>
+                        <p>Ski past obstacles in this WebGL arcade game</p>
+                        <br>
+                        <a href="https://github.com/ritamsarmah/ski-simulator" target="_blank">view on github</a>
+                    </div>
+                </div>
+                <div class="panel panel-default slideanim">
+                    <div class="panel-body">
+                        <h3>HearthBase</h3>
+                        <p>Reference your Hearthstone cards on the go</p>
+                        <br>
+                        <a href="https://github.com/ritamsarmah/hearthbase" target="_blank">view on github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="container-fluid">
+
+        <div class="col-lg-4 col-lg-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+            <h2>how to reach me</h2>
+            <div class="panel">
+                <br>
+                <p>
+                    Feel free to contact me if you are interested in working together or if you have any questions.
+                    <br><br>
+                    You can also find me on social media by checking out the links at the bottom of this page. I look forward to hearing from you!
+                </p>
+                <br><br>
+                <div class="row">
+                    <div class="form-group">
+                        <script type="text/javascript">
+                        var first = "ritam";
+                        var last = "sarmah";
+                        var domain = "gmail";
+                        document.write('<a href="mailto:'+ last + '.' + first + '@' + domain + '.com"class="btn btn-default">get in touch<\/a>');
+                        </script>
+                    </div>
                 </div>
             </div>
         </div>
@@ -214,92 +189,25 @@
     </footer>
 
     <script>
-
-    var solidColor = 'rgba(255, 255, 255, 1)';
-
-    // navbar transparency
-    $(window).scroll(function () {
-        $('.navbar').css('background-color', solidColor);
-        if ($(window).scrollTop() >= 50) {
-            $('.navbar').css('background-color', solidColor);
-        } else {
-            var isExpanded = $("#myNavbar").is(":visible");
-            if (!isExpanded || $(window).width() >= 768) {
-                $('.navbar').css('background-color', 'transparent');
-            }
-        }
-    });
-
-    function navFill() {
-        var isExpanded = $("#myNavbar").is(":visible");
-        if ($(window).scrollTop() < 50) {
-            $('.navbar').css('background-color', 'transparent');
-        }
-        if (isExpanded && $(window).width() < 768) {
-            $('.navbar').css('background-color', solidColor);
-        }
-    }
-
-    window.onload = navFill();
-    $(window).on('resize', navFill);
-
-    $('.navbar-collapse').on('show.bs.collapse', function () {
-        $('.navbar').css('background-color', solidColor);
-    });
-
-    $('.navbar-collapse').on('hidden.bs.collapse', function () {
-        if ($(window).scrollTop() < 50) {
-            $('.navbar').css('background-color', 'transparent');
-        }
-    });
-
-    $(window).on('scroll', function () {
-        if (window.pageYOffset < 0) {
-            var newOffset = Math.abs(window.pageYOffset);
-            document.getElementById('completeNavbar').style.top = newOffset.toString() + 'px';
-        } else {
-            document.getElementById('completeNavbar').style.top = 0;
-        }
-    })
-
     // smooth anchor scrolling
     var $root = $('html, body');
     $('a').click(function() {
         var href = $.attr(this, 'href');
-        var offset = 50; // section padding
-
-        // Desktop navbar has different height than mobile
-        if ($(window).width() >= 768) {
-            offset = 80 + 3; // 3 is a corrective magic number
-        }
         $root.animate({
-            scrollTop: $(href).offset().top - offset
+            scrollTop: $(href).offset().top
         }, 500, function () {
             window.location.hash = href;
         });
         event.preventDefault();
     });
 
-
     // slide in animation
     $(window).scroll(function() {
         $(".slideanim").each(function() {
             var pos = $(this).offset().top;
-
-            var winTop = $(window).scrollTop();
-            if (pos < winTop + 700) {
+            var winBottom = $(window).scrollTop() + $(window).height();
+            if (pos < winBottom - 100) {
                 $(this).addClass("slide");
-            }
-        });
-    });
-
-    // slide in animation
-    $(window).scroll(function() {
-        $(".bounceanim").each(function() {
-            var pos = $(this).offset().top;
-            var scrollBottom = $(window).scrollTop() + $(window).height();
-            if (pos < scrollBottom - 200) {
-                $(this).addClass("bounceIn");
             }
         });
     });

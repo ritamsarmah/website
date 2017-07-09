@@ -1,1 +1,18 @@
-<svg width="281" height="281" viewBox="0 0 281 281" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>mobile</title><defs><circle id="a" cx="140.5" cy="140.5" r="140.5"/></defs><g fill="none" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill="#495F70" xlink:href="#a"/><g mask="url(#b)"><g transform="translate(91 42)"><rect fill="#2C2C2C" x="1.1" width="96.8" height="198" rx="14.3"/><path fill="#495F70" d="M8.8 24.2h81.4v149.6H8.8z"/><ellipse fill="#495F70" cx="49.4" cy="185.4" rx="7.4" ry="7.4"/><rect fill="#495F70" x="39.6" y="11" width="20.9" height="4.4" rx="2.2"/></g></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="199px" height="199px" viewBox="0 0 199 199" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43 (38999) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3" transform="translate(1.000000, 1.000000)" stroke="#FF6978" stroke-width="2">
+            <g id="iPhone" transform="translate(63.797153, 29.444840)">
+                <rect id="Rectangle" x="1.77117438" y="1" width="65.8633452" height="136.811388" rx="10.01"></rect>
+                <rect id="Rectangle-6" x="7.16939502" y="17.9658363" width="55.0669039" height="102.879715"></rect>
+                <ellipse id="Oval" cx="34.6327402" cy="128.977936" rx="5.18790036" ry="5.18790036"></ellipse>
+                <rect id="Rectangle-7" x="28.7622776" y="8.71174377" width="12.6523132" height="3.28825623" rx="1.64412811"></rect>
+            </g>
+            <circle id="Oval-2" cx="98.5" cy="98.5" r="98.5"></circle>
+        </g>
+    </g>
+</svg>
