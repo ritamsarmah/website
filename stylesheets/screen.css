@@ -92,7 +92,7 @@ h2 {
   font-size: 50px;
   font-size: 5vw;
   letter-spacing: 6px;
-  color: #352D39;
+  color: black;
 }
 @media (max-width: 600px) {
   /* line 40, ../sass/screen.scss */
@@ -112,7 +112,7 @@ p {
   font-family: Open Sans, sans-serif;
   font-weight: 300;
   font-size: 18px;
-  color: #6F6F6F;
+  color: #333333;
   line-height: 24px;
   letter-spacing: 0.8px;
 }
@@ -147,7 +147,7 @@ p b {
 }
 /* line 82, ../sass/screen.scss */
 .navbar .navbar-toggle .icon-bar {
-  background-color: #352D39;
+  background-color: black;
 }
 /* line 86, ../sass/screen.scss */
 .navbar .navbar-toggle:hover {
@@ -155,7 +155,7 @@ p b {
 }
 /* line 88, ../sass/screen.scss */
 .navbar .navbar-toggle:hover .icon-bar {
-  background-color: #776580;
+  background-color: #404040;
 }
 /* line 93, ../sass/screen.scss */
 .navbar .navbar-toggle:active, .navbar .navbar-toggle:enabled {
@@ -183,7 +183,7 @@ p b {
 }
 /* line 112, ../sass/screen.scss */
 .navbar .navbar-nav > li > a {
-  color: #352D39;
+  color: black;
 }
 /* line 118, ../sass/screen.scss */
 .navbar .navbar-collapse {
@@ -259,7 +259,7 @@ p b {
   font-size: 50px;
   font-size: 5vw;
   letter-spacing: 6px;
-  color: #352D39;
+  color: black;
 }
 @media (max-width: 400px) {
   /* line 161, ../sass/screen.scss */
@@ -295,7 +295,7 @@ p b {
   font-size: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: #352D39;
+  color: black;
 }
 /* line 194, ../sass/screen.scss */
 #work img {
@@ -315,7 +315,7 @@ p b {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 400;
 }
 /* line 214, ../sass/screen.scss */
 #contact .btn:hover {

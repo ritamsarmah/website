@@ -7,68 +7,64 @@
 @import "responsive-font";
 
 // Colors
-$pale-turquoise: #c2eaec;
-$jet: #303030;
-$deep-space: #495F70;
-$isabelline: #f2efea;
-$columbine-green: #2c2c2c;
-$terracotta: #ED6A5A;
-$white-smoke: #F9F7F5;
+$begonia: #FF6978;
+$snow: #FFFCF9;
+$main-color: black;
+$body-color: lighten($main-color, 20%);
 
-@mixin opacity($opacity) {
-    opacity: $opacity;
-    $opacity-ie: $opacity * 100;
-    filter: alpha(opacity=$opacity-ie); //IE8
-}
+$default-font: Open Sans, sans-serif;
+$serif-font: Zilla Slab, serif;
+$default-pad: 20px;
 
-@mixin transition($args...) {
-    -webkit-transition: $args;
-    -moz-transition: $args;
-    -ms-transition: $args;
-    -o-transition: $args;
-    transition: $args;
-}
+// font weights
+$normal-weight: 300;
+$bold-weight: 400;
 
 a {
-    font-family: Open Sans, sans-serif;
-    color: white;
-    text-decoration: none;
+    font-family: $default-font;
+    font-weight: $normal-weight;
+    color: $begonia;
+    line-height: 24px;
+    letter-spacing: 0.8px;
 
     &:hover {
-        color: $terracotta;
-    }
-
-    &:active, &:focus, &:link {
-        color: white;
-        text-decoration: none;
+        color: $begonia;
     }
 }
 
-b { font-weight: bold; }
-
-i { font-style: italic; }
+body {
+    background-color: $snow;
+    text-align: center;
+}
 
 h2 {
-    font-family: Arvo, serif;
-    font-style: bold;
-    text-align: center;
-    @include responsive-font(5vw, 28px, 36px, 50px);
-    padding-bottom: 20px;
+    font-family: $serif-font;
+    @include responsive-font(5vw, 30px, 36px, 50px);
+    letter-spacing: 6px;
+    color: $main-color;
+}
 
-    &:after {
-        content:'';
-        margin: auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        display: block;
-        max-width: 50vw;
-        -webkit-transform: translateY(10px);
-        border: 1px solid;
+p {
+    font-family: $default-font;
+    font-weight: $normal-weight;
+    font-size: 18px;
+    color: $body-color;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+    b {
+        font-weight: $bold-weight;
     }
+}
+
+.panel {
+    border-width: 1px;
+    border-color: $begonia;
+    border-radius: 7px;
+    background-color: transparent;
+    padding: $default-pad;
 }
 
 .navbar {
-    font-family: Open Sans, sans-serif;
     border-color: transparent;
     background-color: transparent;
     padding-top: 20px;
@@ -76,16 +72,21 @@ h2 {
     padding-left: 0px;
     padding-right: 0px;
 
+    a {
+        font-family: $default-font;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
     .navbar-toggle {
-        border: none;
         .icon-bar {
-            background-color: $jet;
+            background-color: $main-color;
         }
 
         &:hover {
             background-color: transparent;
             .icon-bar {
-                background-color: lighten($jet, 25%);;
+                background-color: lighten($main-color, 25%);;
             }
         }
 
@@ -98,28 +99,159 @@ h2 {
         display: inline-block;
         float: none;
         li a:hover, li.active a {
-            color: $terracotta !important;
+            color: $begonia !important;
             background-color: transparent !important;
         }
         > li {
             font-size: 18px;
             padding-left: 10px;
-            // padding-right: 10px;
+            padding-right: 10px;
             &:hover a, &:active a, &:focus a {
-                color: $terracotta !important;
+                color: $begonia !important;
             }
             > a {
-                color: $jet;
+                color: $main-color;
             }
         }
     }
 
     .navbar-collapse {
         text-align: center;
+        border-top: none;
     }
 }
 
+#home {
+    h1 {
+        font-family: $serif-font;
+        letter-spacing: 2px;
+        @include responsive-font(5vw, 64px, 100px, 50px);
 
+    }
+    h2 {
+        font-family: $default-font;
+        font-weight: $normal-weight;
+        @include responsive-font(5vw, 24px, 36px, 50px);
+        line-height: 35px;
+        letter-spacing: 6px;
+        color: $begonia;
+    }
+}
+
+#home, #about, #experience, #work, #contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    h2, h3{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+}
+
+#home {
+    img {
+        display: block;
+        margin: auto;
+        width: 30%;
+        min-width: 200px;
+    }
+}
+
+#experience {
+    h3 {
+        font-family: $serif-font;
+        font-weight: $bold-weight;
+        @include responsive-font(5vw, 20px, 24px, 50px);
+        letter-spacing: 6px;
+        color: $main-color;
+    }
+
+    p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    img, svg {
+        width: 90%;
+        max-width: 100px;
+        display: block;
+        padding-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+#work {
+    h3 {
+        font-family: $default-font;
+        font-weight: $bold-weight;
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: $main-color;
+    }
+
+    img {
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, .3);
+        width: 80%;
+        max-width: 250px;
+        height: auto;
+        margin: auto;
+    }
+}
+
+#contact {
+    .btn {
+        background-color: $begonia;
+        border: none;
+        color: white;
+        padding: 15px 20px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: $bold-weight;
+
+        &:hover {
+            color: white;
+            background-color: lighten($begonia, 7%);
+        }
+    }
+}
+
+footer {
+    margin-top: 20px;
+    background-color: $begonia;
+    color: white;
+    text-align: center;
+
+    a {
+        display: inline-block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        text-decoration: none;
+
+        &:hover, &:active, &:focus {
+            text-decoration: none;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #home {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    footer {
+        a {
+            padding-left: 4vw;
+            padding-right: 4vw;
+        }
+    }
+}
+
+// animations
 .delay-animated {
     -webkit-animation-delay: 0.4s; /* Safari 4.0 - 8.0 */
     animation-delay: 0.4s;
@@ -218,268 +350,4 @@ h2 {
     animation-duration: 1s;
     -webkit-animation-duration: 1s;
     visibility: visible;
-}
-
-@keyframes bounceIn {
-    from, 30%, 60%, to {
-        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-
-    0% {
-        opacity: 0;
-        transform: scale3d(0.3, 0.3, 0.3);
-    }
-
-    30% {
-        transform: scale3d(1.1, 1.1, 1.1);
-    }
-
-    60% {
-        transform: scale3d(0.9, 0.9, 0.9);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale3d(1, 1, 1);
-    }
-}
-
-.bounceanim {
-    visibility: hidden;
-}
-
-.bounceIn {
-    animation-name: bounceIn;
-    -webkit-animation-name: bounceIn;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible;
-}
-
-.jumbotron {
-    background-color: $pale-turquoise;
-    background-image: url(../images/jumbotron.png);
-    background-position: top;
-    background-size: 100%;
-    -webkit-background-size: cover;
-    background-repeat: no-repeat;
-
-    position: relative;
-    height: 100vh;
-    padding: 20%;
-    margin-bottom: 0px;
-    text-shadow: 1px 1px 1px lightgray;
-
-    transition: 1000ms;
-
-    h1 {
-        font-family: Arvo, serif;
-        @include responsive-font(5vw, 48px, 84px, 50px);
-        color: $jet;
-        margin-bottom: 10px;
-    }
-
-    h3 {
-        font-family: Open Sans, sans-serif;
-        @include responsive-font(5vw, 24px, 32px, 50px);
-        font-weight: 10;
-        letter-spacing: 0.1em;
-        line-height: 1.4em;
-        color: $jet;
-        margin: 0px;
-        padding: 0px;
-    }
-}
-
-.jumbotron-text {
-    position: absolute;
-    padding-right: 20%;
-    top: 45%;
-    transform: translate(0%, -50%);
-}
-
-#about {
-    background-color: $deep-space;
-    color: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    p {
-        font-family: Open Sans, sans-serif;
-        text-align: center;
-        line-height: 1.4em;
-    }
-
-    h2:after {
-        color: $pale-turquoise;
-    }
-}
-
-#projects {
-    background-color: $isabelline;
-    color: $jet;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-    font-family: Open Sans, sans-serif;
-
-    .panel {
-        border-width: 0px;
-        border-radius: 7px;
-        background-color: $white-smoke;
-        padding: 15px;
-        transition: box-shadow 0.5s;
-
-        &:hover {
-            box-shadow: 0px 5px 20px rgba(0, 0, 0, .2);
-        }
-    }
-
-    h3 {
-        font-weight: bold;
-        font-size: 18px;
-    }
-
-    h3, p {
-        margin-top: 8px;
-        margin-bottom: 8px;
-        margin-left: 20px;
-        margin-right: 20px;
-        line-height: 1.4em;
-    }
-
-    a {
-        color: $jet;
-        text-decoration: underline;
-
-        &:hover {
-            color: $terracotta;
-        }
-    }
-
-    img {
-        box-shadow: 0px 3px 10px rgba(0, 0, 0, .3);
-        width: 80%;
-        max-width: 250px;
-        height: auto;
-        margin: auto;
-    }
-
-    h2:after {
-        color: $jet;
-    }
-}
-
-#experience {
-    background-color: $columbine-green;
-    color: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-    font-family: Open Sans, sans-serif;
-    font-size: 18px;
-
-    h3 {
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 1.5em;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    h4, h5 {
-        line-height: 1.5em;
-    }
-
-    h5 {
-        font-style: italic;
-    }
-
-    p {
-        line-height: 2.5em;
-    }
-
-    a {
-        text-decoration: underline;
-    }
-
-    h2:after {
-        color: $pale-turquoise;
-    }
-
-    img, svg {
-        width: 70%;
-        max-width: 100px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 20px;
-    }
-}
-
-#contact {
-    background-color: $isabelline;
-    color: $jet;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-family: Open Sans, sans-serif;
-    font-size: 18px;
-    line-height: 1.5em;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    h2:after {
-        color: $jet;
-    }
-
-    .btn {
-        background-color: $terracotta;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-
-        &:hover {
-            color: white;
-            background-color: lighten($terracotta, 7%);
-        }
-    }
-}
-
-footer {
-    background-color: $deep-space;
-    color: white;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    a {
-        display: inline-block;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 2.5vw;
-        padding-right: 2.5vw;
-    }
-}
-
-@media (max-width: 767px) {
-    .navbar {
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
-    .jumbotron {
-        height: 80vh;
-        min-height: 500px;
-    }
-    footer {
-        a {
-            padding-left: 4vw;
-            padding-right: 4vw;
-        }
-    }
 }
