@@ -7,9 +7,11 @@
 @import "responsive-font";
 
 // Colors
-$begonia: #FF6978;
+$sunset: #F26159;
 $snow: #FFFCF9;
+
 $main-color: black;
+$theme-color: $sunset;
 $body-color: lighten($main-color, 20%);
 
 $default-font: Open Sans, sans-serif;
@@ -23,12 +25,12 @@ $bold-weight: 400;
 a {
     font-family: $default-font;
     font-weight: $normal-weight;
-    color: $begonia;
+    color: $theme-color;
     line-height: 24px;
     letter-spacing: 0.8px;
 
     &:hover {
-        color: $begonia;
+        color: $theme-color;
     }
 }
 
@@ -58,7 +60,7 @@ p {
 
 .panel {
     border-width: 1px;
-    border-color: $begonia;
+    border-color: $theme-color;
     border-radius: 7px;
     background-color: transparent;
     padding: $default-pad;
@@ -99,7 +101,7 @@ p {
         display: inline-block;
         float: none;
         li a:hover, li.active a {
-            color: $begonia !important;
+            color: $theme-color !important;
             background-color: transparent !important;
         }
         > li {
@@ -107,7 +109,7 @@ p {
             padding-left: 10px;
             padding-right: 10px;
             &:hover a, &:active a, &:focus a {
-                color: $begonia !important;
+                color: $theme-color !important;
             }
             > a {
                 color: $main-color;
@@ -134,7 +136,7 @@ p {
         @include responsive-font(5vw, 24px, 36px, 50px);
         line-height: 35px;
         letter-spacing: 6px;
-        color: $begonia;
+        color: $theme-color;
     }
 }
 
@@ -202,7 +204,7 @@ p {
 
 #contact {
     .btn {
-        background-color: $begonia;
+        background-color: $theme-color;
         border: none;
         color: white;
         padding: 15px 20px;
@@ -213,14 +215,14 @@ p {
 
         &:hover {
             color: white;
-            background-color: lighten($begonia, 7%);
+            background-color: lighten($theme-color, 7%);
         }
     }
 }
 
 footer {
     margin-top: 20px;
-    background-color: $begonia;
+    background-color: $theme-color;
     color: white;
     text-align: center;
 
