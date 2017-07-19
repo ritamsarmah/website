@@ -134,7 +134,7 @@ p b {
 .navbar {
   border-color: transparent;
   background-color: transparent;
-  padding-top: 20px;
+  padding-top: 50px;
   padding-bottom: 10px;
   padding-left: 0px;
   padding-right: 0px;
@@ -177,25 +177,24 @@ p b {
 }
 /* line 111, ../sass/screen.scss */
 .navbar .navbar-nav > li {
-  font-size: 20px;
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 115, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .navbar .navbar-nav > li:hover a, .navbar .navbar-nav > li:active a, .navbar .navbar-nav > li:focus a {
   color: #7FAAC8 !important;
 }
-/* line 118, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .navbar .navbar-nav > li > a {
   color: #352D39;
 }
-/* line 124, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .navbar .navbar-collapse {
   text-align: center;
   border-top: none;
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 #home h1 {
   font-family: Zilla Slab, serif;
   letter-spacing: 2px;
@@ -204,18 +203,18 @@ p b {
   font-size: 5vw;
 }
 @media (max-width: 1280px) {
-  /* line 131, ../sass/screen.scss */
+  /* line 130, ../sass/screen.scss */
   #home h1 {
     font-size: 64px;
   }
 }
 @media (min-width: 2000px) {
-  /* line 131, ../sass/screen.scss */
+  /* line 130, ../sass/screen.scss */
   #home h1 {
     font-size: 100px;
   }
 }
-/* line 138, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 #home h2 {
   font-family: Open Sans, sans-serif;
   font-weight: 300;
@@ -226,30 +225,30 @@ p b {
   color: #7FAAC8;
 }
 @media (max-width: 480px) {
-  /* line 138, ../sass/screen.scss */
+  /* line 137, ../sass/screen.scss */
   #home h2 {
     font-size: 24px;
   }
 }
 @media (min-width: 720px) {
-  /* line 138, ../sass/screen.scss */
+  /* line 137, ../sass/screen.scss */
   #home h2 {
     font-size: 36px;
   }
 }
 
-/* line 148, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 #home, #about, #experience, #work, #contact {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 152, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 #home h2, #home h3, #about h2, #about h3, #experience h2, #experience h3, #work h2, #work h3, #contact h2, #contact h3 {
   padding-top: 20px;
   padding-bottom: 30px;
 }
 
-/* line 159, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 #home img {
   display: block;
   margin: auto;
@@ -257,7 +256,7 @@ p b {
   min-width: 200px;
 }
 
-/* line 168, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 #experience h3 {
   font-family: Zilla Slab, serif;
   font-weight: 400;
@@ -268,23 +267,23 @@ p b {
   margin-top: 20px;
 }
 @media (max-width: 400px) {
-  /* line 168, ../sass/screen.scss */
+  /* line 167, ../sass/screen.scss */
   #experience h3 {
     font-size: 20px;
   }
 }
 @media (min-width: 600px) {
-  /* line 168, ../sass/screen.scss */
+  /* line 167, ../sass/screen.scss */
   #experience h3 {
     font-size: 30px;
   }
 }
-/* line 177, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 #experience p {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 182, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 #experience img, #experience svg {
   width: 90%;
   max-width: 100px;
@@ -294,7 +293,7 @@ p b {
   margin-right: auto;
 }
 
-/* line 193, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 #work h3 {
   font-family: Open Sans, sans-serif;
   font-weight: 400;
@@ -303,7 +302,7 @@ p b {
   padding-bottom: 7px;
   color: #352D39;
 }
-/* line 202, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 #work img {
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
   width: 80%;
@@ -311,12 +310,12 @@ p b {
   height: auto;
   margin: auto;
 }
-/* line 210, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 #work .panel {
   padding: 20px;
 }
 
-/* line 216, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 #contact .btn {
   background-color: #7FAAC8;
   border: none;
@@ -328,20 +327,20 @@ p b {
   font-size: 16px;
   font-weight: 400;
 }
-/* line 227, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 #contact .btn:hover {
   color: white;
   background-color: #98bbd3;
 }
 
-/* line 234, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 footer {
   margin-top: 20px;
   background-color: #7FAAC8;
   color: white;
   text-align: center;
 }
-/* line 240, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 footer a {
   display: inline-block;
   padding-top: 20px;
@@ -350,25 +349,25 @@ footer a {
   padding-right: 2vw;
   text-decoration: none;
 }
-/* line 248, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 footer a:hover, footer a:active, footer a:focus {
   text-decoration: none;
 }
 
 @media (max-width: 767px) {
-  /* line 255, ../sass/screen.scss */
+  /* line 254, ../sass/screen.scss */
   #home {
     padding-top: 0px;
     padding-bottom: 0px;
   }
 
-  /* line 260, ../sass/screen.scss */
+  /* line 259, ../sass/screen.scss */
   footer a {
     padding-left: 4vw;
     padding-right: 4vw;
   }
 }
-/* line 268, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 .delay-animated {
   -webkit-animation-delay: 0.4s;
   /* Safari 4.0 - 8.0 */
@@ -379,7 +378,7 @@ footer a:hover, footer a:active, footer a:focus {
   animation-fill-mode: both;
 }
 
-/* line 277, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 .animated {
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
@@ -403,7 +402,7 @@ footer a:hover, footer a:active, footer a:focus {
     opacity: 1;
   }
 }
-/* line 302, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
@@ -429,7 +428,7 @@ footer a:hover, footer a:active, footer a:focus {
     -webkit-transform: translateY(0);
   }
 }
-/* line 329, ../sass/screen.scss */
+/* line 328, ../sass/screen.scss */
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
@@ -455,16 +454,23 @@ footer a:hover, footer a:active, footer a:focus {
     -webkit-transform: translateY(0%);
   }
 }
-/* line 356, ../sass/screen.scss */
+/* line 355, ../sass/screen.scss */
 .slideanim {
   visibility: hidden;
 }
 
-/* line 360, ../sass/screen.scss */
+/* line 359, ../sass/screen.scss */
 .slide {
   animation-name: slide;
   -webkit-animation-name: slide;
   animation-duration: 1s;
   -webkit-animation-duration: 1s;
   visibility: visible;
+}
+
+@media (max-width: 767px) {
+  /* line 368, ../sass/screen.scss */
+  .navbar {
+    padding-top: 10px;
+  }
 }
