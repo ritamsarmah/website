@@ -7,12 +7,15 @@
 @import "responsive-font";
 
 // Colors
-$sunset: #F26159;
+$blue: #7FAAC8;
 $snow: #FFFCF9;
+$onyx: #352D39;
 
-$main-color: black;
-$theme-color: $sunset;
-$body-color: lighten($main-color, 20%);
+$main-color: $onyx;
+$theme-color: $blue;
+$body-color: lighten($main-color, 5%);
+$stroke-color: $theme-color;
+$background-color: $snow;
 
 $default-font: Open Sans, sans-serif;
 $serif-font: Zilla Slab, serif;
@@ -35,13 +38,13 @@ a {
 }
 
 body {
-    background-color: $snow;
+    background-color: $background-color;
     text-align: center;
 }
 
 h2 {
     font-family: $serif-font;
-    @include responsive-font(5vw, 30px, 36px, 50px);
+    @include responsive-font(5vw, 36px, 42px, 50px);
     letter-spacing: 6px;
     color: $main-color;
 }
@@ -60,10 +63,10 @@ p {
 
 .panel {
     border-width: 1px;
-    border-color: $theme-color;
+    border-color: $stroke-color;
     border-radius: 7px;
     background-color: transparent;
-    padding: $default-pad;
+    padding: $default-pad + 15;
 }
 
 .navbar {
@@ -81,6 +84,7 @@ p {
     }
 
     .navbar-toggle {
+        border-width: 0px;
         .icon-bar {
             background-color: $main-color;
         }
@@ -101,11 +105,11 @@ p {
         display: inline-block;
         float: none;
         li a:hover, li.active a {
-            color: $theme-color !important;
+            color: $main-color !important;
             background-color: transparent !important;
         }
         > li {
-            font-size: 18px;
+            font-size: 20px;
             padding-left: 10px;
             padding-right: 10px;
             &:hover a, &:active a, &:focus a {
@@ -127,6 +131,7 @@ p {
     h1 {
         font-family: $serif-font;
         letter-spacing: 2px;
+        color: $main-color;
         @include responsive-font(5vw, 64px, 100px, 50px);
 
     }
@@ -163,9 +168,10 @@ p {
     h3 {
         font-family: $serif-font;
         font-weight: $bold-weight;
-        @include responsive-font(5vw, 20px, 24px, 50px);
+        @include responsive-font(5vw, 20px, 30px, 50px);
         letter-spacing: 6px;
         color: $main-color;
+        margin-top: 20px;
     }
 
     p {
@@ -188,8 +194,8 @@ p {
         font-family: $default-font;
         font-weight: $bold-weight;
         font-size: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 7px;
+        padding-bottom: 7px;
         color: $main-color;
     }
 
@@ -200,6 +206,10 @@ p {
         height: auto;
         margin: auto;
     }
+
+    .panel {
+        padding: $default-pad;
+    }
 }
 
 #contact {
@@ -208,6 +218,7 @@ p {
         border: none;
         color: white;
         padding: 15px 20px;
+        margin: -15px;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;

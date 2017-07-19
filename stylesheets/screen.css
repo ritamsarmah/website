@@ -67,70 +67,70 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 25, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 a {
   font-family: Open Sans, sans-serif;
   font-weight: 300;
-  color: #F26159;
+  color: #7FAAC8;
   line-height: 24px;
   letter-spacing: 0.8px;
 }
-/* line 32, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 a:hover {
-  color: #F26159;
+  color: #7FAAC8;
 }
 
-/* line 37, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 body {
   background-color: #FFFCF9;
   text-align: center;
 }
 
-/* line 42, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 h2 {
   font-family: Zilla Slab, serif;
   font-size: 50px;
   font-size: 5vw;
   letter-spacing: 6px;
-  color: black;
+  color: #352D39;
 }
-@media (max-width: 600px) {
-  /* line 42, ../sass/screen.scss */
-  h2 {
-    font-size: 30px;
-  }
-}
-@media (min-width: 720px) {
-  /* line 42, ../sass/screen.scss */
+@media (max-width: 720px) {
+  /* line 45, ../sass/screen.scss */
   h2 {
     font-size: 36px;
   }
 }
+@media (min-width: 840px) {
+  /* line 45, ../sass/screen.scss */
+  h2 {
+    font-size: 42px;
+  }
+}
 
-/* line 49, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 p {
   font-family: Open Sans, sans-serif;
   font-weight: 300;
   font-size: 18px;
-  color: #333333;
+  color: #423847;
   line-height: 24px;
   letter-spacing: 0.8px;
 }
-/* line 56, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 p b {
   font-weight: 400;
 }
 
-/* line 61, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 .panel {
   border-width: 1px;
-  border-color: #F26159;
+  border-color: #7FAAC8;
   border-radius: 7px;
   background-color: transparent;
-  padding: 20px;
+  padding: 35px;
 }
 
-/* line 69, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .navbar {
   border-color: transparent;
   background-color: transparent;
@@ -139,78 +139,83 @@ p b {
   padding-left: 0px;
   padding-right: 0px;
 }
-/* line 77, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 .navbar a {
   font-family: Open Sans, sans-serif;
   font-size: 20px;
   letter-spacing: 2px;
 }
-/* line 84, ../sass/screen.scss */
-.navbar .navbar-toggle .icon-bar {
-  background-color: black;
+/* line 86, ../sass/screen.scss */
+.navbar .navbar-toggle {
+  border-width: 0px;
 }
 /* line 88, ../sass/screen.scss */
+.navbar .navbar-toggle .icon-bar {
+  background-color: #352D39;
+}
+/* line 92, ../sass/screen.scss */
 .navbar .navbar-toggle:hover {
   background-color: transparent;
 }
-/* line 90, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .navbar .navbar-toggle:hover .icon-bar {
-  background-color: #404040;
+  background-color: #776580;
 }
-/* line 95, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 .navbar .navbar-toggle:active, .navbar .navbar-toggle:enabled {
   background-color: transparent;
 }
-/* line 100, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
 }
-/* line 103, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .navbar .navbar-nav li a:hover, .navbar .navbar-nav li.active a {
-  color: #F26159 !important;
+  color: #352D39 !important;
   background-color: transparent !important;
 }
-/* line 107, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 .navbar .navbar-nav > li {
-  font-size: 18px;
+  font-size: 20px;
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 111, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 .navbar .navbar-nav > li:hover a, .navbar .navbar-nav > li:active a, .navbar .navbar-nav > li:focus a {
-  color: #F26159 !important;
+  color: #7FAAC8 !important;
 }
-/* line 114, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 .navbar .navbar-nav > li > a {
-  color: black;
+  color: #352D39;
 }
-/* line 120, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .navbar .navbar-collapse {
   text-align: center;
   border-top: none;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 #home h1 {
   font-family: Zilla Slab, serif;
   letter-spacing: 2px;
+  color: #352D39;
   font-size: 50px;
   font-size: 5vw;
 }
 @media (max-width: 1280px) {
-  /* line 127, ../sass/screen.scss */
+  /* line 131, ../sass/screen.scss */
   #home h1 {
     font-size: 64px;
   }
 }
 @media (min-width: 2000px) {
-  /* line 127, ../sass/screen.scss */
+  /* line 131, ../sass/screen.scss */
   #home h1 {
     font-size: 100px;
   }
 }
-/* line 133, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 #home h2 {
   font-family: Open Sans, sans-serif;
   font-weight: 300;
@@ -218,33 +223,33 @@ p b {
   font-size: 5vw;
   line-height: 35px;
   letter-spacing: 6px;
-  color: #F26159;
+  color: #7FAAC8;
 }
 @media (max-width: 480px) {
-  /* line 133, ../sass/screen.scss */
+  /* line 138, ../sass/screen.scss */
   #home h2 {
     font-size: 24px;
   }
 }
 @media (min-width: 720px) {
-  /* line 133, ../sass/screen.scss */
+  /* line 138, ../sass/screen.scss */
   #home h2 {
     font-size: 36px;
   }
 }
 
-/* line 143, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 #home, #about, #experience, #work, #contact {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 147, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 #home h2, #home h3, #about h2, #about h3, #experience h2, #experience h3, #work h2, #work h3, #contact h2, #contact h3 {
   padding-top: 20px;
   padding-bottom: 30px;
 }
 
-/* line 154, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 #home img {
   display: block;
   margin: auto;
@@ -252,33 +257,34 @@ p b {
   min-width: 200px;
 }
 
-/* line 163, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 #experience h3 {
   font-family: Zilla Slab, serif;
   font-weight: 400;
   font-size: 50px;
   font-size: 5vw;
   letter-spacing: 6px;
-  color: black;
+  color: #352D39;
+  margin-top: 20px;
 }
 @media (max-width: 400px) {
-  /* line 163, ../sass/screen.scss */
+  /* line 168, ../sass/screen.scss */
   #experience h3 {
     font-size: 20px;
   }
 }
-@media (min-width: 480px) {
-  /* line 163, ../sass/screen.scss */
+@media (min-width: 600px) {
+  /* line 168, ../sass/screen.scss */
   #experience h3 {
-    font-size: 24px;
+    font-size: 30px;
   }
 }
-/* line 171, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 #experience p {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 176, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 #experience img, #experience svg {
   width: 90%;
   max-width: 100px;
@@ -288,16 +294,16 @@ p b {
   margin-right: auto;
 }
 
-/* line 187, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 #work h3 {
   font-family: Open Sans, sans-serif;
   font-weight: 400;
   font-size: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: black;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: #352D39;
 }
-/* line 196, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 #work img {
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
   width: 80%;
@@ -305,32 +311,37 @@ p b {
   height: auto;
   margin: auto;
 }
+/* line 210, ../sass/screen.scss */
+#work .panel {
+  padding: 20px;
+}
 
-/* line 206, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 #contact .btn {
-  background-color: #F26159;
+  background-color: #7FAAC8;
   border: none;
   color: white;
   padding: 15px 20px;
+  margin: -15px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   font-weight: 400;
 }
-/* line 216, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 #contact .btn:hover {
   color: white;
-  background-color: #f5817a;
+  background-color: #98bbd3;
 }
 
-/* line 223, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 footer {
   margin-top: 20px;
-  background-color: #F26159;
+  background-color: #7FAAC8;
   color: white;
   text-align: center;
 }
-/* line 229, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
 footer a {
   display: inline-block;
   padding-top: 20px;
@@ -339,25 +350,25 @@ footer a {
   padding-right: 2vw;
   text-decoration: none;
 }
-/* line 237, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 footer a:hover, footer a:active, footer a:focus {
   text-decoration: none;
 }
 
 @media (max-width: 767px) {
-  /* line 244, ../sass/screen.scss */
+  /* line 255, ../sass/screen.scss */
   #home {
     padding-top: 0px;
     padding-bottom: 0px;
   }
 
-  /* line 249, ../sass/screen.scss */
+  /* line 260, ../sass/screen.scss */
   footer a {
     padding-left: 4vw;
     padding-right: 4vw;
   }
 }
-/* line 257, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 .delay-animated {
   -webkit-animation-delay: 0.4s;
   /* Safari 4.0 - 8.0 */
@@ -368,7 +379,7 @@ footer a:hover, footer a:active, footer a:focus {
   animation-fill-mode: both;
 }
 
-/* line 266, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 .animated {
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
@@ -392,7 +403,7 @@ footer a:hover, footer a:active, footer a:focus {
     opacity: 1;
   }
 }
-/* line 291, ../sass/screen.scss */
+/* line 302, ../sass/screen.scss */
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
@@ -418,7 +429,7 @@ footer a:hover, footer a:active, footer a:focus {
     -webkit-transform: translateY(0);
   }
 }
-/* line 318, ../sass/screen.scss */
+/* line 329, ../sass/screen.scss */
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
@@ -444,12 +455,12 @@ footer a:hover, footer a:active, footer a:focus {
     -webkit-transform: translateY(0%);
   }
 }
-/* line 345, ../sass/screen.scss */
+/* line 356, ../sass/screen.scss */
 .slideanim {
   visibility: hidden;
 }
 
-/* line 349, ../sass/screen.scss */
+/* line 360, ../sass/screen.scss */
 .slide {
   animation-name: slide;
   -webkit-animation-name: slide;
