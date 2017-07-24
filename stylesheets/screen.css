@@ -71,13 +71,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 a {
   font-family: Open Sans, sans-serif;
   font-weight: 300;
-  color: #7FAAC8;
+  color: #5390b2;
   line-height: 24px;
   letter-spacing: 0.8px;
 }
 /* line 35, ../sass/screen.scss */
 a:hover {
-  color: #7FAAC8;
+  color: #5390b2;
 }
 
 /* line 40, ../sass/screen.scss */
@@ -124,17 +124,16 @@ p b {
 /* line 64, ../sass/screen.scss */
 .panel {
   border-width: 1px;
-  border-color: #7FAAC8;
+  border-color: #5390b2;
   border-radius: 7px;
   background-color: transparent;
-  padding: 35px;
+  padding: 25px;
 }
 
 /* line 72, ../sass/screen.scss */
 .navbar {
   border-color: transparent;
   background-color: transparent;
-  padding-top: 50px;
   padding-bottom: 10px;
   padding-left: 0px;
   padding-right: 0px;
@@ -182,7 +181,7 @@ p b {
 }
 /* line 114, ../sass/screen.scss */
 .navbar .navbar-nav > li:hover a, .navbar .navbar-nav > li:active a, .navbar .navbar-nav > li:focus a {
-  color: #7FAAC8 !important;
+  color: #5390b2 !important;
 }
 /* line 117, ../sass/screen.scss */
 .navbar .navbar-nav > li > a {
@@ -222,7 +221,7 @@ p b {
   font-size: 5vw;
   line-height: 35px;
   letter-spacing: 6px;
-  color: #7FAAC8;
+  color: #5390b2;
 }
 @media (max-width: 480px) {
   /* line 137, ../sass/screen.scss */
@@ -266,10 +265,10 @@ p b {
   color: #352D39;
   margin-top: 20px;
 }
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   /* line 167, ../sass/screen.scss */
   #experience h3 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media (min-width: 600px) {
@@ -317,7 +316,7 @@ p b {
 
 /* line 215, ../sass/screen.scss */
 #contact .btn {
-  background-color: #7FAAC8;
+  background-color: #5390b2;
   border: none;
   color: white;
   padding: 15px 20px;
@@ -330,13 +329,13 @@ p b {
 /* line 226, ../sass/screen.scss */
 #contact .btn:hover {
   color: white;
-  background-color: #98bbd3;
+  background-color: #6ca0bd;
 }
 
 /* line 233, ../sass/screen.scss */
 footer {
   margin-top: 20px;
-  background-color: #7FAAC8;
+  background-color: #5390b2;
   color: white;
   text-align: center;
 }

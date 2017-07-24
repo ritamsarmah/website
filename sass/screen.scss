@@ -7,7 +7,7 @@
 @import "responsive-font";
 
 // Colors
-$blue: #7FAAC8;
+$blue: #5390b2;
 $snow: #FFFCF9;
 $onyx: #352D39;
 
@@ -66,13 +66,13 @@ p {
     border-color: $stroke-color;
     border-radius: 7px;
     background-color: transparent;
-    padding: $default-pad + 15;
+    padding: $default-pad + 5;
 }
 
 .navbar {
     border-color: transparent;
     background-color: transparent;
-    padding-top: 50px;
+    // padding-top: 50px;
     padding-bottom: 10px;
     padding-left: 0px;
     padding-right: 0px;
@@ -167,7 +167,7 @@ p {
     h3 {
         font-family: $serif-font;
         font-weight: $bold-weight;
-        @include responsive-font(5vw, 20px, 30px, 50px);
+        @include responsive-font(5vw, 24px, 30px, 50px);
         letter-spacing: 6px;
         color: $main-color;
         margin-top: 20px;
