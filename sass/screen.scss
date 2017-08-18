@@ -35,8 +35,8 @@ b {
 
     a {
         text-decoration-color: black;
-        &:active {
-            text-decoration: none;
+        &:hover, .offcanvas &:focus, &:active {
+            text-decoration-color: black;
         }
     }
 }
