@@ -7,195 +7,266 @@
 @import "responsive-font";
 
 // Colors
-$blue: #5390b2;
-$snow: #FFFCF9;
-$onyx: #352D39;
+$blue: #4CDCBC;
 
-$main-color: $onyx;
-$theme-color: $blue;
-$body-color: lighten($main-color, 5%);
-$stroke-color: $theme-color;
-$background-color: $snow;
+$default-font: 'Work Sans', sans-serif;
+$serif-font: 'Lora', serif;
 
-$default-font: Open Sans, sans-serif;
-$serif-font: Zilla Slab, serif;
-$default-pad: 20px;
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
-// font weights
-$normal-weight: 300;
-$bold-weight: 400;
+b {
+    font-weight: 400;
+}
 
-a {
-    font-family: $default-font;
-    font-weight: $normal-weight;
-    color: $theme-color;
-    line-height: 24px;
-    letter-spacing: 0.8px;
+.panel {
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: $blue;
 
-    &:hover {
-        color: $theme-color;
+    i {
+        font-style: italic;
+        color: lighten(black, 70%);
+    }
+
+    a {
+        text-decoration-color: black;
     }
 }
 
-body {
-    background-color: $background-color;
-    text-align: center;
+/* The side navigation menu */
+.sidenav {
+    position: fixed;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    right: 12%;
+    background-color: black;
+    color: black;
+
+    text-align: right;
+
+    h1 {
+        padding: 8px 30px 8px 32px;
+        color:white;
+        align-items: right;
+        font-family: $serif-font;
+        line-height: 1.2;
+        font-size: 48px;
+        letter-spacing: normal;
+    }
+
+    a {
+        padding: 8px 30px 20px 32px;
+        text-decoration: none;
+        font-family: $default-font;
+        letter-spacing: 3px;
+        font-size: 18px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+
+        &:hover, .offcanvas &:focus {
+            color: $blue;
+        }
+    }
 }
 
-h2 {
+.menuToggle {
+    position: fixed;
+    top: 75%;
+    right: 0px;
+    font-size: 36px;
+    background-color: $blue;
+    // -ms-transform: rotate(-90deg); /* IE 9 */
+    // -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    // transform: rotate(-90deg);
+
+    a {
+        padding: 8px 5px 8px 5px;
+        text-decoration: none;
+        font-family: $default-font;
+        letter-spacing: 3px;
+        font-size: 18px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+        text-align: right;
+
+        &:hover, .offcanvas &:focus{
+            color: $blue;
+        }
+    }
+}
+
+/* Mini side navigation menu */
+.miniSidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: black;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+    a {
+        padding: 8px 30px 20px 32px;
+        text-decoration: none;
+        font-family: $default-font;
+        letter-spacing: 3px;
+        font-size: 18px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+        text-align: right;
+
+        &:hover, .offcanvas &:focus{
+            color: $blue;
+        }
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 100px;
+        font-size: 36px;
+        margin-right: 80px;
+    }
+}
+
+h1, h2 {
+    line-height: 1.2em;
+    padding-top: 0px;
+    padding-bottom: 10px;
     font-family: $serif-font;
-    @include responsive-font(5vw, 36px, 42px, 50px);
-    letter-spacing: 6px;
-    color: $main-color;
+    @include responsive-font(5vw, 36px, 40px, 50px);
+    color: black;
 }
 
 p {
     font-family: $default-font;
-    font-weight: $normal-weight;
+    font-weight: 200;
     font-size: 18px;
-    color: $body-color;
     line-height: 24px;
-    letter-spacing: 0.8px;
-    b {
-        font-weight: $bold-weight;
-    }
 }
 
-.panel {
-    border-width: 1px;
-    border-color: $stroke-color;
-    border-radius: 7px;
-    background-color: transparent;
-    padding: $default-pad + 5;
-}
-
-.navbar {
-    border-color: transparent;
-    background-color: transparent;
-    // padding-top: 50px;
-    padding-bottom: 10px;
-    padding-left: 0px;
-    padding-right: 0px;
-
-    a {
-        font-family: $default-font;
-        font-size: 20px;
-        letter-spacing: 2px;
-    }
-
-    .navbar-toggle {
-        border-width: 0px;
-        .icon-bar {
-            background-color: $main-color;
-        }
-
-        &:hover {
-            background-color: transparent;
-            .icon-bar {
-                background-color: lighten($main-color, 25%);;
-            }
-        }
-
-        &:active, &:enabled {
-            background-color: transparent;
-        }
-    }
-
-    .navbar-nav {
-        display: inline-block;
-        float: none;
-        li a:hover, li.active a {
-            color: $main-color !important;
-            background-color: transparent !important;
-        }
-        > li {
-            padding-left: 10px;
-            padding-right: 10px;
-            &:hover a, &:active a, &:focus a {
-                color: $theme-color !important;
-            }
-            > a {
-                color: $main-color;
-            }
-        }
-    }
-
-    .navbar-collapse {
-        text-align: center;
-        border-top: none;
-    }
-}
-
-#home {
+.header {
+    margin: -1px 0px 0px 0px ;
+    background-color: black;
+    padding: 50px 10px 10px 30px;
     h1 {
-        font-family: $serif-font;
-        letter-spacing: 2px;
-        color: $main-color;
-        @include responsive-font(5vw, 64px, 100px, 50px);
-
+        color: white;
+        font-size: 48px;
     }
+}
+
+#about {
+    margin-top: 60px;
+    margin-bottom: 40px;
+
     h2 {
-        font-family: $default-font;
-        font-weight: $normal-weight;
-        @include responsive-font(5vw, 24px, 36px, 50px);
-        line-height: 35px;
-        letter-spacing: 6px;
-        color: $theme-color;
+        padding-left: 15%;
+        font-style: italic;
+        color: $blue;
     }
-}
 
-#home, #about, #experience, #work, #contact {
-    padding-top: 50px;
-    padding-bottom: 50px;
-
-    h2, h3{
-        padding-top: 20px;
-        padding-bottom: 30px;
-    }
-}
-
-#home {
-    img {
-        display: block;
-        margin: auto;
-        width: 30%;
-        min-width: 200px;
+    em {
+        color: white;
+        background-color: black;
     }
 }
 
 #experience {
-    h3 {
-        font-family: $serif-font;
-        font-weight: $bold-weight;
-        @include responsive-font(5vw, 24px, 30px, 50px);
-        letter-spacing: 6px;
-        color: $main-color;
-        margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    h1 {
+        color: black;
+        em {
+            background-color: $blue;
+        }
     }
 
-    p {
+    h2 {
+        text-align: center;
+        font-family: $serif-font;
+        font-weight: 400;
+        @include responsive-font(5vw, 24px, 30px, 50px);
+        color: black;
+        padding-top: 40px;
+
+        em {
+            background-color: $blue;
+            color: white;
+            font-style: italic;
+        }
+    }
+
+    h3 {
+        font-family: $default-font;
+        text-align: center;
+        font-size: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
     }
 
+    p {
+        text-align: center;
+        padding: 20px;
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
     img, svg {
-        width: 90%;
-        max-width: 100px;
+        width: 70%;
+        max-width: 120px;
         display: block;
         padding-top: 10px;
         margin-left: auto;
         margin-right: auto;
     }
+
+    .icon2 {
+        padding-top: 40px;
+    }
+
+    .icon3 {
+        padding-top: 80px;
+    }
 }
 
 #work {
-    h3 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    a {
+        color: $blue;
         font-family: $default-font;
-        font-weight: $bold-weight;
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    h1 {
+        color: black;
+        em {
+            color: white;
+            background-color: black;
+        }
+    }
+
+    h2 {
+        font-family: $default-font;
+        font-weight: 400;
         font-size: 20px;
-        padding-top: 7px;
-        padding-bottom: 7px;
-        color: $main-color;
+        padding-bottom: 4px;
+        color: black;
     }
 
     img {
@@ -205,34 +276,52 @@ p {
         height: auto;
         margin: auto;
     }
-
-    .panel {
-        padding: $default-pad;
-    }
 }
 
 #contact {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    // .panel {
+    //     padding: 20px 20px 20px 20px;
+    // }
+
+    h1 {
+        color: black;
+        em {
+            background-color: $blue;
+        }
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        padding-top: 30px;
+        width: 80%;
+        min-width: 100px;
+    }
+
     .btn {
-        background-color: $theme-color;
+        background-color: $blue;
         border: none;
         color: white;
         padding: 15px 20px;
-        margin: -15px;
         text-decoration: none;
         display: inline-block;
-        font-size: 16px;
-        font-weight: $bold-weight;
+        font-size: 20px;
+        font-family: $default-font;
+        display: table;
+        margin: 0 auto;
 
         &:hover {
             color: white;
-            background-color: lighten($theme-color, 7%);
+            background-color: lighten($blue, 7%);
         }
     }
 }
 
 footer {
     margin-top: 20px;
-    background-color: $theme-color;
+    background-color: black;
     color: white;
     text-align: center;
 
@@ -250,122 +339,33 @@ footer {
     }
 }
 
+@media (max-width: 991px) {
+    .sidenav {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .miniElement {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
 @media (max-width: 767px) {
-    #home {
-        padding-top: 0px;
-        padding-bottom: 0px;
+    #experience {
+        .icon2, .icon3 {
+            padding-top: 20px;
+        }
     }
     footer {
         a {
             padding-left: 4vw;
             padding-right: 4vw;
         }
-    }
-}
-
-// animations
-.delay-animated {
-    -webkit-animation-delay: 0.4s; /* Safari 4.0 - 8.0 */
-    animation-delay: 0.4s;
-    -webkit-animation-duration: 1.2s;
-    animation-duration: 1.2s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
-
-.animated {
-    -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-}
-
-@keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-40px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@-webkit-keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(-40px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-    }
-}
-
-.fadeInDown {
-    -webkit-animation-name: fadeInDown;
-    animation-name: fadeInDown;
-}
-
-@keyframes slide {
-    0% {
-        opacity: 0;
-        transform: translateY(30%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0%);
-    }
-}
-
-@-webkit-keyframes slide {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(30%);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-    }
-}
-
-.slideanim {
-    visibility: hidden;
-}
-
-.slide {
-    animation-name: slide;
-    -webkit-animation-name: slide;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible;
-}
-
-@media (max-width: 767px) {
-    .navbar {
-        padding-top: 10px;
     }
 }
