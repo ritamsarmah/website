@@ -162,7 +162,7 @@ p {
 .header {
     margin: -1px 0px 0px 0px ;
     background-color: black;
-    padding: 50px 10px 10px 30px;
+    padding: 60px 30px 10px 30px;
     h1 {
         color: white;
         font-size: 48px;
@@ -248,12 +248,14 @@ p {
     margin-top: 40px;
     margin-bottom: 40px;
 
-    a {
-        color: $blue;
-        font-family: $default-font;
-        font-weight: 200;
-        font-size: 18px;
-        line-height: 24px;
+    p {
+        a {
+            color: $blue;
+            font-family: $default-font;
+            font-weight: 200;
+            font-size: 18px;
+            line-height: 24px;
+        }
     }
 
     h1 {
@@ -340,6 +342,59 @@ footer {
             text-decoration: none;
         }
     }
+}
+
+// animations
+// slideup
+@keyframes slideup {
+    0% {
+        transform: translateY(50%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideup {
+    0% {
+        -webkit-transform: translateY(50%);
+    }
+    100% {
+        -webkit-transform: translateY(0%);
+    }
+}
+
+.slideup {
+    animation-name: slideup;
+    -webkit-animation-name: slideup;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+}
+
+// slidedown
+@keyframes slidedown {
+    0% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slidedown {
+    0% {
+        -webkit-transform: translateY(-50%);
+    }
+    100% {
+        -webkit-transform: translateY(0%);
+    }
+}
+
+.slidedown {
+    animation-name: slidedown;
+    -webkit-animation-name: slidedown;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
 }
 
 @media (max-width: 991px) {

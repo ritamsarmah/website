@@ -96,8 +96,8 @@ b {
   text-decoration-color: black;
 }
 /* line 38, ../sass/screen.scss */
-.panel a:active {
-  text-decoration: none;
+.panel a:hover, .offcanvas .panel a:focus, .panel a:active {
+  text-decoration-color: black;
 }
 
 /* The side navigation menu */
@@ -248,7 +248,7 @@ p {
 .header {
   margin: -1px 0px 0px 0px;
   background-color: black;
-  padding: 50px 10px 10px 30px;
+  padding: 60px 30px 10px 30px;
 }
 /* line 166, ../sass/screen.scss */
 .header h1 {
@@ -352,24 +352,24 @@ p {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-/* line 251, ../sass/screen.scss */
-#work a {
+/* line 252, ../sass/screen.scss */
+#work p a {
   color: #4CDCBC;
   font-family: "Work Sans", sans-serif;
   font-weight: 200;
   font-size: 18px;
   line-height: 24px;
 }
-/* line 259, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
 #work h1 {
   color: black;
 }
-/* line 261, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 #work h1 em {
   color: white;
   background-color: black;
 }
-/* line 267, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 #work h2 {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
@@ -377,7 +377,7 @@ p {
   padding-bottom: 4px;
   color: black;
 }
-/* line 275, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 #work img {
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
   width: 80%;
@@ -386,20 +386,20 @@ p {
   margin: auto;
 }
 
-/* line 284, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 #contact {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-/* line 291, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 #contact h1 {
   color: black;
 }
-/* line 293, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 #contact h1 em {
   background-color: #4CDCBC;
 }
-/* line 298, ../sass/screen.scss */
+/* line 300, ../sass/screen.scss */
 #contact img {
   display: block;
   margin: auto;
@@ -407,7 +407,7 @@ p {
   width: 80%;
   min-width: 100px;
 }
-/* line 306, ../sass/screen.scss */
+/* line 308, ../sass/screen.scss */
 #contact .btn {
   background-color: #4CDCBC;
   border: none;
@@ -420,20 +420,20 @@ p {
   display: table;
   margin: 0 auto;
 }
-/* line 318, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 #contact .btn:hover {
   color: white;
   background-color: #6ae2c7;
 }
 
-/* line 325, ../sass/screen.scss */
+/* line 327, ../sass/screen.scss */
 footer {
   margin-top: 20px;
   background-color: black;
   color: white;
   text-align: center;
 }
-/* line 331, ../sass/screen.scss */
+/* line 333, ../sass/screen.scss */
 footer a {
   display: inline-block;
   padding-top: 20px;
@@ -442,41 +442,89 @@ footer a {
   padding-right: 2vw;
   text-decoration: none;
 }
-/* line 339, ../sass/screen.scss */
+/* line 341, ../sass/screen.scss */
 footer a:hover, footer a:active, footer a:focus {
   text-decoration: none;
 }
 
+@keyframes slideup {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slideup {
+  0% {
+    -webkit-transform: translateY(50%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+/* line 367, ../sass/screen.scss */
+.slideup {
+  animation-name: slideup;
+  -webkit-animation-name: slideup;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+}
+
+@keyframes slidedown {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slidedown {
+  0% {
+    -webkit-transform: translateY(-50%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+/* line 393, ../sass/screen.scss */
+.slidedown {
+  animation-name: slidedown;
+  -webkit-animation-name: slidedown;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+}
+
 @media (max-width: 991px) {
-  /* line 346, ../sass/screen.scss */
+  /* line 401, ../sass/screen.scss */
   .sidenav {
     display: none;
   }
 }
 @media (min-width: 992px) {
-  /* line 352, ../sass/screen.scss */
+  /* line 407, ../sass/screen.scss */
   .miniElement {
     display: none;
   }
 }
 @media screen and (max-height: 450px) {
-  /* line 358, ../sass/screen.scss */
+  /* line 413, ../sass/screen.scss */
   .sidenav {
     padding-top: 15px;
   }
 
-  /* line 359, ../sass/screen.scss */
+  /* line 414, ../sass/screen.scss */
   .sidenav a {
     font-size: 18px;
   }
 }
 @media (max-width: 767px) {
-  /* line 364, ../sass/screen.scss */
+  /* line 419, ../sass/screen.scss */
   #experience .icon2, #experience .icon3 {
     padding-top: 20px;
   }
 
-  /* line 369, ../sass/screen.scss */
+  /* line 424, ../sass/screen.scss */
   footer a {
     padding-left: 4vw;
     padding-right: 4vw;
