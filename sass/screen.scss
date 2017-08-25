@@ -80,20 +80,16 @@ b {
 
 .menuToggle {
     position: fixed;
-    top: 75%;
-    right: -22px;
-    font-size: 36px;
+    top: 40%;
+    right: 0;
     background-color: $blue;
-    -ms-transform: rotate(-90deg); /* IE 9 */
-    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
-    transform: rotate(-90deg);
 
     a {
         padding: 8px 8px 8px 8px;
         text-decoration: none;
         font-family: $default-font;
         letter-spacing: 3px;
-        font-size: 18px;
+        font-size: 20px;
         color: white;
         display: block;
         transition: 0.3s;
@@ -148,15 +144,15 @@ h1, h2 {
     padding-top: 0px;
     padding-bottom: 10px;
     font-family: $serif-font;
-    @include responsive-font(5vw, 36px, 40px, 50px);
+    @include responsive-font(5vw, 36px, 56px, 50px);
     color: black;
 }
 
 p {
     font-family: $default-font;
     font-weight: 200;
-    font-size: 18px;
-    line-height: 24px;
+    @include responsive-font(2vw, 18px, 24px, 20px);
+    line-height: 1.4;
 }
 
 .header {
@@ -170,7 +166,7 @@ p {
 }
 
 #about {
-    margin-top: 60px;
+    margin-top: 100px;
     margin-bottom: 40px;
 
     h2 {
@@ -248,22 +244,19 @@ p {
     margin-top: 40px;
     margin-bottom: 40px;
 
-    p {
-        a {
-            color: $blue;
-            font-family: $default-font;
-            font-weight: 200;
-            font-size: 18px;
-            line-height: 24px;
-        }
+    p a {
+        color: $blue;
     }
 
-    h1 {
-        color: black;
-        em {
-            color: white;
-            background-color: black;
-        }
+    h1 em {
+        color: white;
+        background-color: black;
+    }
+}
+
+#projects {
+    p {
+        font-size: 18px;
     }
 
     h2 {
@@ -273,22 +266,11 @@ p {
         padding-bottom: 4px;
         color: black;
     }
-
-    img {
-        box-shadow: 0px 3px 10px rgba(0, 0, 0, .3);
-        width: 80%;
-        max-width: 250px;
-        height: auto;
-        margin: auto;
-    }
 }
 
 #contact {
     margin-top: 40px;
     margin-bottom: 40px;
-    // .panel {
-    //     padding: 20px 20px 20px 20px;
-    // }
 
     h1 {
         color: black;
@@ -297,12 +279,20 @@ p {
         }
     }
 
-    img {
-        display: block;
-        margin: auto;
-        padding-top: 30px;
-        width: 80%;
-        min-width: 100px;
+    p em {
+        font-weight: 400;
+    }
+
+    a {
+        line-height: 1.2em;
+        padding-top: 0px;
+        padding-bottom: 10px;
+        font-size: 42px;
+        color: white;
+        font-family: $serif-font;
+        em {
+            background-color: black;
+        }
     }
 
     .btn {
@@ -322,27 +312,73 @@ p {
             background-color: lighten($blue, 7%);
         }
     }
-}
 
-footer {
-    margin-top: 20px;
-    background-color: black;
-    color: white;
-    text-align: center;
-
-    a {
-        display: inline-block;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 2vw;
-        padding-right: 2vw;
-        text-decoration: none;
-
-        &:hover, &:active, &:focus {
-            text-decoration: none;
-        }
+    img {
+        margin-right: 40px;
     }
 }
+
+.animated {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+// fadeInRight
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-40px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+
+// slideleft
+@keyframes slideleft {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes slideleft {
+    0% {
+        -webkit-transform: translateX(50%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
+.slideleft {
+    animation-name: slideleft;
+    -webkit-animation-name: slideleft;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+}
+
 
 // slidedown
 @keyframes slidedown {
@@ -371,6 +407,9 @@ footer {
 }
 
 @media (max-width: 991px) {
+    #about {
+        margin-top: 50px;
+    }
     .sidenav {
         display: none;
     }
@@ -393,10 +432,9 @@ footer {
             padding-top: 20px;
         }
     }
-    footer {
-        a {
-            padding-left: 4vw;
-            padding-right: 4vw;
+    #contact {
+        img {
+            margin-right: 25px;
         }
     }
 }
