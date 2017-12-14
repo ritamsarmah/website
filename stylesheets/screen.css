@@ -96,10 +96,10 @@ h2 {
   color: #1EB7C6;
   font-size: 3vw;
 }
-@media (max-width: 800px) {
+@media (max-width: 666.66667px) {
   /* line 32, ../sass/screen.scss */
   h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 @media (min-width: 1200px) {
@@ -189,7 +189,7 @@ p {
   font-family: "Raleway", sans-serif;
   font-size: 5vw;
   margin-left: 10%;
-  margin-right: 15%;
+  margin-right: 10%;
   margin-top: 20%;
 }
 @media (max-width: 600px) {
@@ -311,7 +311,7 @@ p {
 
   /* line 168, ../sass/screen.scss */
   .jumbotron h1 {
-    margin-top: 26%;
+    margin-top: 20%;
   }
 
   /* line 170, ../sass/screen.scss */
@@ -327,10 +327,6 @@ p {
   #experience img {
     width: 90px;
   }
-  /* line 175, ../sass/screen.scss */
-  #experience .work p {
-    text-align: left;
-  }
 
   /* line 178, ../sass/screen.scss */
   #projects h3 {
@@ -344,8 +340,14 @@ p {
     width: 40px;
   }
 }
+@media (max-width: 480px) {
+  /* line 184, ../sass/screen.scss */
+  .jumbotron h1 {
+    margin-top: 33%;
+  }
+}
 /* Animations */
-/* line 184, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 .delay-animated {
   -webkit-animation-delay: 0.4s;
   /* Safari 4.0 - 8.0 */
@@ -356,7 +358,7 @@ p {
   animation-fill-mode: both;
 }
 
-/* line 193, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 .delay2-animated {
   visibility: hidden;
   -webkit-animation-delay: 0.8s;
@@ -368,7 +370,7 @@ p {
   animation-fill-mode: both;
 }
 
-/* line 203, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 .animated {
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
@@ -392,7 +394,7 @@ p {
     opacity: 1;
   }
 }
-/* line 220, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 .fadeIn {
   visibility: visible;
   -webkit-animation-name: fadeIn;
@@ -419,7 +421,7 @@ p {
     -webkit-transform: translateY(0);
   }
 }
-/* line 248, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
