@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="197px" height="197px" viewBox="0 0 197 197" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 43 (38999) - http://www.bohemiancoding.com/sketch -->
+<svg width="138px" height="138px" viewBox="0 0 138 138" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
     <title>phone</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop-HD" transform="translate(-242.000000, -1018.000000)">
-            <g id="experience" transform="translate(179.000000, 820.000000)">
-                <g id="icons" transform="translate(54.000000, 198.000000)">
-                    <g id="Group-8">
-                        <g id="phone" transform="translate(9.000000, 0.000000)">
-                            <ellipse id="Oval-2" fill="#000000" cx="98.5" cy="98.5" rx="98.5" ry="98.5"></ellipse>
-                            <g id="iPhone" transform="translate(63.797153, 29.444840)">
-                                <rect id="Rectangle" fill="#FFFFFF" x="0.771174377" y="0" width="67.8633452" height="138.811388" rx="10.01"></rect>
-                                <rect id="Rectangle-6" fill="#000000" x="6.16939502" y="16.9658363" width="57.0669039" height="104.879715"></rect>
-                                <ellipse id="Oval" fill="#000000" cx="34.6327402" cy="128.977936" rx="5.18790036" ry="5.18790036"></ellipse>
-                                <rect id="Rectangle-7" fill="#000000" x="27.7622776" y="7.71174377" width="14.6523132" height="5.28825623" rx="2.64412811"></rect>
+        <g id="Desktop-HD" transform="translate(-169.000000, -1318.000000)">
+            <g id="experience" transform="translate(98.000000, 1144.000000)">
+                <g id="Group-7" transform="translate(0.000000, 91.000000)">
+                    <g id="Group-4" transform="translate(71.000000, 83.000000)">
+                        <g id="Group-3">
+                            <g id="phone">
+                                <circle id="Oval-2" fill="#EFF0F4" cx="69" cy="69" r="69"></circle>
+                                <g id="iPhone" transform="translate(44.690391, 20.626335)">
+                                    <rect id="Rectangle" fill="#1B1B1B" x="0.540213523" y="0" width="47.53879" height="97.2384342" rx="7.007"></rect>
+                                    <rect id="Rectangle-6" fill="#EEEFF1" x="4.32170819" y="11.8846975" width="39.9758007" height="73.4690391"></rect>
+                                    <circle id="Oval" fill="#EEEFF1" cx="24.2604982" cy="90.3500262" r="3.6341637"></circle>
+                                    <rect id="Rectangle-7" fill="#EEEFF1" x="19.4476868" y="5.40213523" width="10.2640569" height="3.70446375" rx="1.85223188"></rect>
+                                </g>
                             </g>
                         </g>
                     </g>

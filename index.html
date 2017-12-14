@@ -7,197 +7,194 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Work+Sans:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600|Raleway:400,600" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <!--Only visible in small screen size-->
-    <div class="container miniElement col-md-4">
-        <div id="myMiniSidenav" class="miniSidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#about">about</a>
-            <a href="#experience">experience</a>
-            <a href="#work">work</a>
-            <a href="#contact">contact</a>
-        </div>
+    <div id="home" class="jumbotron text-left">
+        <h1>
+            Hello!
+            <br>
+            I'm <b>Ritam Sarmah</b>
+            <br>
+            and I build iOS apps.
+        </h1>
     </div>
 
-    <!--Only visible in small screen size-->
-    <div class="menuToggle miniElement">
-        <span onclick="openNav()"><a href="javascript:void(0)">⟨</a></span>
-    </div>
+    <div id="about" class="container-fluid">
 
-    <!--Only visible in small screen size-->
-    <div class="container-fluid header miniElement slidedown">
-        <h1>ritam sarmah</h1>
-    </div>
-
-    <div id="about" class="container-fluid col-md-8">
-        <h1><em>who</em> i am</h1>
-        <div class="animated fadeInRight">
-            <h2>a developer</h2>
-        </div>
-        <br>
-        <p>
-            Hi, my name is Ritam Sarmah. I am currently a third year computer science student at UCLA, and a software developer based in Los Angeles, CA. I love developing and designing beautiful software, and building awesome iOS apps in Swift. In my spare time, I enjoy playing and writing music, learning about modern design and typography, and eating pizza.
-        </p>
-    </div>
-    <div class="container col-md-4">
-        <div id="mySidenav" class="sidenav slidedown">
-            <a href="#about">about</a>
-            <a href="#experience">experience</a>
-            <a href="#work">work</a>
-            <a href="#contact">contact</a>
-            <br><br><br>
-            <h1>ritam<br>sarmah</h1>
-        </div>
-    </div>
-
-    <div id="experience" class="container-fluid col-md-8">
-        <h1><em>what i do</em></h1>
-        <br><br>
         <div class="row">
-            <div class="col-sm-4 icon1">
-                <img src="./images/phone.svg" alt="mobile.svg">
+            <div class="col-sm-8">
+                <h2>About Me</h2>
                 <br>
-                <h3>mobile apps</h3>
+                <p>
+                    I am currently a third year computer science student at UCLA, and a software developer based in Los Angeles, CA. I love developing and designing beautiful software, and building awesome iOS apps in Swift. I've recently developed an interest in machine learning and its use in mobile apps.
+                    <br><br>
+                    In my spare time, I enjoy teaching and writing music, playing classical piano, learning about modern design and typography, eating pizza, and playing video games with friends.
+                </p>
             </div>
-            <div class="col-sm-4 icon2">
+            <div class="col-sm-4">
+                <img class="centered profile" src="./images/profile.png" alt="profile.png">
+            </div>
+        </div>
+    </div>
+
+    <div id="experience" class="container-fluid">
+        <h2>Experience</h2>
+        <h3>What I Do</h3>
+        <div class="row">
+            <div class="col-xs-4">
+                <img src="./images/phone.svg" alt="phone.svg">
+                <br>
+                <p style="text-align: center">Mobile Apps</p>
+            </div>
+            <div class="col-xs-4">
                 <img src="./images/code.svg" alt="code.svg">
                 <br>
-                <h3>development</h3>
+                <p style="text-align: center">Development</p>
             </div>
-            <div class="col-sm-4 icon3">
-                <img src="./images/pen.svg" alt="design.svg">
+            <div class="col-xs-4">
+                <img src="./images/pen.svg" alt="pen.svg">
                 <br>
-                <h3>ui/ux design</h3>
+                <p style="text-align: center">UI/UX Design</p>
+            </div>
+        </div>
+        <h3>What I Use</h3>
+        <div class="row">
+            <div class="col-xs-4">
+                <h4>Languages</h4>
+                <p>Swift</p>
+                <p>Objective-C</p>
+                <p>C / C++</p>
+                <p>Python</p>
+                <p>JavaScript</p>
+                <p>HTML & CSS</p>
+                <p>MySQL</p>
+            </div>
+            <div class="col-xs-4">
+                <h4>Frameworks</h4>
+                <p>UIKit</p>
+                <p>Foundation</p>
+                <p>Alamofire</p>
+                <p>Core ML</p>
+                <p>Realm</p>
+                <p>Bootstrap</p>
+            </div>
+            <div class="col-xs-4">
+                <h4>Tools</h4>
+                <p>Xcode</p>
+                <p>iOS SDK</p>
+                <p>Cocoapods</p>
+                <p>Sketch</p>
+                <p>Atom</p>
+                <p>Git</p>
+            </div>
+        </div>
+        <h3>Who I've Worked With</h3>
+        <div class="row work">
+            <div class="col-sm-6 col-sm-offset-1">
+                <h4>AT&amp;T</h4>
+                <p>iOS Software Engineering Intern</p>
+            </div>
+            <div class="col-sm-4 date">
+                <p>Jun – Aug 2018</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="row work">
+            <div class="col-sm-6 col-sm-offset-1">
+                <h4>Kypher</h4>
+                <p>iOS Application Development Intern</p>
+            </div>
+            <div class="col-sm-4 date">
+                <p>Apr – Aug 2017</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="row work">
+            <div class="col-sm-6 col-sm-offset-1">
+                <h4>UCLA Social Sciences Computing</h4>
+                <p>Support Technician</p>
+            </div>
+            <div class="col-sm-4 date">
+                <p>Apr 2016 – Now</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects" class="container-fluid">
+        <h2>Projects</h2>
+        <p>Here's a selection of my recent work. Check out my <a href="https://github.com/ritamsarmah/">GitHub</a> to see all of my personal projects.</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>CineSearch</h3>
+                <p>
+                    Discover and search for the latest movies using CineSearch for iPhone. Find new movies based on your favorite films. Uses The Movie Database API to find and retrieve movie information.
+                </p>
+                <a href="https://github.com/ritamsarmah/cine-search" class="btn btn-default">GitHub</a>
+                <a href="https://itunes.apple.com/us/app/cinesearch/id1300312387?mt=8" class="btn btn-default">App Store</a>
+            </div>
+            <div class="col-sm-6">
+                <h3>Smart Home</h3>
+                <p>
+                    A smart home system that automatically manages temperature and lighting to save you energy and time. Consists of an iOS app that communicates with an Arduino and ambient sensors to control home devices.
+                </p>
+                <a href="https://github.com/ritamsarmah/smart-home" class="btn btn-default">GitHub</a>
             </div>
         </div>
         <div class="row">
-            <h2>and <em>what i use</em></h2>
+            <div class="col-sm-6">
+                <h3>Cal Scheduler</h3>
+                <p>
+                    Create calendar events in your Google Calendar with the help of a virtual chat assistant who understands natural language input. Uses the Google Calendar and Microsoft LUIS APIs, and the Kivy framework for UI.
+                </p>
+                <a href="https://github.com/ritamsarmah/cal-scheduler" class="btn btn-default">GitHub</a>
+            </div>
+            <div class="col-sm-6">
+                <h3>3D Ski Simulator</h3>
+                <p>
+                    A third-person endless skiing simulator built with WebGL and JavaScript. The environment is procedurally generated with trees, rocks, mountains and an occasional grizzly bear.
+                </p>
+                <a href="https://github.com/ritamsarmah/ski-simulator" class="btn btn-default">GitHub</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Streamer</h3>
+                <p>
+                    Stream and download video files from anywhere on the web to watch on your iPhone or iPad. Includes user customizable playback settings.
+                </p>
+                <a href="https://github.com/ritamsarmah/video-streamer" class="btn btn-default">GitHub</a>
+            </div>
+            <div class="col-sm-6">
+                <h3>Hearthbase</h3>
+                <p>
+                    Search and reference Hearthstone cards from anywhere with this app for iOS.
+                </p>
+                <a href="https://github.com/ritamsarmah/hearthbase" class="btn btn-default">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="container-fluid">
+        <h2>Contact</h2>
+        <div class="row">
+            <div class="col-md-8">
             <p>
-                c<br>
-                c++<br>
-                swift<br>
-                xcode<br>
-                iOS sdk<br>
-                html/css<br>
-                objective-c<br>
-                javascript<br>
-                python<br>
-                sketch<br>
-                sql<br>
-                git
+                Feel free to contact me if you are interested in working together or just want to say hello. I'm always interested in collaborating on cool stuff. Send me an email or find me elsewhere on the internet with the links below. I look forward to hearing from you!
             </p>
         </div>
     </div>
-
-    <div id="work" class="container-fluid col-md-8">
-        <h1>what i've been <em>work</em>ing on</h1>
-        <br>
-        <p>Here's a selection of my recent work. Check out my <a href="https://www.github.com/ritamsarmah" target="_blank">GitHub</a> to see all of my personal projects, or download my <a href="./resume.pdf" target="_blank">resume</a> to view my work experience.</p>
-        <br><br>
-        <div id="projects">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1300312387&mt=8" target="_blank"><h2>CineSearch</h2></a>
-                            <p>Discover and keep track of the latest movies.</p>
-                            <br>
-                            <p><i>Objective-C</i></p>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <a href="https://github.com/ritamsarmah/cal-scheduler" target="_blank"><h2>Cal Scheduler</h2></a>
-                            <p>Create calendar events using natural language.</p>
-                            <br>
-                            <p><i>Python, Kivy</i></p>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <a href="https://github.com/ritamsarmah/hearthbase" target="_blank"><h2>HearthBase</h2></a>
-                            <p>Reference Hearthstone cards on the go.</p>
-                            <br>
-                            <p><i>Swift</i></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <a href="https://github.com/ritamsarmah/video-streamer" target="_blank"><h2>Streamer</h2></a>
-                            <p>Stream or download any video link to your device.</p>
-                            <br>
-                            <p><i>Swift</i></p>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <a href="https://github.com/ritamsarmah/ski-simulator" target="_blank"><h2>3D Ski Simulator</h2></a>
-                            <p>Ski past obstacles in this WebGL arcade game.</p>
-                            <br>
-                            <p><i>JavaScript, WebGL</i></p>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <a href="https://github.com/ritamsarmah/ritamsarmah.github.io" target="_blank"><h2>Personal Website</h2></a>
-                            <p>(You're using it right now).</p>
-                            <br>
-                            <p><i>HTML, SCSS</i></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="contact" class="container-fluid col-md-8">
-        <h1>how to <em>contact</em> me</h1>
-        <h2></h2>
-        <br>
-        <p>
-            <em>I'm always interested in collaborating on cool stuff.</em> Feel free to contact me if you are interested in working together or just want to say hello.  Send me an email or find me elsewhere on the internet with the links below. I look forward to hearing from you!
-        </p>
-        <br><br><br>
-        <script type="text/javascript">
-        var first = "ritam";
-        var last = "sarmah";
-        var domain = "gmail";
-        document.write('<a href="mailto:'+ last + '.' + first + '@' + domain + '.com"class=" target="_blank"><img border="0" alt="Mail" src=".\/images\/email.svg" width="50" height="50"><\/a>');
-        document.write('<a href="https://www.linkedin.com/in/r' + last + '" target="_blank"><img border="0" alt="LinkedIn" src=".\/images\/linkedin.svg" width="50" height="50"><\/a>');
-        document.write('<a href="https://www.github.com/' + first + last + '" target="_blank"><img border="0" alt="GitHub" src=".\/images\/github.svg" width="50" height="50"><\/a>');
-        </script>
-        <br><br>
-    </div>
-
-    <script>
-    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-    function openNav() {
-        document.getElementById("myMiniSidenav").style.width = "250px";
-    }
-
-    /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-    function closeNav() {
-        document.getElementById("myMiniSidenav").style.width = "0";
-    }
-
-    // smooth anchor scrolling
-    var $root = $('html, body');
-    $('a').click(function() {
-        var href = $.attr(this, 'href');
-        $root.animate({
-            scrollTop: $(href).offset().top - 60
-        }, 500, function () {
-            window.location.hash = href;
-        });
-        event.preventDefault();
-    });
+    <script type="text/javascript">
+    var first = "ritam";
+    var last = "sarmah";
+    var domain = "gmail";
+    document.write('<a href="mailto:'+ last + '.' + first + '@' + domain + '.com"class=" target="_blank"><img border="0" alt="Mail" src=".\/images\/email.svg" width="50" height="50"><\/a>');
+    document.write('<a href="https://www.linkedin.com/in/r' + last + '" target="_blank"><img border="0" alt="LinkedIn" src=".\/images\/linkedin.svg" width="50" height="50"><\/a>');
+    document.write('<a href="https://www.github.com/' + first + last + '" target="_blank"><img border="0" alt="GitHub" src=".\/images\/github.svg" width="50" height="50"><\/a>');
     </script>
+    <br><br>
+</div>
 </body>
 </html>
