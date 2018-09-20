@@ -9,10 +9,10 @@
 // Colors
 $blue: #1EB7C6;
 $black: #1B1B1B;
-$gray: #EFF0F4;
+$gray: #EBECF0;
 $dark-gray: #9B9B9B;
 
-$body-font: 'Open Sans', sans-serif;
+$body-font: 'Source Sans Pro', sans-serif;
 $heading-font: 'Raleway', sans-serif;
 
 b { font-weight: 600; }
@@ -36,14 +36,14 @@ h2 {
     letter-spacing: 1px;
     font-weight: 600;
     color: $blue;
-    @include responsive-font(3vw, 20px, 36px);
+    @include responsive-font(3vw, 24px, 36px);
 
 }
 
 h3 {
-    font-family: $heading-font;
+    font-family: $body-font;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     color: $black;
     @include responsive-font(2vw, 18px, 24px);
     margin: 30px 0 10px 0;
@@ -54,7 +54,7 @@ h4 {
     font-weight: 600;
     line-height: 1.4em;
     letter-spacing: 0.7px;
-    @include responsive-font(2vw, 14px, 18px);
+    @include responsive-font(2vw, 16px, 18px);
 }
 
 p {
@@ -62,12 +62,12 @@ p {
     font-weight: 300;
     line-height: 1.4em;
     letter-spacing: 0.7px;
-    @include responsive-font(2vw, 14px, 18px);
+    @include responsive-font(2vw, 16px, 18px);
 }
 
 .jumbotron {
     background-color: $gray;
-    background-image: url(../images/jumbo.png);
+    background-image: url(../images/jumbo.jpg);
     background-position: left;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -100,30 +100,6 @@ p {
     display: block;
     margin: auto;
     padding: 40px 0;
-}
-
-#experience {
-    img, svg {
-        max-width: 120px;
-        display: block;
-        padding-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    h3 { margin: 50px 0 30px 0; }
-    h4, p { text-align: center; }
-
-    .work {
-        display: block;
-        margin: auto;
-        h4, p { text-align: left; }
-    }
-    .date {
-        p {
-            color: $dark-gray;
-            text-align: right;
-        }
-    }
 }
 
 #projects {
@@ -258,4 +234,10 @@ p {
 .fadeInDown {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
+}
+
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
 }
