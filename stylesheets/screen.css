@@ -289,20 +289,19 @@ p {
   }
 
   /* line 149, ../sass/screen.scss */
-  #experience img {
-    width: 60px;
+  #projects h2 {
+    margin-top: 80px;
   }
-
   /* line 152, ../sass/screen.scss */
   #projects h3 {
-    margin: 40px 10px 30px 0;
+    margin: 40px 10px 10px 0;
   }
 
-  /* line 156, ../sass/screen.scss */
+  /* line 157, ../sass/screen.scss */
   #contact {
     margin-bottom: 40px;
   }
-  /* line 158, ../sass/screen.scss */
+  /* line 159, ../sass/screen.scss */
   #contact img {
     margin-top: 20px;
     margin-right: 30px;
@@ -310,13 +309,13 @@ p {
   }
 }
 @media (max-width: 480px) {
-  /* line 167, ../sass/screen.scss */
+  /* line 168, ../sass/screen.scss */
   .jumbotron h1 {
     margin-top: 33%;
   }
 }
 /* Animations */
-/* line 171, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 .delay-animated {
   -webkit-animation-delay: 0.4s;
   /* Safari 4.0 - 8.0 */
@@ -327,7 +326,7 @@ p {
   animation-fill-mode: both;
 }
 
-/* line 180, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .delay2-animated {
   visibility: hidden;
   -webkit-animation-delay: 0.8s;
@@ -339,7 +338,7 @@ p {
   animation-fill-mode: both;
 }
 
-/* line 190, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 .animated {
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
@@ -363,7 +362,7 @@ p {
     opacity: 1;
   }
 }
-/* line 207, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 .fadeIn {
   visibility: visible;
   -webkit-animation-name: fadeIn;
@@ -390,13 +389,13 @@ p {
     -webkit-transform: translateY(0);
   }
 }
-/* line 235, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }
 
-/* line 240, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 .js-loading *,
 .js-loading *:before,
 .js-loading *:after {
