@@ -227,12 +227,12 @@ p {
 }
 
 /* line 105, ../sass/screen.scss */
-.fab, .fas {
+.social {
   font-size: 3.5em;
   color: black;
 }
 /* line 109, ../sass/screen.scss */
-.fab:hover, .offcanvas .fab:focus, .fas:hover, .offcanvas .fas:focus {
+.social:hover, .offcanvas .social:focus {
   color: #1EB7C6;
 }
 
