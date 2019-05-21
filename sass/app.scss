@@ -20,6 +20,7 @@ b { font-weight: 600; }
 body {
     background-color: $gray;
     padding: 10px;
+    text-align: center;
 }
 
 a {
@@ -30,12 +31,13 @@ a {
     }
 }
 
-#privacy {
+#sectional-text {
     padding: 4vw;
 }
 
-#policy {
+#column-text {
     max-width: 800px;
+    text-align: center;
 }
 
 #logo {
@@ -82,8 +84,7 @@ h4 {
     font-family: $body-font;
     font-weight: 600;
     line-height: 1.4em;
-    letter-spacing: 0.7px;
-    @include responsive-font(2vw, 16px, 18px);
+    font-size: 18px;
 }
 
 p {
@@ -91,7 +92,11 @@ p {
     font-weight: 300;
     line-height: 1.4em;
     letter-spacing: 0.7px;
-    @include responsive-font(2vw, 16px, 18px);
+    font-size: 18px;
+}
+
+i {
+    font-style: italic;
 }
 
 .centered{

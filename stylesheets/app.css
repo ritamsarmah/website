@@ -2,7 +2,7 @@
 * In this file you should write your main styles. (or centralize your imports)
 * Import this file using the following HTML or equivalent:
 * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -76,28 +76,30 @@ b {
 body {
   background-color: #EBECF0;
   padding: 10px;
+  text-align: center;
 }
 
-/* line 25, ../sass/app.scss */
+/* line 26, ../sass/app.scss */
 a {
   color: #1EB7C6;
 }
-/* line 28, ../sass/app.scss */
+/* line 29, ../sass/app.scss */
 a:hover, .offcanvas a:focus {
   color: #178e9a;
 }
 
-/* line 33, ../sass/app.scss */
-#privacy {
+/* line 34, ../sass/app.scss */
+#sectional-text {
   padding: 4vw;
 }
 
-/* line 37, ../sass/app.scss */
-#policy {
+/* line 38, ../sass/app.scss */
+#column-text {
   max-width: 800px;
+  text-align: center;
 }
 
-/* line 41, ../sass/app.scss */
+/* line 43, ../sass/app.scss */
 #logo {
   display: flex;
   justify-content: center;
@@ -106,12 +108,12 @@ a:hover, .offcanvas a:focus {
   margin-top: 40px;
 }
 
-/* line 49, ../sass/app.scss */
+/* line 51, ../sass/app.scss */
 #info {
   max-width: 800px;
 }
 
-/* line 53, ../sass/app.scss */
+/* line 55, ../sass/app.scss */
 h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -119,12 +121,12 @@ h1 {
   margin-top: 20px;
 }
 
-/* line 60, ../sass/app.scss */
+/* line 62, ../sass/app.scss */
 .icon {
   max-width: 150px;
 }
 
-/* line 64, ../sass/app.scss */
+/* line 66, ../sass/app.scss */
 h2 {
   font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 1px;
@@ -132,19 +134,19 @@ h2 {
   font-size: 1vw;
 }
 @media (max-width: 2400px) {
-  /* line 64, ../sass/app.scss */
+  /* line 66, ../sass/app.scss */
   h2 {
     font-size: 24px;
   }
 }
 @media (min-width: 3600px) {
-  /* line 64, ../sass/app.scss */
+  /* line 66, ../sass/app.scss */
   h2 {
     font-size: 36px;
   }
 }
 
-/* line 72, ../sass/app.scss */
+/* line 74, ../sass/app.scss */
 h3 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
@@ -154,61 +156,41 @@ h3 {
   margin: 30px 0 10px 0;
 }
 @media (max-width: 900px) {
-  /* line 72, ../sass/app.scss */
+  /* line 74, ../sass/app.scss */
   h3 {
     font-size: 18px;
   }
 }
 @media (min-width: 1000px) {
-  /* line 72, ../sass/app.scss */
+  /* line 74, ../sass/app.scss */
   h3 {
     font-size: 20px;
   }
 }
 
-/* line 81, ../sass/app.scss */
+/* line 83, ../sass/app.scss */
 h4 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   line-height: 1.4em;
-  letter-spacing: 0.7px;
-  font-size: 2vw;
-}
-@media (max-width: 800px) {
-  /* line 81, ../sass/app.scss */
-  h4 {
-    font-size: 16px;
-  }
-}
-@media (min-width: 900px) {
-  /* line 81, ../sass/app.scss */
-  h4 {
-    font-size: 18px;
-  }
+  font-size: 18px;
 }
 
-/* line 89, ../sass/app.scss */
+/* line 90, ../sass/app.scss */
 p {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   line-height: 1.4em;
   letter-spacing: 0.7px;
-  font-size: 2vw;
-}
-@media (max-width: 800px) {
-  /* line 89, ../sass/app.scss */
-  p {
-    font-size: 16px;
-  }
-}
-@media (min-width: 900px) {
-  /* line 89, ../sass/app.scss */
-  p {
-    font-size: 18px;
-  }
+  font-size: 18px;
 }
 
-/* line 97, ../sass/app.scss */
+/* line 98, ../sass/app.scss */
+i {
+  font-style: italic;
+}
+
+/* line 102, ../sass/app.scss */
 .centered {
   display: flex;
   justify-items: center;
