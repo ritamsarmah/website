@@ -86,27 +86,30 @@ a {
 /* line 29, ../sass/app.scss */
 a:hover, .offcanvas a:focus {
   color: #1EB7C6;
-  text-decoration: underline;
 }
 
-/* line 35, ../sass/app.scss */
+/* line 34, ../sass/app.scss */
 #sectional-text {
   padding: 4vw;
 }
 
-/* line 39, ../sass/app.scss */
+/* line 38, ../sass/app.scss */
 #column-text {
   max-width: 800px;
   text-align: center;
 }
 
-/* line 44, ../sass/app.scss */
+/* line 43, ../sass/app.scss */
 #info {
   max-width: 800px;
-  text-align: center;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
-/* line 49, ../sass/app.scss */
+/* line 52, ../sass/app.scss */
 h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -114,12 +117,12 @@ h1 {
   margin-top: 20px;
 }
 
-/* line 56, ../sass/app.scss */
+/* line 59, ../sass/app.scss */
 .icon {
   max-width: 150px;
 }
 
-/* line 60, ../sass/app.scss */
+/* line 63, ../sass/app.scss */
 h2 {
   font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 1px;
@@ -127,41 +130,39 @@ h2 {
   font-size: 1vw;
 }
 @media (max-width: 2400px) {
-  /* line 60, ../sass/app.scss */
+  /* line 63, ../sass/app.scss */
   h2 {
     font-size: 24px;
   }
 }
 @media (min-width: 3600px) {
-  /* line 60, ../sass/app.scss */
+  /* line 63, ../sass/app.scss */
   h2 {
     font-size: 36px;
   }
 }
 
-/* line 68, ../sass/app.scss */
+/* line 71, ../sass/app.scss */
 h3 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 600;
-  letter-spacing: 0.5px;
-  color: #1B1B1B;
-  font-size: 2vw;
-  margin: 30px 0 10px 0;
+  font-size: 1vw;
+  margin-top: 20px;
 }
-@media (max-width: 900px) {
-  /* line 68, ../sass/app.scss */
+@media (max-width: 2400px) {
+  /* line 71, ../sass/app.scss */
   h3 {
-    font-size: 18px;
+    font-size: 24px;
   }
 }
-@media (min-width: 1000px) {
-  /* line 68, ../sass/app.scss */
+@media (min-width: 3600px) {
+  /* line 71, ../sass/app.scss */
   h3 {
-    font-size: 20px;
+    font-size: 36px;
   }
 }
 
-/* line 77, ../sass/app.scss */
+/* line 78, ../sass/app.scss */
 h4 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
@@ -169,7 +170,7 @@ h4 {
   font-size: 18px;
 }
 
-/* line 84, ../sass/app.scss */
+/* line 85, ../sass/app.scss */
 p {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
@@ -178,20 +179,21 @@ p {
   font-size: 18px;
 }
 
-/* line 92, ../sass/app.scss */
+/* line 93, ../sass/app.scss */
 i {
   font-style: italic;
 }
 
-/* line 96, ../sass/app.scss */
+/* line 97, ../sass/app.scss */
 .centered {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
-/* line 103, ../sass/app.scss */
+/* line 105, ../sass/app.scss */
 .navitem {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;

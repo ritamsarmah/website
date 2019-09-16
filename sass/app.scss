@@ -28,7 +28,6 @@ a {
     
     &:hover, .offcanvas &:focus {
         color: $blue;
-        text-decoration: underline;
     }
 }
 
@@ -43,7 +42,11 @@ a {
 
 #info {
     max-width: 800px;
-    text-align: center;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 h1 {
@@ -66,12 +69,10 @@ h2 {
 }
 
 h3 {
-    font-family: $body-font;
+    font-family: $heading-font;
     font-weight: 600;
-    letter-spacing: 0.5px;
-    color: $black;
-    @include responsive-font(2vw, 18px, 20px);
-    margin: 30px 0 10px 0;
+    @include responsive-font(1vw, 24px, 36px);
+    margin-top: 20px;
 }
 
 h4 {
@@ -98,6 +99,7 @@ i {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .navitem {
