@@ -25,7 +25,7 @@ a {
     color: $blue;
 
     &:hover, .offcanvas &:focus {
-        color: darken($blue, 10);
+        color: $blue;
     }
 }
 

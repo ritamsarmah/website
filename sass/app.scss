@@ -27,7 +27,8 @@ a {
     color: $blue;
     
     &:hover, .offcanvas &:focus {
-        color: darken($blue, 10);
+        color: $blue;
+        text-decoration: underline;
     }
 }
 
@@ -40,16 +41,9 @@ a {
     text-align: center;
 }
 
-#logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 40px;
-}
-
 #info {
     max-width: 800px;
+    text-align: center;
 }
 
 h1 {
@@ -99,10 +93,18 @@ i {
     font-style: italic;
 }
 
-.centered{
+.centered {
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: center;
+}
+
+.navitem {
+    font-family: $body-font;
+    font-weight: 300;
+    line-height: 1.4em;
+    letter-spacing: 0.7px;
+    font-size: 24px;
+    display: inline-block
 }
