@@ -19,33 +19,58 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+    
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-center">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="faq.html">FAQ<span class="sr-only">(current)</span></a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="mailto:sarmah.ritam@gmail.com" target="_blank">Contact</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
     <div id="sectional-text" class="centered">
         <div id="column-text">
             <h1>Frequently Asked Questions</h1>
             <br><br>
-            <h4>Which websites work with Accelerate?</h4>
+            <h4>Which terminal applications are supported by Terminal Tools?</h4>
             <p>
-                Accelerate works on any website using HTML5 video, which includes most modern sites like YouTube, Netflix, Hulu, Vimeo, and Facebook. Accelerate does not support Flash video.
+                Terminal Tools currently supports the default macOS Terminal application and <a href="https://www.iterm2.com">iTerm 2</a>. Support for other applications may be added in the future!
             </p>
             <br><br>
-            <h4>Why can't I use right-click controls on Netflix or some other site?</h4>
+            <h4>What features do I get in the free version compared to Pro?</h4>
             <p>
-                Netflix and certain other sites block users from accessing the right-click menu. There are some Safari extensions that can prevent sites from doing this, but otherwise you'll have to use the keyboard shortcuts or toolbar item for controls.
+                The free version includes native Finder integration for opening a new terminal window, global keyboard shortcut creation, and changing your terminal application. Pro is available as a one-time in-app purchase, and includes everything in the free version, along with the ability to create custom commands to run in the Finder and from the menu bar.
             </p>
             <br><br>
-            <h4>Why aren't playback controls working properly on Netflix or some other site?</h4>
+            <h4>How do I enable the Finder toolbar button or right-click menu options?</h4>
             <p>
-                The site is probably using a custom video player that modifies the standard playback control behavior. For example, the Netflix video player will sometimes freeze when using Accelerate's forward and backward skipping. As a result, your own playback keyboard shortcuts might not work perfectly, and you'll just have to use theirs.
+                Make sure that the Terminal Tools Finder extension is enabled under System Preferences > Extensions > Finder Extensions. If the extension is enabled, but the toolbar button is still not showing, right-click on the Finder toolbar, select "Customize Toolbar...", and drag the Terminal icon into the toolbar. For right-click menu options, make sure "Show right-click menu options" is enabled in Terminal Tools' preferences. You may also try relaunching the Finder by holding Option + Control and clicking the Finder icon in the dock.
             </p>
             <br><br>
-            <h4>Why aren't my updated keyboard controls or preferences working?</h4>
+            <h4>Why aren't commands working in the menu bar or Finder?</h4>
             <p>
-                After you make changes to Accelerate's preferences, you will have to refresh any currently open websites to see the updates. If the changes still aren't showing, try restarting Safari.
+                Terminal Tools requires automation permissions to send custom commands to your terminal. In System Preferences, go to Security & Privacy > Privacy > Automation, and ensure that the checkboxes under Terminal Tools are enabled.
             </p>
             <br><br>
-            <h4>Why isn't Accelerate enabled/working for me?</h4>
+            <h4>Why does an extra window get created when running a command while the terminal is not running?</h4>
             <p>
-                Check that the extension is enabled by opening Safari's extension preferences: Safari > Preferences > Extensions; make sure the checkbox next to "Accelerate" is checked. If Accelerate is already enabled, try unchecking the checkbox and restarting Safari. Once Safari re-opens, re-enable Accelerate. If it is still not working, try deleting and reinstalling.
+                This is a known issue when a macOS application tries to interact with another application that is not open. There is unforunately no solution at the moment.
             </p>
             <br><br>
             <h4>What if I have a different question or feedback?</h4>

@@ -19,8 +19,17 @@ b { font-weight: 600; }
 
 body {
     background-color: $gray;
-    padding: 10px;
     text-align: center;
+    padding: 0px 16px;
+}
+
+nav {
+    color: $dark-gray;
+    font-family: $body-font;
+    font-weight: 300;
+    letter-spacing: 0.7px;
+    font-size: 20px; 
+    margin-top: 36px;
 }
 
 a {
@@ -31,8 +40,20 @@ a {
     }
 }
 
+hr {
+    width: 90%;
+    height: 1px;
+    background: black;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from($gray), to($gray), color-stop(50%, #C6C7CC));
+}
+
+#header {
+    padding: 20px;
+    margin: 0
+}
+
 #sectional-text {
-    padding: 4vw;
+    padding: 2vw;
 }
 
 #column-text {
@@ -71,8 +92,10 @@ h2 {
 h3 {
     font-family: $heading-font;
     font-weight: 600;
-    @include responsive-font(1vw, 24px, 36px);
+    letter-spacing: 1px;
+    @include responsive-font(1vw, 28px, 36px);
     margin-top: 20px;
+    margin-bottom: 8px;
 }
 
 h4 {
@@ -90,8 +113,19 @@ p {
     font-size: 18px;
 }
 
+code {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.4em;
+    font-size: 16px;
+}
+
 i {
     font-style: italic;
+}
+
+ul {
+    list-style-type: circle;
+    list-style-position: inside;
 }
 
 .centered {
@@ -109,4 +143,43 @@ i {
     letter-spacing: 0.7px;
     font-size: 24px;
     display: inline-block
+}
+
+/* navbar */
+.navbar-default {
+    background-color: $gray;
+    border-color: $gray;
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+/* Link */
+.navbar-default .navbar-nav > li > a {
+    color: $dark-gray;
+    
+    &:hover, .offcanvas &:focus {
+        color: $blue;
+    }
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: $blue;
+    background-color: $gray;
+}
+
+.navbar-nav > li {
+  padding-left: 12px;
+  padding-right: 12px;
 }

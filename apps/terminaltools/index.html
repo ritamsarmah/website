@@ -20,28 +20,150 @@
 </head>
 
 <body>
-    <img class="icon" src="../../images/terminaltools.png" alt="terminaltools.png">
-    <h1>Terminal Tools</h1>
-    <br>
-    <h2>Powerful macOS integrations for Terminal/iTerm</h2>
-    <br>
-    <div style="margin-top: 8px">
-        <a href="https://itunes.apple.com/us/app/accelerate-for-safari/id1459809092?mt=12">
-            <img src="../../images/macappstore_black.svg" alt="download">
-        </a>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-center">
+                    <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="mailto:sarmah.ritam@gmail.com" target="_blank">Contact</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div id="header">
+        <img class="icon" src="../../images/terminaltools.png" alt="terminaltools.png">
+        <h1>Terminal Tools</h1>
+        <br>
+        <h2>Powerful macOS integrations for Terminal/iTerm</h2>
+        <br>
+        <div style="margin-top: 8px">
+            <a href="https://itunes.apple.com/us/app/accelerate-for-safari/id1459809092?mt=12">
+                <img src="../../images/macappstore_black.svg" alt="download">
+            </a>
+        </div>
     </div>
 
-    <!-- <a href="faq.html">
-        <p>FAQ</p>
-    </a>
-    <a href="privacy.html">
-        <p>Privacy Policy</p>
-    </a>
-    <a href="mailto:sarmah.ritam@gmail.com" target="_blank">
-        <p>Contact</p>
-    </a> -->
-    <h3>Turbocharge your Terminal</h3>
-    <br><br>
+    <hr>
+    <br>
+    <div id="summary">
+
+        <h3>Turbocharge Your Terminal</h3>
+        <br>
+        <p>
+            Terminal Tools includes many features that improve your terminal experience and streamline your workflow.
+        </p>
+        <br><br>
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-2" style="margin-bottom: 40px">
+                <img width="64px" src="../../images/tt/finder.png" alt="Finder">
+                <br><br>
+                <h4>Native Finder Integration</h4>
+                <p>Open a new terminal in any directory and access other features using the Finder toolbar or
+                    right-click menu.</p>
+            </div>
+            <div class="col-sm-4" style="margin-bottom: 40px">
+                <img width="64px" src="../../images/tt/keyboard.png" alt="Keyboard">
+                <br><br>
+                <h4>Global Keyboard Shortcut</h4>
+                <p>Easily switch to your terminal from anywhere with a custom keyboard shortcut.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-2" style="margin-bottom: 40px">
+                <img width="64px" src="../../images/tt/cmd.png" alt="Command">
+                <br><br>
+                <h4>Custom Commands</h4>
+                <p>Create shell commands that can be run from the menu bar or from the Finder.
+                    <span style="color: gray">(Pro Only)</span></p>
+            </div>
+            <div class="col-sm-4" style="margin-bottom: 40px">
+                <img width="64px" src="../../images/tt/terminals.png" alt="Terminals">
+                <br><br>
+                <h4>Application Support</h4>
+                <p>Supports macOS Terminal and iTerm2, with more applications to come.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div id="commands">
+        <h3>Quickly Run Commands</h3>
+        <br>
+        <p>
+            Bring the power of the terminal to the Finder and/or menu bar with custom commands. Here are some useful examples to get you started.
+        </p>
+        <br>
+
+        <h3 style="font-size: 20px">Menu Bar Commands</h3>
+        <p style="color: gray">Menu bar commands run in the user's home directory (<code>~/</code>)</p>
+        <br>
+
+        <h4>Advanced Mac Controls</h4>
+        <p>Disable Sleep for an Hour (in Seconds)</p>
+        <code>caffeinate -t 3600</code>
+        <br><br>
+        <p>Clear RAM Cache</p>
+        <code>sudo purge</code>
+        <br><br>
+
+        <h4>Networks and Remote Access</h4>
+        <p>Copy Wi-Fi IP Address</p>
+        <code>ipconfig getifaddr en0 | tr -d '\n' | pbcopy</code>
+        <br><br>
+
+        <p>Connect to VPN and Login via SSH</p>
+        <code>
+            networksetup -connectpppoeservice "My VPN";<br>
+            ssh username@server.domain.com
+        </code>
+        <br><br>
+
+        <h3 style="font-size: 20px">Finder Commands</h3>
+        <p style="color: gray">Finder commands run in the current directory</p>
+        <br>
+
+        <h4>Working with Folders</h4>
+        <p>Open Folder in Xcode</p>
+        <code>open -a "Xcode" .</code>
+        <br><br>
+        <p>Move Folder to Desktop</p>
+        <code>mv . "~/Desktop"</code>
+        <br><br>
+
+        <h4>Git Operations</h4>
+        <p>Fetch Branches</p>
+        <code>git fetch origin</code>
+        <br><br>
+        <p>Delete Last Pushed Commit</p>
+        <code>
+            git reset --hard HEAD~1;<br>
+            git push origin HEAD --force
+        </code>
+        <br><br>
+
+        <h3 style="font-size:20px">Other Useful Hints</h3>
+        <ul>
+            <li><p>Use Option + Return to add new lines while editing commands</p></li>
+            <li><p>Combine commands with semicolons (e.g. <code>command1 args; command2 args</code>)</p></li>
+            <li><p>Use <code>exit</code> to automatically close the terminal window after running</p></li>
+        </ul>
+        <br>
+    </div>
+    <br><br><br><br><br>
 </body>
 
 </html>

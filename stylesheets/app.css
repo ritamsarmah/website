@@ -75,31 +75,55 @@ b {
 /* line 20, ../sass/app.scss */
 body {
   background-color: #EBECF0;
-  padding: 10px;
   text-align: center;
+  padding: 0px 16px;
 }
 
 /* line 26, ../sass/app.scss */
+nav {
+  color: #9B9B9B;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+  font-size: 20px;
+  margin-top: 36px;
+}
+
+/* line 35, ../sass/app.scss */
 a {
   color: #1EB7C6;
 }
-/* line 29, ../sass/app.scss */
+/* line 38, ../sass/app.scss */
 a:hover, .offcanvas a:focus {
   color: #1EB7C6;
 }
 
-/* line 34, ../sass/app.scss */
-#sectional-text {
-  padding: 4vw;
+/* line 43, ../sass/app.scss */
+hr {
+  width: 90%;
+  height: 1px;
+  background: black;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(#EBECF0), to(#EBECF0), color-stop(50%, #C6C7CC));
 }
 
-/* line 38, ../sass/app.scss */
+/* line 50, ../sass/app.scss */
+#header {
+  padding: 20px;
+  margin: 0;
+}
+
+/* line 55, ../sass/app.scss */
+#sectional-text {
+  padding: 2vw;
+}
+
+/* line 59, ../sass/app.scss */
 #column-text {
   max-width: 800px;
   text-align: center;
 }
 
-/* line 43, ../sass/app.scss */
+/* line 64, ../sass/app.scss */
 #info {
   max-width: 800px;
   margin-top: 24px;
@@ -109,7 +133,7 @@ a:hover, .offcanvas a:focus {
   padding-right: 8px;
 }
 
-/* line 52, ../sass/app.scss */
+/* line 73, ../sass/app.scss */
 h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -117,12 +141,12 @@ h1 {
   margin-top: 20px;
 }
 
-/* line 59, ../sass/app.scss */
+/* line 80, ../sass/app.scss */
 .icon {
   max-width: 150px;
 }
 
-/* line 63, ../sass/app.scss */
+/* line 84, ../sass/app.scss */
 h2 {
   font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 1px;
@@ -130,39 +154,41 @@ h2 {
   font-size: 1vw;
 }
 @media (max-width: 2400px) {
-  /* line 63, ../sass/app.scss */
+  /* line 84, ../sass/app.scss */
   h2 {
     font-size: 24px;
   }
 }
 @media (min-width: 3600px) {
-  /* line 63, ../sass/app.scss */
+  /* line 84, ../sass/app.scss */
   h2 {
     font-size: 36px;
   }
 }
 
-/* line 71, ../sass/app.scss */
+/* line 92, ../sass/app.scss */
 h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
+  letter-spacing: 1px;
   font-size: 1vw;
   margin-top: 20px;
+  margin-bottom: 8px;
 }
-@media (max-width: 2400px) {
-  /* line 71, ../sass/app.scss */
+@media (max-width: 2800px) {
+  /* line 92, ../sass/app.scss */
   h3 {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 @media (min-width: 3600px) {
-  /* line 71, ../sass/app.scss */
+  /* line 92, ../sass/app.scss */
   h3 {
     font-size: 36px;
   }
 }
 
-/* line 78, ../sass/app.scss */
+/* line 101, ../sass/app.scss */
 h4 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
@@ -170,7 +196,7 @@ h4 {
   font-size: 18px;
 }
 
-/* line 85, ../sass/app.scss */
+/* line 108, ../sass/app.scss */
 p {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
@@ -179,12 +205,25 @@ p {
   font-size: 18px;
 }
 
-/* line 93, ../sass/app.scss */
+/* line 116, ../sass/app.scss */
+code {
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.4em;
+  font-size: 16px;
+}
+
+/* line 122, ../sass/app.scss */
 i {
   font-style: italic;
 }
 
-/* line 97, ../sass/app.scss */
+/* line 126, ../sass/app.scss */
+ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+/* line 131, ../sass/app.scss */
 .centered {
   display: flex;
   justify-content: center;
@@ -193,7 +232,7 @@ i {
   text-align: center;
 }
 
-/* line 105, ../sass/app.scss */
+/* line 139, ../sass/app.scss */
 .navitem {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
@@ -201,4 +240,48 @@ i {
   letter-spacing: 0.7px;
   font-size: 24px;
   display: inline-block;
+}
+
+/* navbar */
+/* line 149, ../sass/app.scss */
+.navbar-default {
+  background-color: #EBECF0;
+  border-color: #EBECF0;
+}
+
+@media (min-width: 768px) {
+  /* line 155, ../sass/app.scss */
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+  /* line 161, ../sass/app.scss */
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+}
+/* Link */
+/* line 167, ../sass/app.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #9B9B9B;
+}
+/* line 170, ../sass/app.scss */
+.navbar-default .navbar-nav > li > a:hover, .offcanvas .navbar-default .navbar-nav > li > a:focus {
+  color: #1EB7C6;
+}
+
+/* line 175, ../sass/app.scss */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #1EB7C6;
+  background-color: #EBECF0;
+}
+
+/* line 182, ../sass/app.scss */
+.navbar-nav > li {
+  padding-left: 12px;
+  padding-right: 12px;
 }
