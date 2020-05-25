@@ -1,0 +1,29 @@
+@import "./layout.css";
+
+.container {
+  margin-bottom: 2em;
+}
+
+.project-header {
+  font-family: "Nunito Sans";
+  vertical-align: middle;
+  display: inline;
+  line-height: 1rem;
+}
+
+.project-description {
+  margin: 0.5rem auto;
+}
+
+.project-link {
+  margin-right: 1.2rem;
+}
+
+.project-tag {
+  background-color: var(--theme-color);
+  border-radius: 5px;
+  color: white;
+  line-height: 1rem;
+  padding: 0.3rem 0.5rem;
+  vertical-align: middle;
+}

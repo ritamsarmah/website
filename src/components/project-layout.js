@@ -1,9 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import "./layout.css"
+import "./project-layout.css"
 
-const Layout = ({ margin, children }) => {
+const ProjectLayout = ({ margin, children }) => {
   return (
     <>
       <div
@@ -18,12 +18,12 @@ const Layout = ({ margin, children }) => {
   )
 }
 
-Layout.propTypes = {
+ProjectLayout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-Layout.defaultProps = {
+ProjectLayout.defaultProps = {
   margin: "5rem",
 }
 
-export default Layout
+export default ProjectLayout

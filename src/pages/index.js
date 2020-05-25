@@ -27,7 +27,7 @@ const IndexPage = ({ data }) => {
       <Social />
       <div style={{ maxWidth: `300px`, marginBottom: `5rem` }}></div>
       <h1>Projects</h1>
-      {data.allProjectsJson.nodes.map((project, index) => (
+      {data.allProjectsYaml.nodes.map((project, index) => (
         <Project key={index} project={project} />
       ))}
     </Layout>
@@ -36,7 +36,7 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    allProjectsJson {
+    allProjectsYaml {
       nodes {
         description
         name
