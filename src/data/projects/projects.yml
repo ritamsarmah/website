@@ -11,7 +11,10 @@
     - name: App Store
       url: https://itunes.apple.com/us/app/accelerate-for-safari/id1459809092?mt=12
   theme:
-    color: "#7252DF"
+    colors:
+      bg: "white"
+      accent: "#7252DF"
+      text: "black"
 - name: CineSearch
   description: Discover and search for the latest movies on iOS.
   tags:
@@ -23,6 +26,12 @@
       url: https://itunes.apple.com/us/app/cinesearch/id1300312387?mt=8
     - name: GitHub
       url: https://github.com/ritamsarmah/cine-search
+  theme:
+    colors:
+      bg: "#282C34"
+      accent: "#1EAFF0"
+      text: "white"
+
 - name: Geno
   description:
     An Electron-based IDE for adding voice/multimodal interfaces into existing

@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import "./project-layout.css"
 
-const ProjectLayout = ({ margin, children }) => {
+const ProjectLayout = ({ margin, theme, children }) => {
   return (
     <>
       <div

@@ -4,13 +4,15 @@ project: Accelerate
 index: 0
 ---
 
-<p style="margin:0">Accelerate for Safari</p>
+### Accelerate
 
-# Customizable controls for<br>video playback in Safari
+# Customizable controls for video playback in Safari
 
-![icon](images/accelerate.png)
+<img width="40px" height="40px" src="../../../images/accelerate.png">
 
-[![download](./images/macappstore_black.svg)](https://itunes.apple.com/us/app/accelerate-for-safari/id1459809092?mt=12)
+<!-- [![download](./images/macappstore_black.svg)](https://itunes.apple.com/us/app/accelerate-for-safari/id1459809092?mt=12) -->
+
+---
 
 ### Control video playback
 

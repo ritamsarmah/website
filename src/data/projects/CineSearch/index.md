@@ -4,6 +4,13 @@ project: CineSearch
 index: 0
 ---
 
+<!-- <p align="center">
+  <img width="200" height="300" src="http://www.fillmurray.com/460/300">
+</p> -->
+<div>
+    <img align="right" style="padding: 2rem; width: 10px; height: 20px" src="images/cinesearch.png">
+</div>
+
 # CineSearch
 
 ## Discover and search for the latest movies

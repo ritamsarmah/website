@@ -7,10 +7,11 @@ const Creator = ({ theme }) => (
       marginTop: "4rem",
       marginBottom: "2rem",
       textAlign: "center",
+      color: theme.colors.text,
     }}
   >
     Created by{" "}
-    <Link style={{ color: theme.color }} to="/">
+    <Link style={{ color: theme.colors.accent }} to="/">
       Ritam Sarmah
     </Link>
   </div>

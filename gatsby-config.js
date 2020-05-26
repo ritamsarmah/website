@@ -18,6 +18,13 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: `${__dirname}/src/images/`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         start_url: `/`,
@@ -34,9 +41,12 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-images`,
+            resolve: "gatsby-remark-copy-linked-files",
             options: {
-              maxWidth: 590,
+              // If you'd like to not use gatsby-remark-images and just copy your
+              // original images to the public directory, set
+              // `ignoreFileExtensions` to an empty array.
+              ignoreFileExtensions: [],
             },
           },
         ],

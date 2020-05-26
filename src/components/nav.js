@@ -7,7 +7,7 @@ const Nav = ({ links, spacing, theme }) => (
       display: "flex",
       justifyItems: "right",
       justifyContent: "flex-end",
-      padding: spacing,
+      margin: `${spacing} auto 4rem`,
     }}
   >
     {links.map((link, index) => (
@@ -15,7 +15,7 @@ const Nav = ({ links, spacing, theme }) => (
         to={link.fields.slug}
         key={index}
         style={{
-          color: theme.color,
+          color: theme.colors.accent,
           marginRight: "2em",
         }}
       >
@@ -24,7 +24,7 @@ const Nav = ({ links, spacing, theme }) => (
     ))}
     <a
       style={{
-        color: theme.color,
+        color: theme.colors.accent,
       }}
       href="mailto:hello@ritam.me"
     >
@@ -32,9 +32,5 @@ const Nav = ({ links, spacing, theme }) => (
     </a>
   </span>
 )
-
-Nav.defaultProps = {
-  theme: "black",
-}
 
 export default Nav

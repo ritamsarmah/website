@@ -1,21 +1,25 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 import Nav from "../components/nav"
 import Creator from "../components/creator"
 import ProjectLayout from "../components/project-layout"
 
 const ProjectPage = ({ data }) => {
-  const spacing = "1rem"
   const theme = data.projectsYaml.theme
   return (
     <div>
-      <Nav
-        links={data.allMarkdownRemark.nodes}
-        spacing={spacing}
-        theme={theme}
-      ></Nav>
-      <ProjectLayout margin={spacing}>
-        <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+      <style>{`body { background-color: ${theme.colors.bg}; } a { color: ${theme.colors.accent}}`}</style>
+      <ProjectLayout margin="1rem" theme={theme}>
+        <Nav
+          links={data.allMarkdownRemark.nodes}
+          spacing="2rem"
+          theme={theme}
+        ></Nav>
+        <div
+          style={{ color: theme.colors.text }}
+          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+        />
         <Creator theme={theme}></Creator>
       </ProjectLayout>
     </div>
@@ -48,7 +52,11 @@ export const query = graphql`
     }
     projectsYaml(name: { eq: $project }) {
       theme {
-        color
+        colors {
+          accent
+          bg
+          text
+        }
       }
     }
   }
