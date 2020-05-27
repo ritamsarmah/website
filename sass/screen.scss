@@ -7,245 +7,262 @@
 @import "responsive-font";
 
 // Colors
-$blue: #1EB7C6;
-$black: #1B1B1B;
-$gray: #EBECF0;
-$dark-gray: #9B9B9B;
+$blue: #1eb7c6;
+$black: #1b1b1b;
+$gray: #ebecf0;
+$dark-gray: #9b9b9b;
 
-$body-font: 'Source Sans Pro', sans-serif;
-$heading-font: 'Raleway', sans-serif;
+$body-font: "Source Sans Pro", sans-serif;
+$heading-font: "Raleway", sans-serif;
 
-b { font-weight: 600; }
+b {
+  font-weight: 600;
+}
 
 body {
-    background-color: $gray;
+  background-color: $gray;
 }
 
 a {
-    color: $blue;
+  color: $blue;
 
-    &:hover, .offcanvas &:focus {
-        color: $blue;
-    }
+  &:hover,
+  .offcanvas &:focus {
+    color: $blue;
+  }
 }
 
 h2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: $heading-font;
-    letter-spacing: 1px;
-    font-weight: 600;
-    color: $blue;
-    @include responsive-font(3vw, 24px, 36px);
-
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: $heading-font;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: $blue;
+  @include responsive-font(3vw, 24px, 36px);
 }
 
 h3 {
-    font-family: $body-font;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    color: $black;
-    @include responsive-font(2vw, 18px, 20px);
-    margin: 30px 0 10px 0;
+  font-family: $body-font;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: $black;
+  @include responsive-font(2vw, 18px, 20px);
+  margin: 30px 0 10px 0;
 }
 
 h4 {
-    font-family: $body-font;
-    font-weight: 600;
-    line-height: 1.4em;
-    letter-spacing: 0.7px;
-    @include responsive-font(2vw, 16px, 18px);
+  font-family: $body-font;
+  font-weight: 600;
+  line-height: 1.4em;
+  letter-spacing: 0.7px;
+  @include responsive-font(2vw, 16px, 18px);
 }
 
 p {
-    font-family: $body-font;
-    font-weight: 300;
-    line-height: 1.4em;
-    letter-spacing: 0.7px;
-    @include responsive-font(2vw, 16px, 18px);
+  font-family: $body-font;
+  font-weight: 300;
+  line-height: 1.4em;
+  letter-spacing: 0.7px;
+  @include responsive-font(2vw, 18px, 24px);
 }
 
 .jumbotron {
-    background-color: $gray;
-    background-image: url(../images/jumbo.jpg);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    position: relative;
+  background-color: $gray;
+  background-image: url(../images/jumbo.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  position: relative;
 
-    h1 {
-        line-height: 1.4em;
-        letter-spacing: 1px;
-        font-family: $heading-font;
-        @include responsive-font(5vw, 30px, 64px);
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 20%;
-    }
+  h1 {
+    line-height: 1.4em;
+    letter-spacing: 1px;
+    font-family: $heading-font;
+    @include responsive-font(5vw, 30px, 64px);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20%;
+  }
 }
 
 .profile {
-    width: 80%;
-    max-width: 250px;
+  width: 80%;
+  max-width: 250px;
 }
 
 .container-fluid {
-    margin-top: 6%;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding: 0;
+  margin-top: 6%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0;
 }
 
-.centered{
-    display: block;
-    margin: auto;
-    padding: 40px 0;
+.centered {
+  display: block;
+  margin: auto;
+  padding: 40px 0;
 }
 
 .social {
   font-size: 3em;
   color: black;
 
-  &:hover, .offcanvas &:focus {
-      color: $blue;
+  &:hover,
+  .offcanvas &:focus {
+    color: $blue;
   }
 }
 
 #projects {
-    .btn {
-        background-color: transparent;
-        border-width: thin;
-        border-color: $blue;
-        padding: 6px 12px;
-        margin: 20px 10px 20px 0;
-        text-decoration: none;
-        display: inline-block;
+  .btn {
+    background-color: transparent;
+    border-width: thin;
+    border-color: $blue;
+    padding: 6px 12px;
+    margin: 20px 10px 20px 0;
+    text-decoration: none;
+    display: inline-block;
 
-        color: $blue;
-        font-family: $body-font;
-        font-weight: 300;
-        line-height: 1.4em;
-        letter-spacing: 0.7px;
-        font-size: 14px;
-        @include responsive-font(2vw, 14px, 18px);
+    color: $blue;
+    font-family: $body-font;
+    font-weight: 300;
+    line-height: 1.4em;
+    letter-spacing: 0.7px;
+    font-size: 14px;
+    @include responsive-font(2vw, 14px, 18px);
 
-        &:hover {
-            background-color: $blue;
-            color: $gray;
-        }
+    &:hover {
+      background-color: $blue;
+      color: $gray;
     }
+  }
 }
 
 #contact {
-    img {
-        margin-top: 40px;
-        margin-right: 40px;
-    }
-    margin-bottom: 70px;
+  img {
+    margin-top: 40px;
+    margin-right: 40px;
+  }
+  margin-bottom: 70px;
 }
 
 @media (max-width: 767px) {
-    .profile {
-        width: 60%;
-        max-width: 150px;
+  .profile {
+    width: 60%;
+    max-width: 150px;
+  }
+
+  .jumbotron h1 {
+    margin-top: 20%;
+  }
+
+  .centered {
+    padding: 40px 0 0 0;
+  }
+
+  #projects {
+    h2 {
+      margin-top: 60px;
     }
-
-    .jumbotron h1 { margin-top: 20%; }
-
-    .centered { padding: 40px 0 0 0; }
-
-    #projects {
-        h2 {
-            margin-top: 60px;
-        }
-        h3 {
-            margin: 40px 10px 10px 0;
-        }
+    h3 {
+      margin: 40px 10px 10px 0;
     }
+  }
 
-    #contact {
-        margin-bottom: 40px;
-        img {
-            margin-top: 20px;
-            margin-right: 30px;
-            width: 40px;
-        }
+  #contact {
+    margin-bottom: 40px;
+    img {
+      margin-top: 20px;
+      margin-right: 30px;
+      width: 40px;
     }
+  }
 }
 
 @media (max-width: 480px) {
-    .jumbotron h1 { margin-top: 33%; }
+  .jumbotron h1 {
+    margin-top: 33%;
+  }
 }
 
 /* Animations */
 .delay-animated {
-    -webkit-animation-delay: 0.4s; /* Safari 4.0 - 8.0 */
-    animation-delay: 0.4s;
-    -webkit-animation-duration: 1.2s;
-    animation-duration: 1.2s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+  -webkit-animation-delay: 0.4s; /* Safari 4.0 - 8.0 */
+  animation-delay: 0.4s;
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .delay2-animated {
-    visibility: hidden;
-    -webkit-animation-delay: 0.8s; /* Safari 4.0 - 8.0 */
-    animation-delay: 0.8s;
-    -webkit-animation-duration: 1.2s;
-    animation-duration: 1.2s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+  visibility: hidden;
+  -webkit-animation-delay: 0.8s; /* Safari 4.0 - 8.0 */
+  animation-delay: 0.8s;
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .animated {
-    -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .fadeIn {
-    visibility: visible;
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
+  visibility: visible;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
 
 @keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @-webkit-keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
 }
 
 .fadeInDown {
-    -webkit-animation-name: fadeInDown;
-    animation-name: fadeInDown;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
 }
 
 .js-loading *,

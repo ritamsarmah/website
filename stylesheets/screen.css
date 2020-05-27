@@ -3,19 +3,87 @@
 * Import this file using the following HTML or equivalent:
 * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 5, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -30,7 +98,8 @@ html {
 }
 
 /* line 24, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -41,18 +110,24 @@ table {
 }
 
 /* line 28, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
+caption,
+th,
+td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
 /* line 30, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
+q,
+blockquote {
   quotes: none;
 }
 /* line 103, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
   content: "";
   content: none;
 }
@@ -63,7 +138,19 @@ a img {
 }
 
 /* line 116, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
   display: block;
 }
 
@@ -74,16 +161,17 @@ b {
 
 /* line 20, ../sass/screen.scss */
 body {
-  background-color: #EBECF0;
+  background-color: #ebecf0;
 }
 
 /* line 24, ../sass/screen.scss */
 a {
-  color: #1EB7C6;
+  color: #1eb7c6;
 }
 /* line 27, ../sass/screen.scss */
-a:hover, .offcanvas a:focus {
-  color: #1EB7C6;
+a:hover,
+.offcanvas a:focus {
+  color: #1eb7c6;
 }
 
 /* line 32, ../sass/screen.scss */
@@ -93,7 +181,7 @@ h2 {
   font-family: "Raleway", sans-serif;
   letter-spacing: 1px;
   font-weight: 600;
-  color: #1EB7C6;
+  color: #1eb7c6;
   font-size: 3vw;
 }
 @media (max-width: 800px) {
@@ -114,7 +202,7 @@ h3 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   letter-spacing: 0.5px;
-  color: #1B1B1B;
+  color: #1b1b1b;
   font-size: 2vw;
   margin: 30px 0 10px 0;
 }
@@ -175,8 +263,7 @@ p {
 
 /* line 68, ../sass/screen.scss */
 .jumbotron {
-  background-color: #EBECF0;
-  background-image: url(../images/jumbo.jpg);
+  background-color: #ebecf0;
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -191,7 +278,7 @@ p {
   font-size: 5vw;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 20%;
+  margin-top: 5rem;
 }
 @media (max-width: 600px) {
   /* line 77, ../sass/screen.scss */
@@ -214,7 +301,7 @@ p {
 
 /* line 93, ../sass/screen.scss */
 .container-fluid {
-  margin-top: 6%;
+  margin-top: 3rem;
   margin-left: 10%;
   margin-right: 10%;
   padding: 0;
@@ -233,20 +320,21 @@ p {
   color: black;
 }
 /* line 110, ../sass/screen.scss */
-.social:hover, .offcanvas .social:focus {
-  color: #1EB7C6;
+.social:hover,
+.offcanvas .social:focus {
+  color: #1eb7c6;
 }
 
 /* line 116, ../sass/screen.scss */
 #projects .btn {
   background-color: transparent;
   border-width: thin;
-  border-color: #1EB7C6;
+  border-color: #1eb7c6;
   padding: 6px 12px;
   margin: 20px 10px 20px 0;
   text-decoration: none;
   display: inline-block;
-  color: #1EB7C6;
+  color: #1eb7c6;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   line-height: 1.4em;
@@ -268,8 +356,8 @@ p {
 }
 /* line 133, ../sass/screen.scss */
 #projects .btn:hover {
-  background-color: #1EB7C6;
-  color: #EBECF0;
+  background-color: #1eb7c6;
+  color: #ebecf0;
 }
 
 /* line 140, ../sass/screen.scss */
