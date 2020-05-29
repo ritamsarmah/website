@@ -45,9 +45,9 @@ index: 0
     <h1>CineSearch</h1>
     <h2>The best way to discover movies</h2>
     <ul>
-      <li>Discover new films based on your favorites</li>
-      <li>Search for the latest releases or timeless classics</li>
-      <li>View plot summaries, ratings, trailers, and more</li>
+      <li>Discover new films based on your favorites.</li>
+      <li>Search for the latest releases or timeless classics.</li>
+      <li>View plot summaries, ratings, trailers, and more.</li>
     </ul>
     <a href="https://apps.apple.com/us/app/cinesearch/id1300312387">
       <img height="48px" src="../../../images/appstore_white.svg" alt="download">

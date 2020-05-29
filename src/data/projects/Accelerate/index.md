@@ -14,6 +14,7 @@ index: 0
   .product-img {
     grid-column: span 6;
     width: 70%;
+    margin: 0 auto;
   }
 
   .product-info {
@@ -35,11 +36,11 @@ index: 0
     width: 64px;
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1023px) {
     .product-img {
       grid-column: span 12;
       width: 200px;
-      margin: 0 auto 50px;
+      margin: 0 auto;
     }
 
     .product-info {
@@ -54,8 +55,11 @@ index: 0
 </style>
 
 <div class="hero">
-  <img class="product-img" src="../../../images/accelerate/accelerate.png">
+  <div class="product-img">
+    <img src="../../../images/accelerate/accelerate.png">
+  </div>
   <div class="product-info">
+    <br>
     <h1>Accelerate</h1>
     <h2>Customizable controls for video playback in Safari</h2> 
     <p>
