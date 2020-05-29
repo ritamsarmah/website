@@ -4,30 +4,79 @@ project: Accelerate
 index: 0
 ---
 
-<!-- <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap">
-  <div>
-    <span>
-        <h3><img width="30px" src="../../../images/accelerate.png">Accelerate</h3>
-    </span>
-    <h1>Customizable controls for video playback in Safari</h1>
+<style>
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+  }
+
+  .product-img {
+    grid-column: span 6;
+    width: 70%;
+  }
+
+  .product-info {
+    grid-column: span 6;
+  }
+
+  .product-features {
+    display: grid;
+    margin-top: 80px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .product-feature {
+    padding: 0 10px;
+      text-align: center;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .product-img {
+      grid-column: span 12;
+      width: 200px;
+      margin: 0 auto 50px;
+    }
+
+    .product-info {
+      grid-column: span 12;
+      text-align: center;
+    }
+
+    .product-feature {
+      grid-column: span 12;
+    }
+  }
+</style>
+
+<div class="hero">
+  <img class="product-img" src="../../../images/accelerate/accelerate.png">
+  <div class="product-info">
+    <h1>Accelerate</h1>
+    <h2>Customizable controls for video playback in Safari</h2> 
+    <p>
+      Accelerate is a fully customizable Safari extension for controlling video playback & speed on your favorite websites.
+    </p>
     <a href="https://itunes.apple.com/us/app/accelerate-for-safari/id1459809092?mt=12">
-      <img src="../../../images/macappstore_black.svg" alt="download">
+      <img height="48px" src="../../../images/macappstore_black.svg" alt="download">
     </a>
   </div>
-</div> -->
+</div>
 
-### Accelerate
-
-# Customizable controls for video playback in Safari
-
----
-
-### Control video playback
-
-Play/pause, skip forward or back using keyboard shortcuts, right-click menu controls, or a toolbar item
-
-### Fully customizable settings
-
-### Skip video ads
-
-Accelerate is a fully customizable Safari extension that allows you to control videos on any website, including YouTube, Netflix, Hulu, Vimeo, and more. Use custom keyboard shortcuts, right-click menu controls, or a toolbar item to easily adjust video playback and speed. Includes support for Picture-in-Picture and AirPlay.
+<div class="product-features">
+  <div class="product-feature">
+    <img src="../../../images/accelerate.png">
+    <h3>Playback Controls</h3>
+    <p>Control video playback & speed using keyboard shortcuts or right-click menu options.</p>
+  </div>
+  <div class="product-feature">
+    <img src="../../../images/accelerate.png">
+    <h3>Ad Skipping</h3>
+    <p>Save time by skipping past unskippable video ads with just a keystroke.</p>
+  </div>
+  <div class="product-feature">
+    <img src="../../../images/accelerate.png">
+    <h3>Works Everywhere</h3>
+    <p>Supports any website using HTML5 video, including YouTube, Netflix, Hulu, Vimeo, and more.</p>
+  </div>
+</div>

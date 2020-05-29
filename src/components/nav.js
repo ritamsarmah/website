@@ -1,36 +1,42 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from "@emotion/styled"
 
-const Nav = ({ links, spacing, theme }) => (
-  <span
-    style={{
-      display: "flex",
-      justifyItems: "right",
-      justifyContent: "flex-end",
-      margin: `${spacing} auto 4rem`,
-    }}
-  >
-    {links.map((link, index) => (
-      <Link
-        to={link.fields.slug}
-        key={index}
-        style={{
-          color: theme.colors.accent,
-          marginRight: "2em",
-        }}
-      >
-        {link.frontmatter.title}
-      </Link>
-    ))}
-    <a
-      style={{
-        color: theme.colors.accent,
-      }}
-      href="mailto:hello@ritam.me"
-    >
-      Support
-    </a>
-  </span>
-)
+const Nav = ({ links, theme }) => {
+  const NavBar = styled.span`
+    display: flex;
+    justify-items: right;
+    justify-content: flex-end;
+    margin: 2rem auto 4rem;
+
+    a {
+      color: ${theme.colors.text};
+      font-weight: bold;
+      margin-left: 1em;
+      margin-right: 1em;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      color: ${theme.colors.accent};
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 1024px) {
+      justify-content: center;
+    }
+  `
+
+  return (
+    <NavBar>
+      {links.map((link, index) => (
+        <Link to={link.fields.slug} key={index}>
+          {link.frontmatter.title}
+        </Link>
+      ))}
+      <a href="mailto:hello@ritam.me">Support</a>
+    </NavBar>
+  )
+}
 
 export default Nav

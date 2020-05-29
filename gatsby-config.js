@@ -5,6 +5,7 @@ module.exports = {
     author: `Ritam Sarmah`,
   },
   plugins: [
+    `gatsby-plugin-emotion`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -28,6 +29,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         start_url: `/`,
+        icon: `src/images/favicon.png`,
       },
     },
     {
@@ -43,9 +45,6 @@ module.exports = {
           {
             resolve: "gatsby-remark-copy-linked-files",
             options: {
-              // If you'd like to not use gatsby-remark-images and just copy your
-              // original images to the public directory, set
-              // `ignoreFileExtensions` to an empty array.
               ignoreFileExtensions: [],
             },
           },

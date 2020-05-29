@@ -9,13 +9,9 @@ const ProjectPage = ({ data }) => {
   const theme = data.projectsYaml.theme
   return (
     <div>
-      <style>{`body { background-color: ${theme.colors.bg}; } a { color: ${theme.colors.accent}}`}</style>
-      <ProjectLayout margin="1rem" theme={theme}>
-        <Nav
-          links={data.allMarkdownRemark.nodes}
-          spacing="2rem"
-          theme={theme}
-        ></Nav>
+      <style>{`body { background-color: ${theme.colors.bg} } a { color: ${theme.colors.accent}}`}</style>
+      <ProjectLayout>
+        <Nav links={data.allMarkdownRemark.nodes} theme={theme}></Nav>
         <div
           style={{ color: theme.colors.text }}
           dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}

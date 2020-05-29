@@ -23,12 +23,17 @@ The site is probably using a custom video player that modifies the standard play
 
 <details>
 <summary>Why aren't my updated keyboard controls or preferences working?</summary>
-After you make changes to Accelerate's preferences, you will have to refresh any currently open websites to see the updates. If the changes still aren't showing, try restarting Safari.
+After you make changes to Accelerate's preferences, refresh any currently open websites to see the updates. If the changes still aren't showing, try restarting Safari.
 </details>
 
 <details>
 <summary>Why isn't Accelerate enabled/working for me?</summary>
-Check that the extension is enabled by opening Safari's extension preferences: Safari > Preferences > Extensions; make sure the checkbox next to "Accelerate" is checked. If Accelerate is already enabled, try unchecking the checkbox and restarting Safari. Once Safari re-opens, re-enable Accelerate. If it is still not working, try deleting and reinstalling.
+<ol>
+  <li>Check that the extension is enabled by opening Safari's extension preferences: Safari > Preferences > Extensions. In the sidebar on the left, make sure the checkbox next to "Accelerate" is checked.
+  <li>If Accelerate is already enabled, try unchecking the checkbox and restarting Safari. Once Safari re-opens, re-enable Accelerate.</li>
+  <li>If it is still not working, try deleting and reinstalling.</li>
+  <li>If you continue to have issues, feel free to <a href="mailto:hello@ritam.me">email me</a>.</li>
+</ol>
 </details>
 
 <details>

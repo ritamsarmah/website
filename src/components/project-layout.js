@@ -3,12 +3,12 @@ import PropTypes from "prop-types"
 
 import "./project-layout.css"
 
-const ProjectLayout = ({ margin, theme, children }) => {
+const ProjectLayout = ({ children }) => {
   return (
     <>
       <div
         style={{
-          margin: `${margin} auto`,
+          margin: `1rem auto`,
           maxWidth: 960,
         }}
       >
@@ -20,10 +20,6 @@ const ProjectLayout = ({ margin, theme, children }) => {
 
 ProjectLayout.propTypes = {
   children: PropTypes.node.isRequired,
-}
-
-ProjectLayout.defaultProps = {
-  margin: "5rem",
 }
 
 export default ProjectLayout
