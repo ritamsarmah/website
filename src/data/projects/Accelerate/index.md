@@ -13,7 +13,7 @@ index: 0
 
   .product-img {
     grid-column: span 6;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
   }
 

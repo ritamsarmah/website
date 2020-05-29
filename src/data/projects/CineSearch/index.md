@@ -24,17 +24,13 @@ index: 0
   @media screen and (max-width: 1024px) {
     .product-img {
       grid-column: span 12;
-      width: 30%;
+      width: 50%;
       margin: 0 auto 50px;
     }
 
     .product-info {
       grid-column: span 12;
       text-align: center;
-    }
-
-    .product-info > ul {
-      list-style: none;
     }
   }
 </style>
@@ -44,11 +40,10 @@ index: 0
   <div class="product-info">
     <h1>CineSearch</h1>
     <h2>The best way to discover movies</h2>
-    <ul>
-      <li>Discover new films based on your favorites.</li>
-      <li>Search for the latest releases or timeless classics.</li>
-      <li>View plot summaries, ratings, trailers, and more.</li>
-    </ul>
+    <li>Discover new films based on your favorites</li>
+    <li>Search for the latest releases or timeless classics</li>
+    <li>View plot summaries, ratings, trailers, and more</li>
+    <br>
     <a href="https://apps.apple.com/us/app/cinesearch/id1300312387">
       <img height="48px" src="../../../images/appstore_white.svg" alt="download">
     </a>

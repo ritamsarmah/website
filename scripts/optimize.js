@@ -20,6 +20,8 @@ Promise.all(
       (match, ext) => `-optimized${ext}`
     )
 
+    console.log(`Creating ${match}`)
+
     await stream
       .resize(MAX_WIDTH)
       .jpeg({ quality: QUALITY })
