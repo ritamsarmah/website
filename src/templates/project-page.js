@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+import SEO from "../components/seo"
 import Nav from "../components/nav"
 import Creator from "../components/creator"
 import ProjectLayout from "../components/project-layout"
@@ -9,6 +10,10 @@ const ProjectPage = ({ data }) => {
   const theme = data.projectsYaml.theme
   return (
     <div>
+      <SEO
+        title={data.markdownRemark.frontmatter.title}
+        subdomain={data.projectsYaml.name}
+      />
       <style>{`body { background-color: ${theme.colors.bg} } a { color: ${theme.colors.accent}}`}</style>
       <ProjectLayout>
         <Nav links={data.allMarkdownRemark.nodes} theme={theme}></Nav>
@@ -47,6 +52,7 @@ export const query = graphql`
       }
     }
     projectsYaml(name: { eq: $project }) {
+      name
       theme {
         colors {
           accent
