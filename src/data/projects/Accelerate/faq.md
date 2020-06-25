@@ -24,7 +24,7 @@ These shortcuts can be modified in Accelerate's preferences, where you can creat
 <summary>How do I configure preferences in Accelerate?</summary>
 You can access Accelerate's preferences by opening the Accelerate application, say from Launchpad or Spotlight. Here are some options configurable under the General tab:
 
-- The **default speed** to automatically start playing videos at. Videos normally play at 1x speed by default.
+- The **default speed** to automatically start playing videos. Videos normally play at 1x speed by default.
 - The **preferred speed** to toggle to after pressing the keyboard shortcut, toolbar item, or right-click menu option.
 - The **speed interval** to change by when speeding up or slowing down playback.
 - The **skip interval** (in seconds) to change by when skipping forward or skipping back.

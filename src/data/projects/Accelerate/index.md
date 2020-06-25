@@ -7,18 +7,18 @@ index: 0
 <style>
   .hero {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     align-items: center;
   }
 
   .product-img {
-    grid-column: span 6;
+    grid-column: span 2;
     width: 60%;
     margin: 0 auto;
   }
 
   .product-info {
-    grid-column: span 6;
+    grid-column: span 3;
   }
 
   .product-features {
@@ -47,7 +47,7 @@ index: 0
       grid-column: span 12;
       text-align: center;
     }
-
+    
     .product-feature {
       grid-column: span 12;
     }
@@ -61,9 +61,9 @@ index: 0
   <div class="product-info">
     <br>
     <h1>Accelerate</h1>
-    <h2>Customizable controls for video playback in Safari</h2> 
+    <h2>Control video playback in Safari</h2> 
     <p>
-      Accelerate is a fully customizable Safari extension for controlling video playback on your favorite websites.
+      Accelerate is a fully customizable Safari extension for controlling video playback and speed on your favorite websites.
     </p>
     <a href="https://itunes.apple.com/us/app/accelerate-for-safari/id1459809092?mt=12">
       <img height="48px" src="../../../images/macappstore_black.svg" alt="download">

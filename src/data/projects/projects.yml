@@ -31,13 +31,13 @@
       bg: "#06070B"
       accent: "#1EAFF0"
       text: "white"
-- name: Geno
-  description:
-    An Electron-based IDE for adding voice/multimodal interfaces into existing
-    web applications.
-  tags:
-    - JS
-    - Electron
-  links:
-    - name: GitHub
-      url: https://github.com/ritamsarmah/geno
+# - name: Geno
+#   description:
+#     An Electron-based IDE for adding voice/multimodal interfaces into existing
+#     web applications.
+#   tags:
+#     - JS
+#     - Electron
+#   links:
+#     - name: GitHub
+#       url: https://github.com/ritamsarmah/geno
