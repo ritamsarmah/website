@@ -78,12 +78,12 @@ index: 0
     <p>Control video playback & speed using keyboard shortcuts or right-click menu options.</p>
   </div>
   <div class="product-feature">
-    <img src="../../../images/accelerate/skip.svg" alt="speed">
+    <img src="../../../images/accelerate/skip.svg" alt="skip">
     <h3>Ad Skipping</h3>
     <p>Save time by skipping past unskippable video ads with just a keystroke.</p>
   </div>
   <div class="product-feature">
-    <img src="../../../images/accelerate/youtube.svg" alt="speed">
+    <img src="../../../images/accelerate/globe.svg" alt="globe">
     <h3>Extensive Support</h3>
     <p>Supports any website using HTML5 video, including YouTube, Netflix, Hulu, Vimeo, and more.</p>
   </div>
