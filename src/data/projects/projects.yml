@@ -15,6 +15,20 @@
       bg: "white"
       accent: "#7252DF"
       text: "black"
+- name: Textify
+  description: Extract text from images, videos, and PDFs on your computer.
+  tags:
+    - macOS
+  links:
+    - name: Website
+      url: "/projects/textify"
+    - name: App Store
+      url: https://itunes.apple.com/us/app/cinesearch/id1300312387?mt=8
+  theme:
+    colors:
+      bg: "#131324"
+      accent: "#57F4FC"
+      text: "white"
 - name: CineSearch
   description: Discover and search for the latest movies on iOS.
   tags:
