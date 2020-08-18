@@ -19,7 +19,9 @@
   description: Extract text from images, videos, and PDFs on your computer.
   tags:
     - macOS
-  # links:
+  links:
+    - name: (Coming Soon)
+      url: "about:blank"
   #   - name: Website
   #     url: "/projects/textile"
   #   - name: App Store
