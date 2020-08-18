@@ -15,15 +15,15 @@
       bg: "white"
       accent: "#7252DF"
       text: "black"
-- name: Textify
+- name: Textile
   description: Extract text from images, videos, and PDFs on your computer.
   tags:
     - macOS
-  links:
-    - name: Website
-      url: "/projects/textify"
-    - name: App Store
-      url: https://itunes.apple.com/us/app/cinesearch/id1300312387?mt=8
+  # links:
+  #   - name: Website
+  #     url: "/projects/textile"
+  #   - name: App Store
+  #     url: https://itunes.apple.com/us/app/cinesearch/id1300312387?mt=8
   theme:
     colors:
       bg: "#131324"
@@ -45,13 +45,20 @@
       bg: "#06070B"
       accent: "#1EAFF0"
       text: "white"
-# - name: Geno
-#   description:
-#     An Electron-based IDE for adding voice/multimodal interfaces into existing
-#     web applications.
-#   tags:
-#     - JS
-#     - Electron
-#   links:
-#     - name: GitHub
-#       url: https://github.com/ritamsarmah/geno
+- name: Geno
+  description: "An Electron-based IDE for adding multimodal interfaces into existing web apps. Accepted at UIST 2020."
+  tags:
+    - HCI
+    - JavaScript
+    - React
+    - Electron
+  links:
+    - name: Paper
+      url: https://arxiv.org/pdf/2007.09809.pdf
+    - name: GitHub
+      url: https://github.com/ritamsarmah/geno
+  theme:
+    colors:
+      bg: "#131324"
+      accent: "#57F4FC"
+      text: "white"

@@ -10,8 +10,8 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <h1 class="animated fadeDown">Hello! I&#39;m Ritam.</h1>
-      <div class="delay-animated fadeIn">
+      <h1>Hello! I&#39;m Ritam.</h1>
+      <div>
         <p>
           I am a software developer and graduate student at UCLA pursuing an
           M.S. in Computer Science. I've previously worked on teams at AppLovin
