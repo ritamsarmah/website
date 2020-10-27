@@ -10,15 +10,20 @@ index: 1
 
 <details>
 <summary>How do I get started with Accelerate?</summary>
-Accelerate allows you to control video playback primarily using keyboard shortcuts. The default controls are:
+Accelerate allows you to control video playback primarily using keyboard shortcuts. The following controls are available, with default keys listed in parentheses:
 
-- **D**: Speed up
-- **S**: Slow down
-- **R**: Reset to default speed
-- **A**: Toggle to your preferred speed
-- **V**: Show current playback speed
+- Speed up (**D**)
+- Slow down (**S**)
+- Reset to default speed (**R**)
+- Toggle to preferred speed (**A**)
+- Show current playback speed (**V**)
+- Play/pause
+- Skip forward/backward
+- Skip to the end, e.g., skip ads
+- Mute
+- Picture-in-Picture
 
-These shortcuts can be modified in Accelerate's preferences, where you can create additional shortcuts. Accelerate currently supports adding shortcuts for play/pause, skip forward/backward, skip to the end of the video (e.g., for skipping ads), mute, and Picture-in-Picture. You can also right-click on a video to adjust playback speed or use the toolbar item to toggle to your preferred speed.
+These shortcuts can be modified in Accelerate's preferences, where you can create additional shortcuts. You can also right-click on a video to adjust playback speed or use the toolbar item to toggle to your preferred speed.
 
 </details>
 

@@ -5,86 +5,44 @@ index: 0
 ---
 
 <style>
-  .hero {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    align-items: center;
-  }
-
-  .product-img {
-    grid-column: span 2;
-    width: 60%;
-    margin: 0 auto;
-  }
-
-  .product-info {
-    grid-column: span 3;
-  }
-
-  .product-features {
-    display: grid;
-    margin-top: 80px;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .product-feature {
-    padding: 0 10px;
-      text-align: center;
-  }
-
-  .product-feature > img {
-    width: 64px;
-  }
-
-  @media screen and (max-width: 1023px) {
-    .product-img {
-      grid-column: span 12;
-      width: 200px;
-      margin: 0 auto;
-    }
-
-    .product-info {
-      grid-column: span 12;
-      text-align: center;
-    }
-    
-    .product-feature {
-      grid-column: span 12;
-    }
-  }
+body {
+  text-align: center;
+  margin: 0 auto;
+}
 </style>
 
-<div class="hero">
-  <div class="product-img">
-    <img src="../../../images/accelerate/accelerate.png">
-  </div>
-  <div class="product-info">
-    <br>
-    <h1>Accelerate</h1>
-    <h2>Control video playback in Safari</h2> 
-    <p>
-      Accelerate is a fully customizable Safari extension for controlling video playback and speed on your favorite websites.
-    </p>
-    <a href="https://itunes.apple.com/us/app/accelerate-for-safari/id1459809092?mt=12">
-      <img height="48px" src="../../../images/macappstore_black.svg" alt="download">
-    </a>
-  </div>
-</div>
+# Accelerate for Safari
 
-<div class="product-features">
-  <div class="product-feature">
-    <img src="../../../images/accelerate/speed.svg" alt="speed">
-    <h3>Playback Controls</h3>
-    <p>Control video playback & speed using keyboard shortcuts or right-click menu options.</p>
-  </div>
-  <div class="product-feature">
-    <img src="../../../images/accelerate/skip.svg" alt="skip">
-    <h3>Ad Skipping</h3>
-    <p>Save time by skipping past unskippable video ads with just a keystroke.</p>
-  </div>
-  <div class="product-feature">
-    <img src="../../../images/accelerate/globe.svg" alt="globe">
-    <h3>Extensive Support</h3>
-    <p>Supports any website using HTML5 video, including YouTube, Netflix, Hulu, Vimeo, and more.</p>
-  </div>
+### Customizable controls for video playback and speed
+
+<img style="margin:0" src="../../../images/accelerate/screenshot.png" alt="Screenshot">
+
+<div>
+  <a href="https://itunes.apple.com/us/app/accelerate-for-safari/id1459809092?mt=12">
+    <img height="48px" style="margin:0" src="../../../images/macappstore_black.svg" alt="Download">
+  </a>
+  <p style="font-size:14px; margin:0; color: gray">Requires macOS 10.11+</p>
 </div>
+<br>
+
+---
+
+<br>
+
+### Control video speed
+
+Customizable keyboard shortcuts allow you to instantly speed up and slow down videos on any video website, or toggle between different speed settings.
+
+<img width="70%" style="min-width:300px" src="../../../images/accelerate/tutorial1.svg" alt="Keyboard">
+
+### Advanced playback shortcuts
+
+Add convenient playback shortcuts that work across your favorite video websites, allowing you to easily toggle Picture-in-Picture or skip video ads.
+
+<img style="margin-top:20px; margin-bottom:60px; min-width:260px" width="60%" src="../../../images/accelerate/tutorial2.svg" alt="Playback">
+
+### Extensive website support
+
+Accelerate supports any website that uses HTML5 video, including YouTube, Netflix, Hulu, and more.</p>
+
+<img style="margin:40px; min-width:240px" width="60%" src="../../../images/accelerate/tutorial3.png" alt="Apps">
