@@ -21,10 +21,27 @@ const IndexPage = ({ data }) => {
           awesome apps for iOS and macOS, with a focus on beautiful, quality
           user experiences.
         </p>
-        <p>
-          Feel free to contact me if you have any questions or just want to say
-          hello.
-        </p>
+        <p>Feel free to contact me if you have any questions or comments.</p>
+
+        {/* TEMPORARY MESSAGE */}
+        <div
+          style={{
+            background: "#6358D85b",
+            padding: "12px",
+            borderRadius: "5px",
+          }}
+        >
+          <strong>Note to Accelerate Users:</strong> There is a known issue with{" "}
+          <strong>macOS Big Sur 11.1 Beta</strong> that breaks video/audio sync
+          in Safari, which directly impacts Accelerate's functionality. If your
+          computer is currently on macOS 11.1+, you'll need to revert to an
+          earlier version in order to use Accelerate. Please&nbsp;
+          <a href="https://feedbackassistant.apple.com">
+            send your feedback to Apple
+          </a>{" "}
+          so they may resolve the issue as soon as possible.
+        </div>
+
         <Social />
         <div style={{ maxWidth: `300px`, marginBottom: `5rem` }}></div>
         <h1>Projects</h1>
