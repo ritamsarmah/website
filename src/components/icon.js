@@ -9,16 +9,18 @@ import "@fortawesome/fontawesome-svg-core/styles.css"
 import { config } from "@fortawesome/fontawesome-svg-core"
 config.autoAddCss = false /* eslint-disable import/first */
 
-const Icon = ({ spacing, href, icon }) => (
-  <a
+const Icon = ({ spacing, link, icon }) => (
+  <button
     className={iconStyles.icon}
-    href={href}
     style={{
       marginRight: spacing,
     }}
+    onClick={() => {
+      window.location.href = link
+    }}
   >
     <FontAwesomeIcon icon={icon} size="2x"></FontAwesomeIcon>
-  </a>
+  </button>
 )
 
 Icon.defaultProps = {

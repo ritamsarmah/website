@@ -1,9 +1,12 @@
 @import "./layout.css";
 
 .icon {
+  all: unset;
+  padding: 5px 0;
   color: black;
 }
 
 .icon:hover {
   color: var(--theme-color);
+  cursor: pointer;
 }
