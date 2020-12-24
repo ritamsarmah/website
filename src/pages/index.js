@@ -14,11 +14,11 @@ const IndexPage = ({ data }) => {
       <div>
         <p>
           I am a software engineer at{" "}
-          <a href="https://www.applovin.com">AppLovin</a> and currently based in
-          San Francisco, CA. I enjoy building awesome apps for iOS and macOS,
-          with a focus on beautiful, quality user experiences. I graduated from
-          UCLA, where I studied computer science and conducted research in{" "}
-          <a href="https://hci.ucla.edu">human-computer interaction</a> with AI.
+          <a href="https://www.applovin.com">AppLovin</a> and based in San
+          Francisco, CA. I enjoy building awesome apps for iOS and macOS, with a
+          focus on beautiful, quality user experiences. I graduated from UCLA,
+          where I studied computer science and researched{" "}
+          <a href="https://hci.ucla.edu">human-computer interaction</a> and AI.
         </p>
         <p>
           Feel free to reach out if you have any questions or just want to say
