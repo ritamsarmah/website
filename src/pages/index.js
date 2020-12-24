@@ -13,16 +13,17 @@ const IndexPage = ({ data }) => {
       <h1>Hello! I&#39;m Ritam.</h1>
       <div>
         <p>
-          I am a software developer and graduate student at UCLA pursuing an
-          M.S. in Computer Science. I've previously worked on teams at AppLovin
-          and AT&T. Recently, I've been researching multimodal interfaces and
-          natural language processing with{" "}
-          <a href="https://hci.ucla.edu">UCLA HCI Research</a>. I love building
-          awesome apps for iOS and macOS, with a focus on beautiful, quality
-          user experiences.
+          I am a software engineer at{" "}
+          <a href="https://www.applovin.com">AppLovin</a> and currently based in
+          San Francisco, CA. I enjoy building awesome apps for iOS and macOS,
+          with a focus on beautiful, quality user experiences. I graduated from
+          UCLA, where I studied computer science and conducted research in{" "}
+          <a href="https://hci.ucla.edu">human-computer interaction</a> with AI.
         </p>
-        <p>Feel free to contact me if you have any questions or comments.</p>
-
+        <p>
+          Feel free to reach out if you have any questions or just want to say
+          hello.
+        </p>
         <Social />
         <div style={{ maxWidth: `300px`, marginBottom: `5rem` }}></div>
         <h1>Projects</h1>
