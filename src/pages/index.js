@@ -13,11 +13,10 @@ const IndexPage = ({ data }) => {
       <h1>Hello! I&#39;m Ritam.</h1>
       <div>
         <p>
-          I am a software engineer at{" "}
-          <a href="https://www.applovin.com">AppLovin</a> and based in San
-          Francisco, CA. I enjoy building awesome apps for iOS and macOS, with a
-          focus on beautiful, quality user experiences. I graduated from UCLA,
-          where I studied computer science and researched{" "}
+          I am a software engineer from California, and currently working at{" "}
+          <a href="https://www.applovin.com">AppLovin</a>. In my spare time, I
+          enjoy building useful apps for iOS and macOS. I recently graduated
+          from UCLA, where I studied computer science with a focus on{" "}
           <a href="https://hci.ucla.edu">human-computer interaction</a>.
         </p>
         <p>
